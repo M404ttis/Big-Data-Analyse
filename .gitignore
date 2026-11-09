@@ -1,0 +1,15 @@
+# Kursfolien: nicht öffentlich, lokal behalten
+*.pdf
+
+# Python-Umgebungen und Caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Große Rohdaten und erzeugte Dateien
+*.parquet
