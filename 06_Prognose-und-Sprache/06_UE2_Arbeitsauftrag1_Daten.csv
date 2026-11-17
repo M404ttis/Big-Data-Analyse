@@ -1,0 +1,13 @@
+﻿Kunde;Gruppe;Alter;Einkommen_Monat_EUR;Kaeufe_12_Monate;Kanal;Newsletter;Kunde_seit;Premium_gekauft;Umsatz_Folgejahr_EUR
+A;bisherig;34;3200;9;online;ja;2019;ja;1150
+B;bisherig;52;4800;2;Filiale;ja;2012;nein;310
+C;bisherig;27;2100;11;online;nein;2022;ja;870
+D;bisherig;45;5500;7;online;ja;2015;ja;1640
+E;bisherig;61;2900;1;Filiale;nein;2018;nein;120
+F;bisherig;38;3900;4;beides;ja;2017;nein;520
+G;bisherig;23;1700;6;online;nein;2024;nein;410
+H;bisherig;49;4200;10;beides;ja;2016;ja;1480
+N1;neu;31;2800;8;online;ja;2021;;
+N2;neu;57;6100;3;Filiale;nein;2010;;
+N3;neu;42;3500;6;beides;ja;2020;;
+N4;neu;26;2300;12;online;nein;2023;;
