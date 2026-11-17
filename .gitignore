@@ -13,3 +13,6 @@ __pycache__/
 
 # Große Rohdaten und erzeugte Dateien
 *.parquet
+
+# Seminar-Skript (nicht öffentlich)
+graphiken_erzeugen.py
