@@ -1,0 +1,14 @@
+﻿kunde;alter;kaeufe_pro_jahr;umsatz_pro_jahr_eur;kunde_seit;filiale;zahlart
+K01;24;26;640;2023;Nord;Karte
+K02;58;3;1950;2009;Süd;bar
+K03;41;18;2300;2016;Nord;Rechnung
+K04;29;22;590;2022;Süd;Karte
+K05;63;2;2400;2008;Nord;Karte
+K06;35;4;210;2020;Nord;bar
+K07;45;20;2650;2014;Süd;Rechnung
+K08;22;30;710;2024;Nord;Karte
+K09;52;2;180;2021;Süd;bar
+K10;61;4;2100;2011;Nord;Karte
+K11;38;16;1980;2018;Süd;Rechnung
+K12;47;3;240;2019;Nord;Karte
+;;;;;;
