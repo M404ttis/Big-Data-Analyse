@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Morgenblick Geschäftsführung</title>
+  <style>
+    /* Morgenblick für die Geschäftsführung, gedacht für das Tablet (quer und hoch).
+       Genau fünf Elemente. Alle Grafiken sind HTML und CSS mit Prozentwerten, nichts wird per Skript neu gezeichnet:
+       Drehen des Geräts passt das Raster sofort an.
+       Raster: quer ab 900 px = 6 Spalten (2 + 3), hoch oder 560 bis 899 px = 2 Spalten (Heldenkarte über beide),
+       darunter = 1 Spalte. Kein Hover nötig, alles Wichtige steht sichtbar. Ziele zum Antippen mindestens 44 px. */
+    :root {
+      color-scheme: light;
+      --page: #f9f9f7;
+      --surface: #fcfcfb;
+      --ink: #0b0b0b;
+      --ink2: #52514e;
+      --muted: #898781;
+      --grid: #e1e0d9;
+      --axis: #c3c2b7;
+      --ring: rgba(11, 11, 11, .10);
+      --track: #ebeae4;
+      --pos: #2a78d6;
+      /* besser als Vorjahr oder Plan */
+      --pos-soft: #b7d3f6;
+      --neg: #e34948;
+      /* schlechter */
+      --good: #0ca30c;
+      --warn: #fab219;
+      --crit: #d03b3b;
+      --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+      --gap: 14px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:where(:not([data-theme="light"])) {
+        color-scheme: dark;
+        --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
+        --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, .10); --track: #2c2c2a;
+        --pos: #3987e5; --pos-soft: #184f95; --neg: #e66767; --crit: #e66767;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
+      --grid: #2c2c2a; --axis: #383835; --ring: rgba(255, 255, 255, .10); --track: #2c2c2a;
+      --pos: #3987e5; --pos-soft: #184f95; --neg: #e66767; --crit: #e66767;
+    }
+
+    * { box-sizing: border-box }
+    html { -webkit-text-size-adjust: 100% }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 17px/1.45 var(--font);
+      padding: 18px max(18px, env(safe-area-inset-right)) 28px max(18px, env(safe-area-inset-left));
+    }
+
+    .wrap { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--gap) }
+
+    /* ---------- Kopf ---------- */
+    header { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: center }
+    h1 { font-size: 1.5rem; line-height: 1.2; margin: 0; letter-spacing: -.01em; text-wrap: balance }
+    .sub { margin: 2px 0 0; color: var(--ink2); font-size: .94rem }
+    .btn { font: inherit; font-size: .92rem; color: var(--ink2); background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; min-height: 44px; padding: 0 16px; cursor: pointer }
+    .btn:hover { background: var(--track) }
+    .btn:focus-visible, summary:focus-visible { outline: 2px solid var(--pos); outline-offset: 2px }
+
+    /* ---------- Raster ---------- */
+    .board { display: grid; gap: var(--gap); grid-template-columns: 1fr }
+    .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 14px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0 }
+    @media (min-width: 560px) {
+      .board { grid-template-columns: 1fr 1fr }
+      .c-marge { grid-column: 1 / -1 }
+    }
+    /* hoch auf dem Tablet und mittlere Breiten: Heldenkarte zweispaltig (Zahl links, Grafik rechts) */
+    @media (min-width: 560px) and (max-width: 899px), (min-width: 900px) and (max-width: 1279px) and (orientation: portrait) {
+      .c-marge { display: grid; grid-template-columns: 1.05fr 1fr; column-gap: 32px; grid-template-areas: "top top" "val vis" "delta vis" "tag vis" "hint vis" "src src"; align-items: start }
+      .c-marge .top { grid-area: top } .c-marge .val { grid-area: val } .c-marge .delta { grid-area: delta } .c-marge .tag { grid-area: tag }
+      .c-marge .hint { grid-area: hint } .c-marge .tag { justify-self: start } .c-marge .vis { grid-area: vis; align-self: center; margin: 0 } .c-marge .src { grid-area: src }
+    }
+    /* quer auf dem Tablet (und große Bildschirme in jeder Lage): 2 + 3 */
+    @media (min-width: 900px) and (orientation: landscape), (min-width: 1280px) {
+      .board { grid-template-columns: repeat(6, 1fr) }
+      .c-marge, .c-umsatz { grid-column: span 3 }
+      .c-retouren, .c-lago, .c-zufr { grid-column: span 2 }
+    }
+    @media (min-width: 900px) and (orientation: landscape) and (max-height: 820px) {
+      body { font-size: 16px; padding-top: 12px; padding-bottom: 14px }
+      .wrap, .board { gap: 10px }
+      .card { padding: 12px 15px 11px; gap: 4px }
+      .hero .val { font-size: 3.4rem }
+    }
+    /* ganz flache Querformate (zum Beispiel 1024 x 768 mit Browserleiste): noch etwas enger, damit alles ohne Scrollen passt */
+    @media (min-width: 900px) and (orientation: landscape) and (max-height: 790px) {
+      body { padding-top: 8px; padding-bottom: 8px }
+      header { gap: 2px 12px } h1 { font-size: 1.3rem } .sub { font-size: .86rem } .btn { min-height: 40px }
+      .card { padding: 10px 14px 9px; gap: 3px }
+      .hero .val { font-size: 3rem } .val { font-size: 2.2rem }
+      .hint { font-size: .86rem; margin: 0 } .delta { font-size: .92rem } .tag { margin-top: 0 }
+      .src { margin-top: 6px; padding-top: 6px } .vis { padding-top: 4px }
+      .db { height: 54px } .db .tr { top: 24px } .db .ln { top: 23px } .db .dot { top: 26px } .db .l.prev { top: 40px }
+      .row + .row { margin-top: 4px } .db-head b { font-size: 1.3rem }
+      .legend { font-size: .8rem }
+    }
+
+    /* ---------- Karteninhalt ---------- */
+    .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px }
+    .lab { font-size: .95rem; color: var(--ink2); font-weight: 600 }
+    .val { font-size: 2.6rem; font-weight: 650; line-height: 1.05; letter-spacing: -.02em }
+    .hero .val { font-size: 4rem; letter-spacing: -.03em }
+    .delta { font-size: .98rem; font-weight: 600; display: flex; gap: 6px; align-items: baseline }
+    .delta .ic { font-size: .78rem }
+    .delta.bad .ic { color: var(--neg) }
+    .delta.good .ic { color: var(--pos) }
+    .hint { font-size: .92rem; color: var(--ink2); margin: 2px 0 0 }
+    .vis { margin-top: auto; padding-top: 8px }
+    .src { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--grid); padding-top: 8px; margin-top: 10px }
+
+    /* Status: Symbol und Wort, nie nur Farbe */
+    .chip { display: inline-flex; align-items: center; gap: 6px; font-size: .84rem; font-weight: 600; color: var(--ink); background: var(--track); border-radius: 99px; padding: 4px 11px 4px 8px; white-space: nowrap }
+    .chip svg { width: 16px; height: 16px; flex: none }
+    .chip.good svg { color: var(--good) }
+    .chip.warn svg { color: var(--warn) }
+    .chip.crit svg { color: var(--crit) }
+
+    .tag { display: inline-block; font-size: .84rem; font-weight: 600; border: 1px solid var(--axis); border-radius: 8px; padding: 3px 10px; color: var(--ink2); margin-top: 4px; align-self: flex-start }
+
+    /* ---------- Hantel (Vorjahr gegen jetzt) ---------- */
+    .db { position: relative; height: 60px; margin: 4px 18px 0 18px }
+    .db .tr { position: absolute; left: 0; right: 0; top: 27px; height: 4px; border-radius: 2px; background: var(--track) }
+    .db .ln { position: absolute; top: 26px; height: 6px; border-radius: 3px; background: var(--c); opacity: .5 }
+    .db .dot { position: absolute; top: 29px; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50% }
+    .db .dot.prev { background: var(--surface); border: 3px solid var(--muted) }
+    .db .dot.now { background: var(--c); box-shadow: 0 0 0 3px var(--surface) }
+    .db .l { position: absolute; transform: translateX(-50%); white-space: nowrap; font-size: .95rem; line-height: 1 }
+    .db .l.now { top: 1px; font-weight: 700 }
+    .db .l.prev { top: 44px; color: var(--ink2) }
+    .db .l small { font-size: .78rem; color: var(--muted); font-weight: 500 }
+    .db-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: .95rem }
+    .db-head b { font-size: 1.5rem; letter-spacing: -.01em }
+    .db-head span { color: var(--ink2); font-size: .9rem; text-align: right }
+    .scale { display: flex; justify-content: space-between; font-size: .75rem; color: var(--muted); margin: -2px 18px 0 18px }
+    .tone-better { --c: var(--pos) }
+    .tone-worse { --c: var(--neg) }
+    .tone-flat { --c: var(--ink2) }
+    .row + .row { margin-top: 8px }
+
+    /* ---------- Zielbalken (Umsatz gegen Plan) ---------- */
+    .bl { position: relative; height: 64px; margin: 0 18px }
+    .bl .tr { position: absolute; left: 0; right: 0; top: 26px; height: 16px; border-radius: 8px; background: var(--track) }
+    .bl .f1 { position: absolute; left: 0; top: 26px; height: 16px; background: var(--pos-soft); border-radius: 8px 0 0 8px }
+    .bl .f2 { position: absolute; top: 26px; height: 16px; background: var(--pos); border-radius: 0 8px 8px 0 }
+    .bl .pl { position: absolute; top: 20px; width: 3px; height: 28px; margin-left: -1.5px; background: var(--ink); border-radius: 2px }
+    .bl .l { position: absolute; white-space: nowrap; font-size: .92rem; line-height: 1 }
+    .bl .l.plan { top: 0; transform: translateX(-50%); color: var(--ink2) }
+    .bl .l.now { top: 48px; transform: translateX(-100%); font-weight: 700 }
+
+    /* ---------- Balken (Lago gegen übrige) ---------- */
+    .bars { display: grid; gap: 10px }
+    .bars .b { display: grid; grid-template-columns: minmax(0, 7.2em) 1fr; gap: 10px; align-items: center; font-size: .92rem }
+    .bars .b span:first-child { color: var(--ink2); line-height: 1.2 }
+    .bars .t { position: relative; height: 24px }
+    .bars .t i { position: absolute; left: 0; top: 2px; height: 20px; background: var(--c); border-radius: 0 4px 4px 0 }
+    .bars .t em { position: absolute; top: 0; font-style: normal; font-weight: 700; line-height: 24px; font-size: .95rem; padding-left: 8px; white-space: nowrap }
+
+    /* ---------- Begründung unter dem Board ---------- */
+    details { background: var(--surface); border: 1px solid var(--ring); border-radius: 14px; padding: 0 18px }
+    summary { cursor: pointer; min-height: 52px; display: flex; align-items: center; font-weight: 600; font-size: 1rem; list-style: none }
+    summary::-webkit-details-marker { display: none }
+    summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .15s }
+    details[open] summary::after { transform: rotate(180deg) }
+    .why { display: grid; gap: 16px; padding: 4px 0 18px; grid-template-columns: 1fr }
+    @media (min-width: 900px) { .why { grid-template-columns: 1.7fr 1fr } }
+    .why h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink2); margin: 0 0 8px }
+    .tw { overflow-x: auto }
+    table { border-collapse: collapse; width: 100%; font-size: .88rem }
+    th, td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--grid); vertical-align: top }
+    th { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600; white-space: nowrap }
+    td:first-child { white-space: nowrap; font-weight: 600 }
+    ul.skip { margin: 0; padding-left: 18px; display: grid; gap: 7px; font-size: .88rem; color: var(--ink2) }
+    ul.skip b { color: var(--ink) }
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: .84rem; color: var(--ink2); padding: 0 2px }
+    .legend span { display: inline-flex; align-items: center; gap: 7px }
+    .legend i { display: inline-block; width: 14px; height: 14px; border-radius: 50% }
+    .legend .p { background: var(--surface); border: 3px solid var(--muted) }
+    footer { color: var(--muted); font-size: .8rem }
+
+    @media (max-width: 559px) {
+      body { font-size: 16px }
+      .hero .val { font-size: 3.2rem }
+      h1 { font-size: 1.3rem }
+    }
+    @media print {
+      body { background: #fff }
+      .btn { display: none }
+      .card, details { break-inside: avoid; border-color: #999 }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Morgenblick Geschäftsführung</h1>
+        <p class="sub">Stand Ende September · fünf Kennzahlen, sortiert nach Dringlichkeit</p>
+      </div>
+      <button class="btn" id="theme" type="button" aria-label="Darstellung wechseln">Hell / Dunkel</button>
+    </header>
+
+    <main class="board" id="board"></main>
+
+    <div class="legend" aria-label="Lesehilfe">
+      <span><i class="p"></i>Vorjahr</span>
+      <span><i style="background:var(--pos)"></i>jetzt, besser</span>
+      <span><i style="background:var(--neg)"></i>jetzt, schlechter</span>
+      <span><i style="background:var(--ink2)"></i>jetzt, unverändert</span>
+    </div>
+
+    <details open>
+      <summary>Warum diese fünf? Auswahl, Darstellung und was bewusst fehlt</summary>
+      <div class="why">
+        <div>
+          <h3>Die fünf Plätze</h3>
+          <div class="tw">
+            <table>
+              <thead><tr><th>Platz</th><th>Kennzahl</th><th>Darstellung</th><th>Warum</th><th>Folge</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Marge gesamt</td><td>Heldenzahl, Hantel gegen Vorjahr</td><td>Anlass: Die Bank will bis Jahresende eine Begründung. 29 % gegen 34 % ist die größte Abweichung.</td><td>Marge je Produktgruppe auswerten (Aluminium prüfen)</td></tr>
+                <tr><td>2</td><td>Umsatz bis September</td><td>Zielbalken gegen Plan</td><td>Eine Zahl gegen eine Marke. Die gute Nachricht neben der schlechten.</td><td>Keine Maßnahme, im Blick behalten</td></tr>
+                <tr><td>3</td><td>Retourenquote</td><td>Zwei Hanteln (online, Handel)</td><td>Zwei Kanäle, je Vorjahr gegen jetzt. Online steigt, Handel nicht.</td><td>Ursachen im Shop prüfen</td></tr>
+                <tr><td>4</td><td>Reklamationen „Lago“</td><td>Zwei Balken, Faktor 4</td><td>Ein Ausreißer gegen den Rest. Balken zeigen das Verhältnis, nicht nur die Zahl.</td><td>Qualitätsprüfung der Kollektion</td></tr>
+                <tr><td>5</td><td>Zufriedenheit</td><td>Hantel auf der Skala 1 bis 5</td><td>Frühindikator. 230 Antworten und 0,2 Unterschied: beobachten, nicht handeln.</td><td>Weiter wöchentlich lesen</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3>Bewusst weggelassen</h3>
+          <ul class="skip">
+            <li><b>Instagram-Follower</b> (18.000 gegen 12.500): wächst stark, bewegt aber keine Entscheidung zu Marge oder Qualität.</li>
+            <li><b>Einzelkosten</b> (Material, Personal, Fracht, Kosten je Stück): die Marge fasst sie zusammen. Aluminium steht als Hinweis auf der Karte. Details erst auf Nachfrage.</li>
+            <li><b>Umsatz je Kanal und Produktgruppe, Auftragseingang, Bestand:</b> im Controlling vorhanden, aber ohne aktuelle Werte in den Unterlagen. Folgeseite für die Bank.</li>
+            <li><b>Weiterempfehlung und Shop-Bewertungen:</b> ohne aktuelle Werte, die Zufriedenheit deckt das Thema ab.</li>
+            <li><b>Mitarbeiterbefragung (November) und neue Website (Februar):</b> Termine, keine Kennzahlen.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <footer>Datenbasis: Aktuelle Werte aus ERP, Controlling, Shop-Umfrage, Service und Marketing laut Aufgabenblatt, Stand Ende September. Einstufung (Gut, Beobachten, Kritisch) ist ein Vorschlag: Kritisch bei deutlichem Abstand (Marge −5 Prozentpunkte, Lago 4-fach), Beobachten bei leichter Verschlechterung, Gut bei besser als Plan. Für den Umsatz liegt kein Vorjahreswert vor.</footer>
+  </div>
+
+  <script>
+    /* ---------- Daten (aus dem Aufgabenblatt) ---------- */
+    const D = {
+      marge: { now: 29, prev: 34, alu: 18 },
+      umsatz: { now: 5.65, plan: 5.4 },
+      retouren: { online: { now: 11, prev: 9 }, handel: { now: 4, prev: 4 } },
+      lago: { lago: 6, rest: 1.5 },
+      zufr: { now: 4.1, prev: 4.3, n: 230 }
+    };
+    const f = (v, d = 0) => v.toFixed(d).replace(".", ",");
+    const h = (tag, attrs = {}, text) => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; };
+    const ICON = {
+      good: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="currentColor"/><path d="M4.6 8.2l2.3 2.3 4.5-4.7" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      warn: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.4l7 12.6H1z" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M8 6v3.6M8 11.4v.2" stroke="#0b0b0b" stroke-width="1.7" stroke-linecap="round"/></svg>',
+      crit: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="currentColor"/><path d="M5.4 5.4l5.2 5.2M10.6 5.4l-5.2 5.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>'
+    };
+    const STATUS = { good: "Gut", warn: "Beobachten", crit: "Kritisch" };
+
+    function card(cls, label, status, tone) {
+      const c = h("article", { class: "card " + cls, "aria-label": label });
+      const top = h("div", { class: "top" });
+      top.appendChild(h("div", { class: "lab" }, label));
+      const chip = h("span", { class: "chip " + status }); chip.innerHTML = ICON[status]; chip.appendChild(document.createTextNode(STATUS[status]));
+      top.appendChild(chip); c.appendChild(top);
+      return c;
+    }
+    const delta = (txt, cls, arrow) => { const d = h("div", { class: "delta " + cls }); d.appendChild(h("span", { class: "ic", "aria-hidden": "true" }, arrow)); d.appendChild(h("span", {}, txt)); return d; };
+
+    /* Hantel: min und max der Skala, Vorjahr, jetzt, Wertung der Änderung (better / worse / flat) */
+    function dumbbell(min, max, prev, now, better, fmt, unit, label) {
+      const pos = v => (v - min) / (max - min) * 100;
+      const tone = now === prev ? "flat" : (better === "up" ? (now > prev ? "better" : "worse") : (now < prev ? "better" : "worse"));
+      const db = h("div", { class: "db tone-" + tone, role: "img", "aria-label": label + ": Vorjahr " + fmt(prev) + unit + ", jetzt " + fmt(now) + unit });
+      db.appendChild(h("div", { class: "tr" }));
+      if (now !== prev) { const ln = h("div", { class: "ln" }); ln.style.left = Math.min(pos(prev), pos(now)) + "%"; ln.style.width = Math.abs(pos(now) - pos(prev)) + "%"; db.appendChild(ln); }
+      const pd = h("div", { class: "dot prev" }); pd.style.left = pos(prev) + "%";
+      const nd = h("div", { class: "dot now" }); nd.style.left = pos(now) + "%";
+      if (now !== prev) db.appendChild(pd);
+      db.appendChild(nd);
+      const ln1 = h("div", { class: "l now" }, fmt(now) + unit); ln1.style.left = pos(now) + "%"; db.appendChild(ln1);
+      if (now !== prev) { const l2 = h("div", { class: "l prev" }); l2.style.left = pos(prev) + "%"; l2.appendChild(document.createTextNode(fmt(prev) + unit + " ")); l2.appendChild(h("small", {}, "Vorjahr")); db.appendChild(l2); }
+      return db;
+    }
+    const scale = (a, b) => { const s = h("div", { class: "scale", "aria-hidden": "true" }); s.appendChild(h("span", {}, a)); s.appendChild(h("span", {}, b)); return s; };
+    const src = t => h("div", { class: "src" }, t);
+
+    const board = document.getElementById("board");
+
+    /* 1 Marge (Heldenzahl) */
+    { const m = D.marge, c = card("c-marge hero", "Marge gesamt", "crit");
+      c.appendChild(h("div", { class: "val" }, f(m.now) + " %"));
+      c.appendChild(delta((m.prev - m.now) + " Prozentpunkte unter Vorjahr (" + m.prev + " %)", "bad", "▼"));
+      c.appendChild(h("div", { class: "tag" }, "Mögliche Ursache: Aluminium +" + m.alu + " %"));
+      c.appendChild(h("p", { class: "hint" }, "Für die Bank fehlt noch die Aufteilung nach Produktgruppe. Sie liegt im Controlling monatlich vor."));
+      const v = h("div", { class: "vis" }); v.appendChild(dumbbell(0, 40, m.prev, m.now, "up", x => f(x), " %", "Marge")); v.appendChild(scale("0 %", "40 %")); c.appendChild(v);
+      c.appendChild(src("Controlling · monatlich")); board.appendChild(c); }
+
+    /* 2 Umsatz gegen Plan (Zielbalken) */
+    { const u = D.umsatz, c = card("c-umsatz", "Umsatz bis Ende September", "good");
+      c.appendChild(h("div", { class: "val" }, f(u.now, 2) + " Mio. €"));
+      const d = u.now - u.plan; c.appendChild(delta("+" + f(d, 2) + " Mio. € (+" + f(d / u.plan * 100, 1) + " %) über Plan von " + f(u.plan, 1) + " Mio. €", "good", "▲"));
+      c.appendChild(h("p", { class: "hint" }, "Ein Vorjahreswert liegt nicht vor. Verglichen wird nur mit dem Plan."));
+      const max = 6.5, p = x => x / max * 100;
+      const bl = h("div", { class: "bl", role: "img", "aria-label": "Umsatz " + f(u.now, 2) + " Millionen Euro, Plan " + f(u.plan, 1) + " Millionen" });
+      bl.appendChild(h("div", { class: "tr" }));
+      const f1 = h("div", { class: "f1" }); f1.style.width = p(u.plan) + "%"; bl.appendChild(f1);
+      const f2 = h("div", { class: "f2" }); f2.style.left = p(u.plan) + "%"; f2.style.width = (p(u.now) - p(u.plan)) + "%"; bl.appendChild(f2);
+      const pl = h("div", { class: "pl" }); pl.style.left = p(u.plan) + "%"; bl.appendChild(pl);
+      const lp = h("div", { class: "l plan" }, "Plan " + f(u.plan, 1)); lp.style.left = p(u.plan) + "%"; bl.appendChild(lp);
+      const ln = h("div", { class: "l now" }, f(u.now, 2)); ln.style.left = p(u.now) + "%"; bl.appendChild(ln);
+      const v = h("div", { class: "vis" }); v.appendChild(bl); v.appendChild(scale("0", "6,5 Mio. €")); c.appendChild(v);
+      c.appendChild(src("ERP · täglich")); board.appendChild(c); }
+
+    /* 3 Retourenquote (zwei Hanteln) */
+    { const r = D.retouren, c = card("c-retouren", "Retourenquote", "warn");
+      const v = h("div", { class: "vis" });
+      [["Online", r.online], ["Handel", r.handel]].forEach(([n, x]) => {
+        const row = h("div", { class: "row" }), hd = h("div", { class: "db-head" });
+        hd.appendChild(h("b", {}, n + " " + f(x.now) + " %"));
+        hd.appendChild(h("span", {}, x.now === x.prev ? "unverändert" : (x.now > x.prev ? "▲ +" : "▼ −") + Math.abs(x.now - x.prev) + " Prozentpunkte"));
+        row.appendChild(hd); row.appendChild(dumbbell(0, 15, x.prev, x.now, "down", y => f(y), " %", "Retourenquote " + n)); v.appendChild(row);
+      });
+      v.appendChild(scale("0 %", "15 %")); c.appendChild(v);
+      c.appendChild(src("ERP · wöchentlich")); board.appendChild(c); }
+
+    /* 4 Reklamationen Lago (zwei Balken) */
+    { const l = D.lago, c = card("c-lago", "Reklamationen „Lago“", "crit");
+      c.appendChild(h("div", { class: "val" }, f(l.lago) + " %"));
+      c.appendChild(delta(f(l.lago / l.rest) + "-mal so hoch wie bei den übrigen Kollektionen", "bad", "▲"));
+      const max = 8, bars = h("div", { class: "bars vis", role: "img", "aria-label": "Reklamationen: Lago " + l.lago + " Prozent, übrige Kollektionen " + f(l.rest, 1) + " Prozent der verkauften Stücke" });
+      [["„Lago“", l.lago, "var(--neg)"], ["Übrige Kollektionen", l.rest, "var(--muted)"]].forEach(([n, x, col]) => {
+        const b = h("div", { class: "b" }); b.appendChild(h("span", {}, n));
+        const t = h("div", { class: "t" }), i = h("i"); i.style.width = x / max * 100 + "%"; i.style.setProperty("--c", col); t.appendChild(i);
+        const e = h("em", {}, f(x, x % 1 ? 1 : 0) + " %"); e.style.left = x / max * 100 + "%"; t.appendChild(e); b.appendChild(t); bars.appendChild(b);
+      });
+      c.appendChild(bars);
+      c.appendChild(h("p", { class: "hint" }, "Anteil an den verkauften Stücken. Neue Kollektion: Anlaufprobleme möglich, Ursache klären."));
+      c.appendChild(src("Service · wöchentlich")); board.appendChild(c); }
+
+    /* 5 Zufriedenheit (Hantel auf 1 bis 5) */
+    { const z = D.zufr, c = card("c-zufr", "Zufriedenheit (1 bis 5)", "warn");
+      c.appendChild(h("div", { class: "val" }, f(z.now, 1)));
+      c.appendChild(delta(f(z.prev - z.now, 1) + " unter Vorjahr (" + f(z.prev, 1) + ")", "bad", "▼"));
+      c.appendChild(h("p", { class: "hint" }, "Aus " + z.n + " Antworten. Der Unterschied ist klein, noch kein klarer Trend."));
+      const v = h("div", { class: "vis" }); v.appendChild(dumbbell(3, 5, z.prev, z.now, "up", y => f(y, 1), "", "Zufriedenheit")); v.appendChild(scale("3", "5 (Ausschnitt der Skala)")); c.appendChild(v);
+      c.appendChild(src("Shop-Umfrage · wöchentlich")); board.appendChild(c); }
+
+    /* Hell / Dunkel */
+    (function () {
+      let saved = null; try { saved = localStorage.getItem("morgenblick-theme"); } catch (e) { }
+      if (saved) document.documentElement.dataset.theme = saved;
+      document.getElementById("theme").onclick = () => {
+        const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        const next = dark ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem("morgenblick-theme", next); } catch (e) { }
+      };
+    })();
+  </script>
+</body>
+
+</html>
