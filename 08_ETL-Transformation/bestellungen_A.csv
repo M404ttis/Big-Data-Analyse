@@ -1,0 +1,201 @@
+﻿zeile;quelle;kunde;bestelldatum;betrag;plz;ort;artikelgruppe
+A-0001;AD Hoffmann;Metallbau Wendt e.K.;01/02/2025;117.13;37073;Göttingen;Elektrowerkzeug
+A-0002;Webshop;Elektro Weber GmbH;2025-01-02;518.00;34117;Kassel;Schleifmittel
+A-0003;AD Becker;Sanitär Ahrens GmbH;02.01.2025;192,17 €;34127;Kassel;Schleifmittel
+A-0004;Webshop;Schreinerei Michel;2025-01-03;106.12;37083;Göttingen;Schleifmittel
+A-0005;Webshop;Fliesen Weiß GmbH;2025-01-03;20410.00;34576;Homberg (Efze);Arbeitsschutz
+A-0006;AD Krüger;Glaserei Gebhardt;08.01.2025;887,26 €;7545;Gera;Handwerkzeug
+A-0007;AD Krüger;AWG Gebäudeservice;08.01.2025;195,85 €;4109;Leipzig;Befestigung
+A-0008;Webshop;Schreinerei Ott;2025-01-08;312.50;36037;Fulda;Schleifmittel
+A-0009;Webshop;Sanitär Huber GmbH;2025-01-09;299.00;99817;Eisenach;Schleifmittel
+A-0010;Webshop;Glaserei Werner GmbH;2025-01-10;979.10;34131;Kassel;Messtechnik
+A-0011;Webshop;Heizungsbau Eckert GmbH;2025-01-10;604.00;7743;Jena;Schleifmittel
+A-0012;Webshop;Gartenbau Schuster GmbH;2025-01-13;100.00;34117;Kassel;Elektrowerkzeug
+A-0013;AD Krüger;Sanitär Möller;14.01.2025;601,00 €;1067;Dresden;Schleifmittel
+A-0014;AD Hoffmann;Fliesen Peters e.K.;01/14/2025;133.00;37073;Göttingen;Handwerkzeug
+A-0015;Webshop;Zimmerei Kolb GmbH;2025-01-14;151.83;35039;Marburg;Befestigung
+A-0016;AD Becker;Malerbetrieb Lenz;15.01.2025;390,05 €;;;Elektrowerkzeug
+A-0017;Webshop;Metallbau Ziegler GmbH;2025-01-16;6250.00;35039;Marburg;Handwerkzeug
+A-0018;Webshop;Bauunternehmung Schäfer GmbH;2025-01-16;129.20;35066;Frankenberg (Eder);Elektrowerkzeug
+A-0019;AD Hoffmann;Holzbau Baumann GmbH;01/16/2025;414.07;37081;Göttingen;Messtechnik
+A-0020;AD Yilmaz;Schreinerei Otto e.K.;16.01.25;406 EUR;;36088 Hünfeld;Arbeitsschutz
+A-0021;AD Becker;Dachdeckerei Voigt GmbH;17.01.2025;76,92 €;34119;Kassel;Arbeitsschutz
+A-0022;Webshop;Tischlerei Schneider GmbH;2025-01-20;172.00;36043;Fulda;Elektrowerkzeug
+A-0023;AD Becker;Elektro Weber GmbH;21.01.2025;387,93 €;;;Messtechnik
+A-0024;Webshop;Tischlerei Arnold GmbH & Co. KG;2025-01-22;167.66;36037;Fulda;Schleifmittel
+A-0025;Webshop;Kfz-Werkstatt Rieger GmbH;2025-01-23;420.48;1277;Dresden;Messtechnik
+A-0026;AD Yilmaz;Gartenbau Haase GmbH;23.01.25;142 EUR;;36381 Schlüchtern;Messtechnik
+A-0027;Webshop;Glaserei Winter;2025-01-24;543.00;8056;Zwickau;Befestigung
+A-0028;AD Schulte;SCHREINEREI KELLER GMBH;24.01.2025;1192,00;35037;Marburg;Handwerkzeug
+A-0029;AD Becker;Zimmerei Fiedler;28.01.2025;445,00 €;;;Messtechnik
+A-0030;Webshop;Tischlerei Schneider GmbH;2025-01-29;179.29;36043;Fulda;Schleifmittel
+A-0031;Webshop;Tischlerei Schneider GmbH;2025-01-29;219.01;36043;Fulda;Befestigung
+A-0032;AD Schulte;KFZ-WERKSTATT ENGEL GMBH & CO. KG;30.01.2025;1707,00;35037;Marburg;Elektrowerkzeug
+A-0033;Webshop;Metallbau Ziegler GmbH;2025-01-30;224.27;35039;Marburg;Schleifmittel
+A-0034;Webshop;tischlerei arnold gmbh & co. kg;2025-02-04;69.00;36037;Fulda;Befestigung
+A-0035;Webshop;Tischlerei Funk;2025-02-04;339.25;1277;Dresden;Elektrowerkzeug
+A-0036;Webshop;Tischlerei Schneider GmbH;2025-02-05;412.71;36043;Fulda;Elektrowerkzeug
+A-0037;Webshop;hausmeisterservice sommer gmbh;2025-02-05;101.87;37269;Eschwege;Elektrowerkzeug
+A-0038;Webshop;Tischlerei Schneider GmbH;2025-02-05;104.04;36043;Fulda;Handwerkzeug
+A-0039;AD Krüger;Glaserei Förster;06.02.2025;370,00 €;9111;Chemnitz;Handwerkzeug
+A-0040;Webshop;Schreinerei Ott;2025-02-06;312.50;36037;Fulda;Schleifmittel
+A-0041;Webshop;holzbau baumann gmbh;2025-02-06;312.00;37081;Göttingen;Handwerkzeug
+A-0042;Webshop;Bau & Haus Kraft GmbH;2025-02-07;8527.00;37073;Göttingen;Befestigung
+A-0043;Webshop;Fliesen Weiß GmbH;2025-02-07;377.89;34576;Homberg (Efze);Messtechnik
+A-0044;AD Yilmaz;Zimmerei Simon GmbH & Co. KG;07.02.25;349 EUR;;36043 Fulda;Elektrowerkzeug
+A-0045;Webshop;Gartenbau Haase GmbH;2025-02-11;854.00;36381;Schlüchtern;Messtechnik
+A-0046;Webshop;glaserei gebhardt;2025-02-13;267.19;7545;Gera;Elektrowerkzeug
+A-0047;Webshop;Glaserei Gebhardt;2025-02-13;944.80;7545;Gera;Schleifmittel
+A-0048;Webshop;Gartenbau Krause GmbH & Co. KG;2025-02-13;701.00;9111;Chemnitz;Handwerkzeug
+A-0049;AD Krüger;Gartenbau Bergmann;14.02.2025;280,00 €;4277;Leipzig;Handwerkzeug
+A-0050;AD Krüger;Fliesen Schmitz;14.02.2025;347,94 €;4109;Leipzig;Elektrowerkzeug
+A-0051;AD Becker;Sanitär Ahrens GmbH;17.02.2025;296,00 €;34127;Kassel;Befestigung
+A-0052;Webshop;dachdeckerei hartmann e.k.;2025-02-17;695.43;34121;Kassel;Schleifmittel
+A-0053;AD Krüger;Glaserei Winter;17.02.2025;372,65 €;8056;Zwickau;Handwerkzeug
+A-0054;Webshop;Dachdeckerei Zimmermann;2025-02-17;177.00;37083;GÃ¶ttingen;Handwerkzeug
+A-0055;Webshop;Glaserei Winter;2025-02-17;372.65;8056;Zwickau;Handwerkzeug
+A-0056;Webshop;Gartenbau Schuster GmbH;2025-02-17;188.00;34117;Kassel;Handwerkzeug
+A-0057;AD Schulte;TISCHLEREI WAGNER GMBH & CO. KG;Februar 2025;480,23;34497;Korbach;Messtechnik
+A-0058;AD Hoffmann;Gartenbau Sauer GmbH;02/18/2025;246.83;37081;Göttingen;Befestigung
+A-0059;Webshop;Glaserei Winter;2025-02-18;518.18;8056;Zwickau;Arbeitsschutz
+A-0060;Webshop;Gartenbau Krause GmbH & Co. KG;2025-02-18;420.03;9111;Chemnitz;Handwerkzeug
+A-0061;AD Krüger;Glaserei Jahn;19.02.2025;162,39 €;99867;Gotha;Arbeitsschutz
+A-0062;AD Becker;Gartenbau Schuster GmbH;19.02.2025;48,00 €;34117;Kassel;Arbeitsschutz
+A-0063;Webshop;Tischlerei Funk e.K.;2025-02-20;201.68;1277;Dresden;Schleifmittel
+A-0064;Webshop;Sanitär Möller GmbH;2025-02-20;184.76;1067;Dresden;Schleifmittel
+A-0065;AD Yilmaz;Gartenbau Busch GmbH;24.02.25;525,16 EUR;;36381 Schlüchtern;Befestigung
+A-0066;Webshop;Gartenbau Haase GmbH;2025-02-26;175.85;36381;Schlüchtern;Elektrowerkzeug
+A-0067;Webshop;Malerbetrieb Wolf GmbH;2025-02-26;480.00;34246;Vellmar;Handwerkzeug
+A-0068;Webshop;Fliesen Ebert GmbH;2025-02-26;349.00;35037;Marburg;Handwerkzeug
+A-0069;AD Hoffmann;Dachdeckerei Ludwig;02/27/2025;1,017.62;37083;Göttingen;Arbeitsschutz
+A-0070;AD Krüger;Kfz-Werkstatt Kretschmer;27.02.2025;315,97 €;1277;Dresden;Elektrowerkzeug
+A-0071;AD Becker;Glaserei Werner GmbH;28.02.2025;479,61 €;34131;Kassel;Elektrowerkzeug
+A-0072;Webshop;Schreinerei Ott;2025-03-04;312.50;36037;Fulda;Schleifmittel
+A-0073;Webshop;Malerbetrieb Graf e.K.;2025-03-05;591.62;34346;Hann. Münden;Messtechnik
+A-0074;Webshop;Schreinerei Michel e.K.;2025-03-12;247.49;37083;Göttingen;Messtechnik
+A-0075;AD Krüger;Kfz-Werkstatt Rieger;13.03.2025;476,35 €;1277;Dresden;Messtechnik
+A-0076;Webshop;Holzbau Vogt e.K.;2025-03-13;1778.84;4109;Leipzig;Messtechnik
+A-0077;Webshop;Metallbau Kern GmbH;2025-03-14;162.61;34212;Melsungen;Arbeitsschutz
+A-0078;AD Schulte;ZIMMEREI HEINRICH GMBH;14.03.2025;605,54;34576;Homberg (Efze);Arbeitsschutz
+A-0079;Webshop;Fliesen Peters e.K.;2025-03-17;162.00;37073;GÃ¶ttingen;Schleifmittel
+A-0080;Webshop;Zimmerei Simon GmbH & Co. KG;2025-03-18;547.71;36043;Fulda;Schleifmittel
+A-0081;AD Krüger;Sanitär Böhm;18.03.2025;79,50 €;7743;Jena;Schleifmittel
+A-0082;AD Schulte;BAUUNTERNEHMUNG SCHÄFER GMBH;März 2025;660,72;35066;Frankenberg (Eder);Befestigung
+A-0083;Webshop;Zimmerei Thiele GmbH & Co. KG;2025-03-18;620.43;4319;Leipzig;Arbeitsschutz
+A-0084;AD Krüger;Fliesen & Naturstein Jäger;19.03.2025;526,56 €;1067;Dresden;Messtechnik
+A-0085;AD Hoffmann;Hausmeisterservice Sommer GmbH;03/19/2025;8,975.00;37269;Eschwege;Handwerkzeug
+A-0086;AD Hoffmann;Bau & Haus Kraft GmbH;03/19/2025;6,466.00;37073;Göttingen;Handwerkzeug
+A-0087;AD Yilmaz;Zimmerei Simon GmbH & Co. KG;19.03.25;455,87 EUR;;36043 Fulda;Schleifmittel
+A-0088;AD Becker;Malerbetrieb Winkler GmbH;24.03.2025;521,00 €;34225;Baunatal;Befestigung
+A-0089;AD Hoffmann;Bau & Haus Kraft GmbH;03/25/2025;11,764.00;37073;Göttingen;Schleifmittel
+A-0090;Webshop;  Gartenbau Haase GmbH ;2025-03-25;736.13;36381;Schlüchtern;Befestigung
+A-0091;Webshop;bau & haus kraft gmbh;2025-03-25;6366.77;37073;Göttingen;Handwerkzeug
+A-0092;AD Becker;Elektro Nolte;26.03.2025;539,41 €;34127;Kassel;Messtechnik
+A-0093;Webshop;Metallbau Ziegler GmbH;2025-03-26;563.00;35039;Marburg;Schleifmittel
+A-0094;Webshop;Tischlerei Lange e.K.;2025-03-26;1565.00;37083;Göttingen;Arbeitsschutz
+A-0095;AD Schulte;METALLBAU DIETRICH GMBH;März 2025;;35066;Frankenberg (Eder);Handwerkzeug
+A-0096;Webshop;Schreinerei Ott;2025-04-03;312.50;36037;Fulda;Schleifmittel
+A-0097;AD Krüger;Glaserei Jahn;03.04.2025;348,14 €;99867;Gotha;Schleifmittel
+A-0098;Webshop;Holzbau-Vogt e.K.;2025-04-08;1171.94;4109;Leipzig;Handwerkzeug
+A-0099;Webshop;Fliesen Schmitz GmbH;2025-04-09;225.77;4109;Leipzig;Elektrowerkzeug
+A-0100;Webshop;tischlerei funk e.k.;2025-04-09;732.47;1277;Dresden;Handwerkzeug
+A-0101;AD Krüger;Tischlerei Funk;09.04.2025;732,47 €;1277;Dresden;Handwerkzeug
+A-0102;AD Krüger;Kfz-Werkstatt Rieger;10.04.2025;720,24 €;1277;Dresden;Handwerkzeug
+A-0103;Webshop;Fliesen Schmitz GmbH;2025-04-10;-254.65;4109;Leipzig;Befestigung
+A-0104;Webshop;Zimmerei Kolb GmbH;2025-04-10;330.11;35039;Marburg;Elektrowerkzeug
+A-0105;Webshop;Bauunternehmung Horn GmbH;2025-04-10;770.61;34497;Korbach;Schleifmittel
+A-0106;Webshop;Glaserei Walter e.K.;2025-04-11;179.37;36037;Fulda;Schleifmittel
+A-0107;Webshop;Fliesen Schmitz GmbH;2025-04-15;223.66;4109;Leipzig;Arbeitsschutz
+A-0108;AD Schulte;KFZ-WERKSTATT ENGEL GMBH & CO. KG;April 2025;731,18;35037;Marburg;Befestigung
+A-0109;Webshop;Tischlerei-Funk e.K.;2025-04-17;222.84;1277;Dresden;Arbeitsschutz
+A-0110;Webshop;Zimmerei-Fiedler;2025-04-18;124.00;34212;Melsungen;Handwerkzeug
+A-0111;Webshop; Schreinerei Kaiser e.K.  ;2025-04-18;12730.00;34119;Kassel;Handwerkzeug
+A-0112;Webshop;Heizungsbau Eckert GmbH;2025-04-21;-26.62;7743;Jena;Schleifmittel
+A-0113;AD Schulte;HAUSMEISTERSERVICE KÖNIG GMBH;April 2025;277,40;35037;Marburg;Messtechnik
+A-0114;AD Krüger;Glaserei Martin;21.04.2025;210,60 €;8056;Zwickau;Arbeitsschutz
+A-0115;Webshop;Sanitär Ahrens GmbH;2025-04-22;466.00;34127;Kassel;Schleifmittel
+A-0116;AD Hoffmann;Schreinerei Berger e.K.;04/22/2025;519.73;37213;Witzenhausen;Handwerkzeug
+A-0117;Webshop;Fliesen & Naturstein Jäger GmbH;2025-04-22;661.00;1067;Dresden;Schleifmittel
+A-0118;Webshop;Metallbau-Ziegler GmbH;2025-04-23;291.44;35039;Marburg;Schleifmittel
+A-0119;AD Yilmaz;Gartenbau Haase GmbH;24.04.25;672,47 EUR;;36381 Schlüchtern;Elektrowerkzeug
+A-0120;AD Krüger;Sanitär Möller;25.04.2025;701,00 €;1067;Dresden;Befestigung
+A-0121;AD Krüger;Kfz-Werkstatt Rieger;25.04.2025;903,15 €;1277;Dresden;Befestigung
+A-0122;AD Becker;Hausmeisterservice Schulz GmbH;25.04.2025;467,98 €;34225;Baunatal;Messtechnik
+A-0123;Webshop;Bau & Haus Kraft GmbH;2025-04-25;13652.84;37073;Göttingen;Elektrowerkzeug
+A-0124;AD Becker;Gartenbau Schuster GmbH;25.04.2025;71,93 €;34117;Kassel;Befestigung
+A-0125;AD Krüger;Kfz-Werkstatt Rieger;28.04.2025;757,00 €;1277;Dresden;Befestigung
+A-0126;AD Krüger;Glaserei Jahn;28.04.2025;171,00 €;99867;Gotha;Arbeitsschutz
+A-0127;Webshop;Fliesen & Naturstein Jäger GmbH;2025-04-29;826.80;1067;Dresden;Arbeitsschutz
+A-0128;Webshop;  Sanitär & Heizung Groß e.K. ;2025-04-29;486.65;7545;Gera;Handwerkzeug
+A-0129;Webshop;Hausmeisterservice GÃ¶tz GmbH;2025-04-29;158.00;7545;Gera;Befestigung
+A-0130;Webshop;Tischlerei Funk e.K.;2025-04-29;313.06;1277;Dresden;Schleifmittel
+A-0131;Webshop; Fliesen & Naturstein Jäger GmbH  ;2025-04-29;484.00;1067;Dresden;Schleifmittel
+A-0132;Webshop;Zimmerei Rausch;2025-04-30;601.00;34225;Baunatal;Handwerkzeug
+A-0133;AD Becker;Zimmerei Rausch;30.04.2025;601,00 €;34225;Baunatal;Handwerkzeug
+A-0134;Webshop;Sanitär & Heizung Groß e.K.;2025-04-30;1704.78;7545;Gera;Befestigung
+A-0135;AD Becker;Zimmerei Fiedler;01.05.2025;100,32 €;34212;Melsungen;Elektrowerkzeug
+A-0136;Webshop;Hausmeisterservice-Groß GmbH;2025-05-01;157.57;34131;Kassel;Schleifmittel
+A-0137;Webshop;Tischlerei Arnold GmbH & Co. KG;2025-05-02;50.67;36037;Fulda;Handwerkzeug
+A-0138;AD Becker;Malerbetrieb Wolf GmbH;02.05.2025;259,70 €;34246;Vellmar;Handwerkzeug
+A-0139;Webshop;Sanitär Huber GmbH;2025-05-02;266.60;99817;Eisenach;Arbeitsschutz
+A-0140;Webshop;Schreinerei Ott;2025-05-05;312.50;36037;Fulda;Schleifmittel
+A-0141;Webshop;Zimmerei Rausch;2025-05-05;742.64;34225;Baunatal;Messtechnik
+A-0142;AD Schulte;FLIESEN BRAUN GMBH;09.05.2025;110,48;34497;Korbach;Arbeitsschutz
+A-0143;Webshop;Dachdeckerei Günther GmbH;2025-05-12;54.00;4319;Leipzig;Elektrowerkzeug
+A-0144;Webshop;Bauunternehmung Richter;2025-05-14;370.17;34131;Kassel;Elektrowerkzeug
+A-0145;AD Schulte;FLIESEN WEISS GMBH;15.05.2025;835,91;34576;Homberg (Efze);Handwerkzeug
+A-0146;AD Schulte;BAUUNTERNEHMUNG SCHÄFER GMBH;15.05.2025;210,00;35066;Frankenberg (Eder);Arbeitsschutz
+A-0147;Webshop;  Fliesen Peters e.K. ;2025-05-16;245.80;37073;Göttingen;Befestigung
+A-0148;Webshop;Schreinerei Berger;2025-05-16;341.84;37213;Witzenhausen;Handwerkzeug
+A-0149;Webshop;Sanitär & Heizung Groß e.K.;2025-05-19;767.47;7545;Gera;Schleifmittel
+A-0150;AD Schulte;TISCHLEREI WAGNER GMBH & CO. KG;19.05.2025;615,02;34497;Korbach;Handwerkzeug
+A-0151;AD Becker;Malerbetrieb Lehmann;19.05.2025;1.301,82 €;34212;Melsungen;Schleifmittel
+A-0152;Webshop;Holzbau Koch GmbH & Co. KG;2025-05-21;171.59;8056;Zwickau;Arbeitsschutz
+A-0153;AD Krüger;Sanitär Huber;21.05.2025;167,18 €;99817;Eisenach;Handwerkzeug
+A-0154;AD Krüger;AWG Gebäudeservice;23.05.2025;949,32 €;4109;Leipzig;Elektrowerkzeug
+A-0155;Webshop;Hausmeisterservice Götz GmbH;2025-05-23;162.60;7545;Gera;Befestigung
+A-0156;AD Hoffmann;Metallbau Fischer;05/26/2025;75.10;37213;Witzenhausen;Arbeitsschutz
+A-0157;Webshop;Bauunternehmung Beck GmbH;2025-05-26;125.00;7745;Jena;Befestigung
+A-0158;AD Becker;Malerbetrieb Wolf GmbH;27.05.2025;303,83 €;34246;Vellmar;Elektrowerkzeug
+A-0159;Webshop;Elektro Weber GmbH;2025-05-27;1096.63;34117;Kassel;Handwerkzeug
+A-0160;AD Yilmaz;Bauunternehmung Seidel e.K.;27.05.25;591 EUR;;36037 Fulda;Handwerkzeug
+A-0161;AD Becker;Elektro Nolte;27.05.2025;131,62 €;34127;Kassel;Befestigung
+A-0162;AD Schulte;TISCHLEREI WAGNER GMBH & CO. KG;28.05.2025;;34497;Korbach;Schleifmittel
+A-0163;Webshop;Dachdeckerei Ludwig;2025-05-28;539.19;37083;Göttingen;Arbeitsschutz
+A-0164;Webshop;Holzbau Baumann GmbH;2025-05-29;8840.00;37081;Göttingen;Arbeitsschutz
+A-0165;AD Yilmaz;Bauunternehmung Seidel e.K.;02.06.25;305,28 EUR;;36037 Fulda;Handwerkzeug
+A-0166;Webshop;Metallbau Ziegler GmbH;2025-06-03;582.59;35039;Marburg;Messtechnik
+A-0167;Webshop;Glaserei Gebhardt;2025-06-03;896.86;7545;Gera;Elektrowerkzeug
+A-0168;Webshop;Tischlerei Funk e.K.;2025-06-04;271.61;1277;Dresden;Schleifmittel
+A-0169;AD Hoffmann;Bauunternehmung Strauß GmbH & Co. KG;06/05/2025;489.00;37081;Göttingen;Befestigung
+A-0170;Webshop;Schreinerei Ott;2025-06-06;312.50;36037;Fulda;Schleifmittel
+A-0171;AD Hoffmann;Metallbau Wendt e.K.;06/06/2025;120.22;37073;Göttingen;Befestigung
+A-0172;AD Yilmaz;Sanitär Brückner e.K.;06.06.25;541,55 EUR;;36043 Fulda;Befestigung
+A-0173;AD Hoffmann;Holzbau Baumann GmbH;06/06/2025;375.12;37081;Göttingen;Messtechnik
+A-0174;Webshop;Fliesen Seifert GmbH;2025-06-06;720.31;34131;Kassel;Schleifmittel
+A-0175;AD Yilmaz;Malerbetrieb Hesse GmbH;10.06.25;94,35 EUR;;36088 Hünfeld;Messtechnik
+A-0176;Webshop;Metallbau Kern GmbH;2025-06-10;1346.00;34212;Melsungen;Arbeitsschutz
+A-0177;Webshop;Fliesen Braun GmbH;2025-06-11;383.48;34497;Korbach;Arbeitsschutz
+A-0178;Webshop;Fliesen & Naturstein Jäger GmbH;2025-06-13;1089.26;1067;Dresden;Handwerkzeug
+A-0179;AD Schulte;ZIMMEREI HEINRICH GMBH;16.06.2025;767,74;34576;Homberg (Efze);Befestigung
+A-0180;Webshop;Gartenbau Schuster GmbH;2025-06-16;124.45;34117;Kassel;Handwerkzeug
+A-0181;Webshop;Tischlerei Arnold GmbH & Co. KG;2025-06-16;141.89;36037;Fulda;Arbeitsschutz
+A-0182;Webshop;HEKA Haustechnik GmbH;2025-06-16;964.23;99084;Erfurt;Elektrowerkzeug
+A-0183;AD Krüger;HEKA Haustechnik;16.06.2025;964,23 €;99084;Erfurt;Elektrowerkzeug
+A-0184;AD Yilmaz;Tischlerei Arnold GmbH & Co. KG;16.06.25;141,89 EUR;;36037 Fulda;Arbeitsschutz
+A-0185;Webshop;Tischlerei Schubert GmbH;2025-06-16;457.87;35039;Marburg;Befestigung
+A-0186;Webshop;Zimmerei Kolb GmbH;2025-06-17;1367.00;35039;Marburg;Arbeitsschutz
+A-0187;AD Hoffmann;Dachdeckerei Ludwig;06/17/2025;1,607.00;37083;Göttingen;Elektrowerkzeug
+A-0188;AD Yilmaz;Tischlerei Schneider GmbH;17.06.25;181,61 EUR;;36043 Fulda;Messtechnik
+A-0189;Webshop;Tischlerei Arnold GmbH & Co. KG;2025-06-18;265.00;36037;Fulda;Befestigung
+A-0190;Webshop;Holzbau Koch GmbH & Co. KG;2025-06-18;58.51;8056;Zwickau;Schleifmittel
+A-0191;Webshop;Bauunternehmung Seidel e.K.;2025-06-18;611.17;36037;Fulda;Befestigung
+A-0192;AD Krüger;Gartenbau Krause;18.06.2025;562,53 €;9111;Chemnitz;Befestigung
+A-0193;AD Yilmaz;Gartenbau Haase GmbH;23.06.25;458,58 EUR;;36381 Schlüchtern;Elektrowerkzeug
+A-0194;Webshop;Gartenbau Haase GmbH;2025-06-23;458.58;36381;Schlüchtern;Elektrowerkzeug
+A-0195;AD Hoffmann;Fliesen Peters e.K.;06/25/2025;135.09;37073;Göttingen;Elektrowerkzeug
+A-0196;AD Becker;Fliesen Herrmann GmbH;25.06.2025;116,49 €;34127;Kassel;Befestigung
+A-0197;AD Krüger;Heizungsbau Schmidt;26.06.2025;10.954,00 €;4109;Leipzig;Befestigung
+A-0198;AD Becker;Dachdeckerei Voigt GmbH;26.06.2025;14.100,00 €;34119;Kassel;Arbeitsschutz
+A-0199;Webshop;Fliesen & Naturstein Jäger GmbH;2025-06-27;1062.09;1067;Dresden;Schleifmittel
+;;;;;;;

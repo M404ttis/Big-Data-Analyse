@@ -1,0 +1,260 @@
+﻿"zeile;spalte;fehlerart;behandlung;wert_roh;wert_richtig"
+"A-0001;bestelldatum;Datum US-Format;beheben;01/02/2025;2025-01-02"
+"A-0003;bestelldatum;Datumsformat;beheben;02.01.2025;2025-01-02"
+"A-0003;betrag;Betragsformat;beheben;192";"17 €;192.17"
+"A-0004;kunde;Schreibweise Kunde;beheben;Schreinerei Michel;Schreinerei Michel e.K.";
+"A-0006;bestelldatum;Datumsformat;beheben;08.01.2025;2025-01-08";
+"A-0006;betrag;Betragsformat;beheben;887";"26 €;887.26"
+"A-0006;plz;PLZ ohne führende Null;beheben;7545;07545";
+"A-0007;bestelldatum;Datumsformat;beheben;08.01.2025;2025-01-08";
+"A-0007;betrag;Betragsformat;beheben;195";"85 €;195.85"
+"A-0007;kunde;Schreibweise Kunde;beheben;AWG Gebäudeservice;AWG Gebäudeservice GmbH";
+"A-0007;plz;PLZ ohne führende Null;beheben;4109;04109";
+"A-0013;bestelldatum;Datumsformat;beheben;14.01.2025;2025-01-14";
+"A-0013;betrag;Betragsformat;beheben;601";"00 €;601.00"
+"A-0013;kunde;Schreibweise Kunde;beheben;Sanitär Möller;Sanitär Möller GmbH";
+"A-0013;plz;PLZ ohne führende Null;beheben;1067;01067";
+"A-0014;bestelldatum;Datum US-Format;beheben;01/14/2025;2025-01-14";
+"A-0016;bestelldatum;Datumsformat;beheben;15.01.2025;2025-01-15";
+"A-0016;betrag;Betragsformat;beheben;390";"05 €;390.05"
+"A-0016;plz;Ort/PLZ fehlt;beheben;;34119";
+"A-0016;ort;Ort/PLZ fehlt;beheben;;Kassel";
+"A-0019;bestelldatum;Datum US-Format;beheben;01/16/2025;2025-01-16";
+"A-0020;bestelldatum;Datumsformat;beheben;16.01.25;2025-01-16";
+"A-0020;betrag;Betragsformat;beheben;406 EUR;406.00";
+"A-0020;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld";
+"A-0020;plz;PLZ im Ortsfeld;beheben;;36088";
+"A-0021;bestelldatum;Datumsformat;beheben;17.01.2025;2025-01-17";
+"A-0021;betrag;Betragsformat;beheben;76";"92 €;76.92"
+"A-0023;bestelldatum;Datumsformat;beheben;21.01.2025;2025-01-21";
+"A-0023;betrag;Betragsformat;beheben;387";"93 €;387.93"
+"A-0023;plz;Ort/PLZ fehlt";" zwei Standorte;markieren;;34225"
+"A-0023;ort;Ort/PLZ fehlt";" zwei Standorte;markieren;;Baunatal"
+"A-0026;bestelldatum;Datumsformat;beheben;23.01.25;2025-01-23";
+"A-0026;betrag;Betragsformat;beheben;142 EUR;142.00";
+"A-0026;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern";
+"A-0026;plz;PLZ im Ortsfeld;beheben;;36381";
+"A-0028;bestelldatum;Datumsformat;beheben;24.01.2025;2025-01-24";
+"A-0028;betrag;Betragsformat;beheben;1192";"00;1192.00"
+"A-0028;kunde;Schreibweise Kunde;beheben;SCHREINEREI KELLER GMBH;Schreinerei Keller GmbH";
+"A-0029;bestelldatum;Datumsformat;beheben;28.01.2025;2025-01-28";
+"A-0029;betrag;Betragsformat;beheben;445";"00 €;445.00"
+"A-0029;plz;Ort/PLZ fehlt;beheben;;34212";
+"A-0029;ort;Ort/PLZ fehlt;beheben;;Melsungen";
+"A-0032;bestelldatum;Datumsformat;beheben;30.01.2025;2025-01-30";
+"A-0032;betrag;Betragsformat;beheben;1707";"00;1707.00"
+"A-0032;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG";
+"A-0034;kunde;Schreibweise Kunde;beheben;tischlerei arnold gmbh & co. kg;Tischlerei Arnold GmbH & Co. KG";
+"A-0035;kunde;Schreibweise Kunde;beheben;Tischlerei Funk;Tischlerei Funk e.K.";
+"A-0037;kunde;Schreibweise Kunde;beheben;hausmeisterservice sommer gmbh;Hausmeisterservice Sommer GmbH";
+"A-0039;bestelldatum;Datumsformat;beheben;06.02.2025;2025-02-06";
+"A-0039;betrag;Betragsformat;beheben;370";"00 €;370.00"
+"A-0039;kunde;Schreibweise Kunde;beheben;Glaserei Förster;Glaserei Förster e.K.";
+"A-0039;plz;PLZ ohne führende Null;beheben;9111;09111";
+"A-0041;kunde;Schreibweise Kunde;beheben;holzbau baumann gmbh;Holzbau Baumann GmbH";
+"A-0044;bestelldatum;Datumsformat;beheben;07.02.25;2025-02-07";
+"A-0044;betrag;Betragsformat;beheben;349 EUR;349.00";
+"A-0044;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda";
+"A-0044;plz;PLZ im Ortsfeld;beheben;;36043";
+"A-0046;kunde;Schreibweise Kunde;beheben;glaserei gebhardt;Glaserei Gebhardt";
+"A-0049;bestelldatum;Datumsformat;beheben;14.02.2025;2025-02-14";
+"A-0049;betrag;Betragsformat;beheben;280";"00 €;280.00"
+"A-0049;kunde;Schreibweise Kunde;beheben;Gartenbau Bergmann;Gartenbau Bergmann e.K.";
+"A-0049;plz;PLZ ohne führende Null;beheben;4277;04277";
+"A-0050;bestelldatum;Datumsformat;beheben;14.02.2025;2025-02-14";
+"A-0050;betrag;Betragsformat;beheben;347";"94 €;347.94"
+"A-0050;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz;Fliesen Schmitz GmbH";
+"A-0050;plz;PLZ ohne führende Null;beheben;4109;04109";
+"A-0051;bestelldatum;Datumsformat;beheben;17.02.2025;2025-02-17";
+"A-0051;betrag;Betragsformat;beheben;296";"00 €;296.00"
+"A-0052;kunde;Schreibweise Kunde;beheben;dachdeckerei hartmann e.k.;Dachdeckerei Hartmann e.K.";
+"A-0053;(Zeile);Dublette;Zeile löschen;;A-0055";
+"A-0054;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen";
+"A-0057;bestelldatum;Datum nur Monat;markieren;Februar 2025;2025-02-17";
+"A-0057;betrag;Betragsformat;beheben;480";"23;480.23"
+"A-0057;kunde;Schreibweise Kunde;beheben;TISCHLEREI WAGNER GMBH & CO. KG;Tischlerei Wagner GmbH & Co. KG";
+"A-0058;bestelldatum;Datum US-Format;beheben;02/18/2025;2025-02-18";
+"A-0061;bestelldatum;Datumsformat;beheben;19.02.2025;2025-02-19";
+"A-0061;betrag;Betragsformat;beheben;162";"39 €;162.39"
+"A-0062;bestelldatum;Datumsformat;beheben;19.02.2025;2025-02-19";
+"A-0062;betrag;Betragsformat;beheben;48";"00 €;48.00"
+"A-0065;bestelldatum;Datumsformat;beheben;24.02.25;2025-02-24";
+"A-0065;betrag;Betragsformat;beheben;525";"16 EUR;525.16"
+"A-0065;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern";
+"A-0065;plz;PLZ im Ortsfeld;beheben;;36381";
+"A-0069;bestelldatum;Datum US-Format;beheben;02/27/2025;2025-02-27";
+"A-0069;betrag;Betrag US-Format;beheben;1";"017.62;1017.62"
+"A-0070;bestelldatum;Datumsformat;beheben;27.02.2025;2025-02-27";
+"A-0070;betrag;Betragsformat;beheben;315";"97 €;315.97"
+"A-0070;plz;PLZ ohne führende Null;beheben;1277;01277";
+"A-0071;bestelldatum;Datumsformat;beheben;28.02.2025;2025-02-28";
+"A-0071;betrag;Betragsformat;beheben;479";"61 €;479.61"
+"A-0075;bestelldatum;Datumsformat;beheben;13.03.2025;2025-03-13";
+"A-0075;betrag;Betragsformat;beheben;476";"35 €;476.35"
+"A-0075;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH";
+"A-0075;plz;PLZ ohne führende Null;beheben;1277;01277";
+"A-0078;bestelldatum;Datumsformat;beheben;14.03.2025;2025-03-14";
+"A-0078;betrag;Betragsformat;beheben;605";"54;605.54"
+"A-0078;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH";
+"A-0079;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen";
+"A-0081;bestelldatum;Datumsformat;beheben;18.03.2025;2025-03-18";
+"A-0081;betrag;Betragsformat;beheben;79";"50 €;79.50"
+"A-0081;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.";
+"A-0081;plz;PLZ ohne führende Null;beheben;7743;07743";
+"A-0082;bestelldatum;Datum nur Monat;markieren;März 2025;2025-03-18";
+"A-0082;betrag;Betragsformat;beheben;660";"72;660.72"
+"A-0082;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG SCHÄFER GMBH;Bauunternehmung Schäfer GmbH";
+"A-0084;bestelldatum;Datumsformat;beheben;19.03.2025;2025-03-19";
+"A-0084;betrag;Betragsformat;beheben;526";"56 €;526.56"
+"A-0084;kunde;Schreibweise Kunde;beheben;Fliesen & Naturstein Jäger;Fliesen & Naturstein Jäger GmbH";
+"A-0084;plz;PLZ ohne führende Null;beheben;1067;01067";
+"A-0085;bestelldatum;Datum US-Format;beheben;03/19/2025;2025-03-19";
+"A-0085;betrag;Betrag Kommafehler;markieren;8";"975.00;89.75"
+"A-0086;bestelldatum;Datum US-Format;beheben;03/19/2025;2025-03-19";
+"A-0086;betrag;Betrag US-Format;beheben;6";"466.00;6466.00"
+"A-0087;bestelldatum;Datumsformat;beheben;19.03.25;2025-03-19";
+"A-0087;betrag;Betragsformat;beheben;455";"87 EUR;455.87"
+"A-0087;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda";
+"A-0087;plz;PLZ im Ortsfeld;beheben;;36043";
+"A-0088;bestelldatum;Datumsformat;beheben;24.03.2025;2025-03-24";
+"A-0088;betrag;Betragsformat;beheben;521";"00 €;521.00"
+"A-0089;bestelldatum;Datum US-Format;beheben;03/25/2025;2025-03-25";
+"A-0089;betrag;Betrag US-Format;beheben;11";"764.00;11764.00"
+"A-0090;kunde;Leerzeichen;beheben;  Gartenbau Haase GmbH ;Gartenbau Haase GmbH";
+"A-0091;kunde;Schreibweise Kunde;beheben;bau & haus kraft gmbh;Bau & Haus Kraft GmbH";
+"A-0092;bestelldatum;Datumsformat;beheben;26.03.2025;2025-03-26";
+"A-0092;betrag;Betragsformat;beheben;539";"41 €;539.41"
+"A-0095;bestelldatum;Datum nur Monat;markieren;März 2025;2025-03-31";
+"A-0095;betrag;Betrag fehlt;markieren;;366.00";
+"A-0095;kunde;Schreibweise Kunde;beheben;METALLBAU DIETRICH GMBH;Metallbau Dietrich GmbH";
+"A-0097;bestelldatum;Datumsformat;beheben;03.04.2025;2025-04-03";
+"A-0097;betrag;Betragsformat;beheben;348";"14 €;348.14"
+"A-0098;kunde;Schreibweise Kunde;beheben;Holzbau-Vogt e.K.;Holzbau Vogt e.K.";
+"A-0100;kunde;Schreibweise Kunde;beheben;tischlerei funk e.k.;Tischlerei Funk e.K.";
+"A-0101;(Zeile);Dublette;Zeile löschen;;A-0100";
+"A-0102;bestelldatum;Datumsformat;beheben;10.04.2025;2025-04-10";
+"A-0102;betrag;Betragsformat;beheben;720";"24 €;720.24"
+"A-0102;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH";
+"A-0102;plz;PLZ ohne führende Null;beheben;1277;01277";
+"A-0108;bestelldatum;Datum nur Monat;markieren;April 2025;2025-04-15";
+"A-0108;betrag;Betragsformat;beheben;731";"18;731.18"
+"A-0108;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG";
+"A-0109;kunde;Schreibweise Kunde;beheben;Tischlerei-Funk e.K.;Tischlerei Funk e.K.";
+"A-0110;kunde;Schreibweise Kunde;beheben;Zimmerei-Fiedler;Zimmerei Fiedler";
+"A-0111;kunde;Leerzeichen;beheben; Schreinerei Kaiser e.K.  ;Schreinerei Kaiser e.K.";
+"A-0113;bestelldatum;Datum nur Monat;markieren;April 2025;2025-04-21";
+"A-0113;betrag;Betragsformat;beheben;277";"40;277.40"
+"A-0113;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH";
+"A-0114;bestelldatum;Datumsformat;beheben;21.04.2025;2025-04-21";
+"A-0114;betrag;Betragsformat;beheben;210";"60 €;210.60"
+"A-0114;kunde;Schreibweise Kunde;beheben;Glaserei Martin;Glaserei Martin GmbH";
+"A-0114;plz;PLZ ohne führende Null;beheben;8056;08056";
+"A-0116;bestelldatum;Datum US-Format;beheben;04/22/2025;2025-04-22";
+"A-0118;kunde;Schreibweise Kunde;beheben;Metallbau-Ziegler GmbH;Metallbau Ziegler GmbH";
+"A-0119;bestelldatum;Datumsformat;beheben;24.04.25;2025-04-24";
+"A-0119;betrag;Betragsformat;beheben;672";"47 EUR;672.47"
+"A-0119;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern";
+"A-0119;plz;PLZ im Ortsfeld;beheben;;36381";
+"A-0120;bestelldatum;Datumsformat;beheben;25.04.2025;2025-04-25";
+"A-0120;betrag;Betragsformat;beheben;701";"00 €;701.00"
+"A-0120;kunde;Schreibweise Kunde;beheben;Sanitär Möller;Sanitär Möller GmbH";
+"A-0120;plz;PLZ ohne führende Null;beheben;1067;01067";
+"A-0121;bestelldatum;Datumsformat;beheben;25.04.2025;2025-04-25";
+"A-0121;betrag;Betragsformat;beheben;903";"15 €;903.15"
+"A-0121;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH";
+"A-0121;plz;PLZ ohne führende Null;beheben;1277;01277";
+"A-0122;bestelldatum;Datumsformat;beheben;25.04.2025;2025-04-25";
+"A-0122;betrag;Betragsformat;beheben;467";"98 €;467.98"
+"A-0124;bestelldatum;Datumsformat;beheben;25.04.2025;2025-04-25";
+"A-0124;betrag;Betragsformat;beheben;71";"93 €;71.93"
+"A-0125;bestelldatum;Datumsformat;beheben;28.04.2025;2025-04-28";
+"A-0125;betrag;Betragsformat;beheben;757";"00 €;757.00"
+"A-0125;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH";
+"A-0125;plz;PLZ ohne führende Null;beheben;1277;01277";
+"A-0126;bestelldatum;Datumsformat;beheben;28.04.2025;2025-04-28";
+"A-0126;betrag;Betragsformat;beheben;171";"00 €;171.00"
+"A-0128;kunde;Leerzeichen;beheben;  Sanitär & Heizung Groß e.K. ;Sanitär & Heizung Groß e.K.";
+"A-0129;kunde;Zeichensalat;beheben;Hausmeisterservice GÃ¶tz GmbH;Hausmeisterservice Götz GmbH";
+"A-0131;kunde;Leerzeichen;beheben; Fliesen & Naturstein Jäger GmbH  ;Fliesen & Naturstein Jäger GmbH";
+"A-0133;(Zeile);Dublette;Zeile löschen;;A-0132";
+"A-0135;bestelldatum;Datumsformat;beheben;01.05.2025;2025-05-01";
+"A-0135;betrag;Betragsformat;beheben;100";"32 €;100.32"
+"A-0136;kunde;Schreibweise Kunde;beheben;Hausmeisterservice-Groß GmbH;Hausmeisterservice Groß GmbH";
+"A-0138;bestelldatum;Datumsformat;beheben;02.05.2025;2025-05-02";
+"A-0138;betrag;Betragsformat;beheben;259";"70 €;259.70"
+"A-0142;bestelldatum;Datumsformat;beheben;09.05.2025;2025-05-09";
+"A-0142;betrag;Betragsformat;beheben;110";"48;110.48"
+"A-0142;kunde;Schreibweise Kunde;beheben;FLIESEN BRAUN GMBH;Fliesen Braun GmbH";
+"A-0145;bestelldatum;Datumsformat;beheben;15.05.2025;2025-05-15";
+"A-0145;betrag;Betragsformat;beheben;835";"91;835.91"
+"A-0145;kunde;Schreibweise Kunde;beheben;FLIESEN WEISS GMBH;Fliesen Weiß GmbH";
+"A-0146;bestelldatum;Datumsformat;beheben;15.05.2025;2025-05-15";
+"A-0146;betrag;Betragsformat;beheben;210";"00;210.00"
+"A-0146;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG SCHÄFER GMBH;Bauunternehmung Schäfer GmbH";
+"A-0147;kunde;Leerzeichen;beheben;  Fliesen Peters e.K. ;Fliesen Peters e.K.";
+"A-0148;kunde;Schreibweise Kunde;beheben;Schreinerei Berger;Schreinerei Berger e.K.";
+"A-0150;bestelldatum;Datumsformat;beheben;19.05.2025;2025-05-19";
+"A-0150;betrag;Betragsformat;beheben;615";"02;615.02"
+"A-0150;kunde;Schreibweise Kunde;beheben;TISCHLEREI WAGNER GMBH & CO. KG;Tischlerei Wagner GmbH & Co. KG";
+"A-0151;bestelldatum;Datumsformat;beheben;19.05.2025;2025-05-19";
+"A-0151;betrag;Betragsformat;beheben;1.301";"82 €;1301.82"
+"A-0153;bestelldatum;Datumsformat;beheben;21.05.2025;2025-05-21";
+"A-0153;betrag;Betragsformat;beheben;167";"18 €;167.18"
+"A-0153;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH";
+"A-0154;bestelldatum;Datumsformat;beheben;23.05.2025;2025-05-23";
+"A-0154;betrag;Betragsformat;beheben;949";"32 €;949.32"
+"A-0154;kunde;Schreibweise Kunde;beheben;AWG Gebäudeservice;AWG Gebäudeservice GmbH";
+"A-0154;plz;PLZ ohne führende Null;beheben;4109;04109";
+"A-0156;bestelldatum;Datum US-Format;beheben;05/26/2025;2025-05-26";
+"A-0158;bestelldatum;Datumsformat;beheben;27.05.2025;2025-05-27";
+"A-0158;betrag;Betragsformat;beheben;303";"83 €;303.83"
+"A-0160;bestelldatum;Datumsformat;beheben;27.05.25;2025-05-27";
+"A-0160;betrag;Betragsformat;beheben;591 EUR;591.00";
+"A-0160;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda";
+"A-0160;plz;PLZ im Ortsfeld;beheben;;36037";
+"A-0161;bestelldatum;Datumsformat;beheben;27.05.2025;2025-05-27";
+"A-0161;betrag;Betragsformat;beheben;131";"62 €;131.62"
+"A-0162;bestelldatum;Datumsformat;beheben;28.05.2025;2025-05-28";
+"A-0162;betrag;Betrag fehlt;markieren;;430.05";
+"A-0162;kunde;Schreibweise Kunde;beheben;TISCHLEREI WAGNER GMBH & CO. KG;Tischlerei Wagner GmbH & Co. KG";
+"A-0165;bestelldatum;Datumsformat;beheben;02.06.25;2025-06-02";
+"A-0165;betrag;Betragsformat;beheben;305";"28 EUR;305.28"
+"A-0165;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda";
+"A-0165;plz;PLZ im Ortsfeld;beheben;;36037";
+"A-0169;bestelldatum;Datum US-Format;beheben;06/05/2025;2025-06-05";
+"A-0171;bestelldatum;Datum US-Format;beheben;06/06/2025;2025-06-06";
+"A-0172;bestelldatum;Datumsformat;beheben;06.06.25;2025-06-06";
+"A-0172;betrag;Betragsformat;beheben;541";"55 EUR;541.55"
+"A-0172;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda";
+"A-0172;plz;PLZ im Ortsfeld;beheben;;36043";
+"A-0173;bestelldatum;Datum US-Format;beheben;06/06/2025;2025-06-06";
+"A-0175;bestelldatum;Datumsformat;beheben;10.06.25;2025-06-10";
+"A-0175;betrag;Betragsformat;beheben;94";"35 EUR;94.35"
+"A-0175;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld";
+"A-0175;plz;PLZ im Ortsfeld;beheben;;36088";
+"A-0179;bestelldatum;Datumsformat;beheben;16.06.2025;2025-06-16";
+"A-0179;betrag;Betragsformat;beheben;767";"74;767.74"
+"A-0179;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH";
+"A-0183;(Zeile);Dublette;Zeile löschen;;A-0182";
+"A-0184;(Zeile);Dublette;Zeile löschen;;A-0181";
+"A-0187;bestelldatum;Datum US-Format;beheben;06/17/2025;2025-06-17";
+"A-0187;betrag;Betrag US-Format;beheben;1";"607.00;1607.00"
+"A-0188;bestelldatum;Datumsformat;beheben;17.06.25;2025-06-17";
+"A-0188;betrag;Betragsformat;beheben;181";"61 EUR;181.61"
+"A-0188;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda";
+"A-0188;plz;PLZ im Ortsfeld;beheben;;36043";
+"A-0192;bestelldatum;Datumsformat;beheben;18.06.2025;2025-06-18";
+"A-0192;betrag;Betragsformat;beheben;562";"53 €;562.53"
+"A-0192;kunde;Schreibweise Kunde;beheben;Gartenbau Krause;Gartenbau Krause GmbH & Co. KG";
+"A-0192;plz;PLZ ohne führende Null;beheben;9111;09111";
+"A-0193;(Zeile);Dublette;Zeile löschen;;A-0194";
+"A-0195;bestelldatum;Datum US-Format;beheben;06/25/2025;2025-06-25";
+"A-0196;bestelldatum;Datumsformat;beheben;25.06.2025;2025-06-25";
+"A-0196;betrag;Betragsformat;beheben;116";"49 €;116.49"
+"A-0197;bestelldatum;Datumsformat;beheben;26.06.2025;2025-06-26";
+"A-0197;betrag;Betrag Kommafehler;markieren;10.954";"00 €;109.54"
+"A-0197;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH";
+"A-0197;plz;PLZ ohne führende Null;beheben;4109;04109";
+"A-0198;bestelldatum;Datumsformat;beheben;26.06.2025;2025-06-26";
+"A-0198;betrag;Betrag Kommafehler;markieren;14.100";"00 €;141.00"
+;

@@ -1,0 +1,1177 @@
+﻿zeile;spalte;fehlerart;behandlung;wert_roh;wert_richtig
+B-0002;bestelldatum;Datumsformat;beheben;01.07.2025;2025-07-01
+B-0002;betrag;Betragsformat;beheben;865,12;865.12
+B-0002;kunde;Schreibweise Kunde;beheben;SCHREINEREI KELLER GMBH;Schreinerei Keller GmbH
+B-0003;bestelldatum;Datum US-Format;beheben;07/01/2025;2025-07-01
+B-0006;kunde;Leerzeichen;beheben;  Sanitär Stein GmbH  ;Sanitär Stein GmbH
+B-0008;bestelldatum;Datumsformat;beheben;02.07.2025;2025-07-02
+B-0008;betrag;Betragsformat;beheben;730,00 €;730.00
+B-0008;kunde;Schreibweise Kunde;beheben;Tischlerei Kuhn;Tischlerei Kuhn GmbH
+B-0008;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0009;bestelldatum;Datumsformat;beheben;02.07.2025;2025-07-02
+B-0009;betrag;Betragsformat;beheben;40,04 €;40.04
+B-0009;kunde;Schreibweise Kunde;beheben;Dachdeckerei Günther;Dachdeckerei Günther GmbH
+B-0009;plz;PLZ ohne führende Null;beheben;4319;4319
+B-0011;bestelldatum;Datumsformat;beheben;02.07.2025;2025-07-02
+B-0011;betrag;Betragsformat;beheben;224,32 €;224.32
+B-0011;kunde;Schreibweise Kunde;beheben;AWG Gebäudeservice;AWG Gebäudeservice GmbH
+B-0011;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0012;bestelldatum;Datumsformat;beheben;02.07.2025;2025-07-02
+B-0012;betrag;Betragsformat;beheben;470,20 €;470.20
+B-0012;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH
+B-0014;bestelldatum;Datumsformat;beheben;02.07.25;2025-07-02
+B-0014;betrag;Betrag Kommafehler;markieren;9900 EUR;99.00
+B-0014;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0014;plz;PLZ im Ortsfeld;beheben;;36251
+B-0016;bestelldatum;Datumsformat;beheben;02.07.2025;2025-07-02
+B-0016;betrag;Betragsformat;beheben;137,00 €;137.00
+B-0018;bestelldatum;Datumsformat;beheben;03.07.2025;2025-07-03
+B-0018;betrag;Betragsformat;beheben;63,76 €;63.76
+B-0018;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH
+B-0018;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0019;bestelldatum;Datumsformat;beheben;03.07.2025;2025-07-03
+B-0019;betrag;Betragsformat;beheben;67,00 €;67.00
+B-0019;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0019;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0020;kunde;Schreibweise Kunde;beheben;Schreinerei-Otto e.K.;Schreinerei Otto e.K.
+B-0022;bestelldatum;Datum US-Format;beheben;07/03/2025;2025-07-03
+B-0024;bestelldatum;Datumsformat;beheben;03.07.2025;2025-07-03
+B-0024;betrag;Betragsformat;beheben;312,00 €;312.00
+B-0024;kunde;Schreibweise Kunde;beheben;Gartenbau Bergmann;Gartenbau Bergmann e.K.
+B-0024;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0025;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0026;bestelldatum;Datumsformat;beheben;04.07.2025;2025-07-04
+B-0026;betrag;Betrag Kommafehler;markieren;26.891,00 €;268.91
+B-0027;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0028;bestelldatum;Datumsformat;beheben;04.07.25;2025-07-04
+B-0028;betrag;Betragsformat;beheben;85,39 EUR;85.39
+B-0028;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0028;plz;PLZ im Ortsfeld;beheben;;36037
+B-0038;bestelldatum;Datumsformat;beheben;08.07.2025;2025-07-08
+B-0038;betrag;Betragsformat;beheben;701,22 €;701.22
+B-0038;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0039;(Zeile);Dublette;Zeile löschen;;B-0042
+B-0041;(Zeile);Dublette;Zeile löschen;;B-0034
+B-0043;bestelldatum;Datumsformat;beheben;08.07.2025;2025-07-08
+B-0043;betrag;Betragsformat;beheben;207,00 €;207.00
+B-0043;kunde;Schreibweise Kunde;beheben;Tischlerei Kuhn;Tischlerei Kuhn GmbH
+B-0043;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0046;bestelldatum;Datumsformat;beheben;09.07.2025;2025-07-09
+B-0046;betrag;Betragsformat;beheben;405,16 €;405.16
+B-0048;kunde;Schreibweise Kunde;beheben;Hausmeisterservice-Jäger GmbH & Co. KG;Hausmeisterservice Jäger GmbH & Co. KG
+B-0049;bestelldatum;Datumsformat;beheben;09.07.2025;2025-07-09
+B-0049;betrag;Betragsformat;beheben;540,00 €;540.00
+B-0050;kunde;Schreibweise Kunde;beheben;zimmerei thiele gmbh & co. kg;Zimmerei Thiele GmbH & Co. KG
+B-0055;bestelldatum;Datum US-Format;beheben;07/10/2025;2025-07-10
+B-0056;bestelldatum;Datum nur Monat;markieren;Juli 2025;2025-07-10
+B-0056;betrag;Betragsformat;beheben;598,19;598.19
+B-0056;kunde;Schreibweise Kunde;beheben;TISCHLEREI SCHUBERT GMBH;Tischlerei Schubert GmbH
+B-0058;bestelldatum;Datum US-Format;beheben;07/10/2025;2025-07-10
+B-0058;betrag;Betrag US-Format;beheben;1,071.00;1071.00
+B-0059;bestelldatum;Datumsformat;beheben;10.07.2025;2025-07-10
+B-0059;betrag;Betragsformat;beheben;134,36 €;134.36
+B-0061;bestelldatum;Datumsformat;beheben;11.07.2025;2025-07-11
+B-0061;betrag;Betragsformat;beheben;273,22 €;273.22
+B-0061;kunde;Schreibweise Kunde;beheben;AWG Gebäudeservice;AWG Gebäudeservice GmbH
+B-0061;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0063;kunde;Schreibweise Kunde;beheben;Tischlerei Schneider;Tischlerei Schneider GmbH
+B-0065;bestelldatum;Datumsformat;beheben;11.07.2025;2025-07-11
+B-0065;betrag;Betragsformat;beheben;542,82 €;542.82
+B-0065;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0067;bestelldatum;Datumsformat;beheben;11.07.2025;2025-07-11
+B-0067;betrag;Betrag fehlt;markieren;;150.08
+B-0067;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG
+B-0072;kunde;Zeichensalat;beheben;Glaserei FÃ¶rster e.K.;Glaserei Förster e.K.
+B-0076;bestelldatum;Datumsformat;beheben;15.07.25;2025-07-15
+B-0076;betrag;Betragsformat;beheben;597 EUR;597.00
+B-0076;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0076;plz;PLZ im Ortsfeld;beheben;;36043
+B-0077;kunde;Schreibweise Kunde;beheben;Dachdeckerei-Zimmermann;Dachdeckerei Zimmermann
+B-0078;kunde;Schreibweise Kunde;beheben;Bauunternehmung Müller GmbH und Co. KG;Bauunternehmung Müller GmbH & Co. KG
+B-0079;bestelldatum;Datumsformat;beheben;16.07.2025;2025-07-16
+B-0079;betrag;Betragsformat;beheben;801,59 €;801.59
+B-0080;bestelldatum;Datumsformat;beheben;16.07.25;2025-07-16
+B-0080;betrag;Betragsformat;beheben;407 EUR;407.00
+B-0080;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0080;plz;PLZ im Ortsfeld;beheben;;36043
+B-0081;(Zeile);Dublette;Zeile löschen;;B-0086
+B-0082;bestelldatum;Datumsformat;beheben;16.07.25;2025-07-16
+B-0082;betrag;Betragsformat;beheben;536,16 EUR;536.16
+B-0082;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0082;plz;PLZ im Ortsfeld;beheben;;36381
+B-0084;bestelldatum;Datum US-Format;beheben;07/16/2025;2025-07-16
+B-0084;betrag;Betrag Kommafehler;markieren;32,764.00;327.64
+B-0089;bestelldatum;Datumsformat;beheben;17.07.2025;2025-07-17
+B-0089;betrag;Betragsformat;beheben;145,00 €;145.00
+B-0092;bestelldatum;Datumsformat;beheben;17.07.2025;2025-07-17
+B-0092;betrag;Betragsformat;beheben;204,04 €;204.04
+B-0093;bestelldatum;Datum US-Format;beheben;07/17/2025;2025-07-17
+B-0096;bestelldatum;Datumsformat;beheben;18.07.2025;2025-07-18
+B-0096;betrag;Betragsformat;beheben;215,86 €;215.86
+B-0096;kunde;Schreibweise Kunde;beheben;Metallbau Haas;Metallbau Haas GmbH
+B-0096;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0098;bestelldatum;Datumsformat;beheben;18.07.25;2025-07-18
+B-0098;betrag;Betragsformat;beheben;245,59 EUR;245.59
+B-0098;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0098;plz;PLZ im Ortsfeld;beheben;;36381
+B-0100;kunde;Zeichensalat;beheben;Hausmeisterservice GroÃŸ GmbH;Hausmeisterservice Groß GmbH
+B-0103;bestelldatum;Datumsformat;beheben;21.07.2025;2025-07-21
+B-0103;betrag;Betragsformat;beheben;244,56 €;244.56
+B-0104;bestelldatum;Datumsformat;beheben;21.07.25;2025-07-21
+B-0104;betrag;Betragsformat;beheben;305,54 EUR;305.54
+B-0104;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0104;plz;PLZ im Ortsfeld;beheben;;36043
+B-0106;bestelldatum;Datum US-Format;beheben;07/21/2025;2025-07-21
+B-0108;bestelldatum;Datumsformat;beheben;21.07.2025;2025-07-21
+B-0108;betrag;Betragsformat;beheben;76,00 €;76.00
+B-0108;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0108;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0110;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0111;bestelldatum;Datumsformat;beheben;22.07.2025;2025-07-22
+B-0111;betrag;Betragsformat;beheben;540,00 €;540.00
+B-0111;kunde;Schreibweise Kunde;beheben;Gartenbau Bergmann;Gartenbau Bergmann e.K.
+B-0111;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0112;bestelldatum;Datum nur Monat;markieren;Juli 2025;2025-07-22
+B-0112;betrag;Betragsformat;beheben;616,96;616.96
+B-0112;kunde;Schreibweise Kunde;beheben;FLIESEN WEISS GMBH;Fliesen Weiß GmbH
+B-0114;bestelldatum;Datumsformat;beheben;22.07.2025;2025-07-22
+B-0114;betrag;Betragsformat;beheben;257,52 €;257.52
+B-0114;kunde;Schreibweise Kunde;beheben;Heizungsbau Fuchs;Heizungsbau Fuchs GmbH
+B-0114;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0115;bestelldatum;Datum US-Format;beheben;07/22/2025;2025-07-22
+B-0116;bestelldatum;Datum US-Format;beheben;07/22/2025;2025-07-22
+B-0118;bestelldatum;Datumsformat;beheben;22.07.2025;2025-07-22
+B-0118;betrag;Betragsformat;beheben;481,39 €;481.39
+B-0120;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0120;betrag;Betragsformat;beheben;148,84 €;148.84
+B-0121;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0121;betrag;Betragsformat;beheben;296,66;296.66
+B-0121;kunde;Schreibweise Kunde;beheben;TISCHLEREI SCHUBERT GMBH;Tischlerei Schubert GmbH
+B-0122;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0122;betrag;Betragsformat;beheben;425,87 €;425.87
+B-0123;bestelldatum;Datum US-Format;beheben;07/23/2025;2025-07-23
+B-0124;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0124;betrag;Betrag fehlt;markieren;;1754.02
+B-0124;kunde;Schreibweise Kunde;beheben;ZIMMEREI KOLB GMBH;Zimmerei Kolb GmbH
+B-0125;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0125;betrag;Betragsformat;beheben;697,71 €;697.71
+B-0125;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34117
+B-0125;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Kassel
+B-0127;bestelldatum;Datumsformat;beheben;23.07.2025;2025-07-23
+B-0127;betrag;Betragsformat;beheben;230,00 €;230.00
+B-0128;bestelldatum;Datum US-Format;beheben;07/23/2025;2025-07-23
+B-0130;bestelldatum;Datum US-Format;beheben;07/23/2025;2025-07-23
+B-0131;bestelldatum;Datumsformat;beheben;24.07.2025;2025-07-24
+B-0131;betrag;Betragsformat;beheben;409,60 €;409.60
+B-0131;kunde;Schreibweise Kunde;beheben;Holzbau Koch;Holzbau Koch GmbH & Co. KG
+B-0131;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0134;bestelldatum;Datum US-Format;beheben;07/24/2025;2025-07-24
+B-0136;bestelldatum;Datumsformat;beheben;24.07.2025;2025-07-24
+B-0136;betrag;Betragsformat;beheben;168,57 €;168.57
+B-0138;bestelldatum;Datumsformat;beheben;24.07.2025;2025-07-24
+B-0138;betrag;Betragsformat;beheben;110,02 €;110.02
+B-0138;plz;Ort/PLZ fehlt;beheben;;34346
+B-0138;ort;Ort/PLZ fehlt;beheben;;Hann. Münden
+B-0139;bestelldatum;Datum US-Format;beheben;07/25/2025;2025-07-25
+B-0140;bestelldatum;Datumsformat;beheben;25.07.2025;2025-07-25
+B-0140;betrag;Betragsformat;beheben;366,35 €;366.35
+B-0140;kunde;Schreibweise Kunde;beheben;Tischlerei Funk;Tischlerei Funk e.K.
+B-0140;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0142;bestelldatum;Datumsformat;beheben;25.07.2025;2025-07-25
+B-0142;betrag;Betragsformat;beheben;415,00 €;415.00
+B-0144;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0146;bestelldatum;Datumsformat;beheben;25.07.2025;2025-07-25
+B-0146;betrag;Betragsformat;beheben;283,07 €;283.07
+B-0147;bestelldatum;Datumsformat;beheben;28.07.2025;2025-07-28
+B-0147;betrag;Betragsformat;beheben;156,00;156.00
+B-0147;kunde;Schreibweise Kunde;beheben;FLIESEN BRAUN GMBH;Fliesen Braun GmbH
+B-0150;bestelldatum;Datumsformat;beheben;28.07.25;2025-07-28
+B-0150;betrag;Betragsformat;beheben;149,15 EUR;149.15
+B-0150;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0150;plz;PLZ im Ortsfeld;beheben;;36037
+B-0151;kunde;Leerzeichen;beheben; Tischlerei Arnold GmbH & Co. KG;Tischlerei Arnold GmbH & Co. KG
+B-0152;bestelldatum;Datumsformat;beheben;29.07.2025;2025-07-29
+B-0152;betrag;Betragsformat;beheben;536,07 €;536.07
+B-0153;(Zeile);Dublette;Zeile löschen;;B-0154
+B-0154;kunde;Schreibweise Kunde;beheben;Gartenbau Busch;Gartenbau Busch GmbH
+B-0155;bestelldatum;Datumsformat;beheben;29.07.2025;2025-07-29
+B-0155;betrag;Betragsformat;beheben;576,33 €;576.33
+B-0156;ort;Zeichensalat;beheben;SchlÃ¼chtern;Schlüchtern
+B-0157;bestelldatum;Datumsformat;beheben;29.07.2025;2025-07-29
+B-0157;betrag;Betragsformat;beheben;327,73 €;327.73
+B-0158;bestelldatum;Datumsformat;beheben;29.07.2025;2025-07-29
+B-0158;betrag;Betragsformat;beheben;143,00 €;143.00
+B-0158;kunde;Schreibweise Kunde;beheben;Holzbau Koch;Holzbau Koch GmbH & Co. KG
+B-0158;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0159;bestelldatum;Datumsformat;beheben;30.07.2025;2025-07-30
+B-0159;betrag;Betragsformat;beheben;301,04;301.04
+B-0159;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0160;bestelldatum;Datum US-Format;beheben;07/30/2025;2025-07-30
+B-0162;bestelldatum;Datumsformat;beheben;30.07.2025;2025-07-30
+B-0162;betrag;Betragsformat;beheben;351,40;351.40
+B-0162;kunde;Schreibweise Kunde;beheben;METALLBAU DIETRICH GMBH;Metallbau Dietrich GmbH
+B-0163;bestelldatum;Datumsformat;beheben;30.07.2025;2025-07-30
+B-0163;betrag;Betragsformat;beheben;221,00 €;221.00
+B-0163;kunde;Schreibweise Kunde;beheben;Sanitär Möller;Sanitär Möller GmbH
+B-0163;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0165;bestelldatum;Datum US-Format;beheben;07/30/2025;2025-07-30
+B-0167;(Zeile);Dublette;Zeile löschen;;B-0170
+B-0169;bestelldatum;Datum US-Format;beheben;07/31/2025;2025-07-31
+B-0172;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0172;betrag;Betragsformat;beheben;429,57 €;429.57
+B-0173;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0173;betrag;Betrag Kommafehler;markieren;23700,00;237.00
+B-0173;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0174;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0174;betrag;Betragsformat;beheben;378,70;378.70
+B-0174;kunde;Schreibweise Kunde;beheben;ZIMMEREI KOLB GMBH;Zimmerei Kolb GmbH
+B-0175;bestelldatum;Datum US-Format;beheben;08/01/2025;2025-08-01
+B-0175;betrag;Betrag US-Format;beheben;1,592.53;1592.53
+B-0176;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0176;betrag;Betragsformat;beheben;288,23 €;288.23
+B-0176;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0176;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0179;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0179;betrag;Betragsformat;beheben;670,48 €;670.48
+B-0179;kunde;Schreibweise Kunde;beheben;Glaserei Martin;Glaserei Martin GmbH
+B-0179;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0180;bestelldatum;Datumsformat;beheben;01.08.2025;2025-08-01
+B-0180;betrag;Betragsformat;beheben;112,00 €;112.00
+B-0180;kunde;Schreibweise Kunde;beheben;Sanitär Möller;Sanitär Möller GmbH
+B-0180;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0181;kunde;Schreibweise Kunde;beheben;elektro weber gmbh;Elektro Weber GmbH
+B-0183;kunde;Zeichensalat;beheben;Dachdeckerei GÃ¼nther GmbH;Dachdeckerei Günther GmbH
+B-0185;bestelldatum;Datumsformat;beheben;04.08.25;2025-08-04
+B-0185;betrag;Betragsformat;beheben;335,96 EUR;335.96
+B-0185;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0185;plz;PLZ im Ortsfeld;beheben;;36088
+B-0187;bestelldatum;Datumsformat;beheben;04.08.25;2025-08-04
+B-0187;betrag;Betragsformat;beheben;161 EUR;161.00
+B-0187;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0187;plz;PLZ im Ortsfeld;beheben;;36043
+B-0188;bestelldatum;Datum US-Format;beheben;08/05/2025;2025-08-05
+B-0190;bestelldatum;Datumsformat;beheben;05.08.2025;2025-08-05
+B-0190;betrag;Betragsformat;beheben;611,00 €;611.00
+B-0190;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34117
+B-0190;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Kassel
+B-0193;bestelldatum;Datumsformat;beheben;05.08.2025;2025-08-05
+B-0193;betrag;Betragsformat;beheben;229,01 €;229.01
+B-0193;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34117
+B-0193;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Kassel
+B-0196;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0197;bestelldatum;Datumsformat;beheben;07.08.2025;2025-08-07
+B-0197;betrag;Betragsformat;beheben;300,00 €;300.00
+B-0197;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH
+B-0197;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0198;bestelldatum;Datumsformat;beheben;07.08.25;2025-08-07
+B-0198;betrag;Betragsformat;beheben;355,01 EUR;355.01
+B-0198;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0198;plz;PLZ im Ortsfeld;beheben;;36088
+B-0201;bestelldatum;Datumsformat;beheben;07.08.2025;2025-08-07
+B-0201;betrag;Betragsformat;beheben;111,59 €;111.59
+B-0201;kunde;Schreibweise Kunde;beheben;Gartenbau Krause;Gartenbau Krause GmbH & Co. KG
+B-0201;plz;PLZ ohne führende Null;beheben;9111;9111
+B-0202;bestelldatum;Datumsformat;beheben;07.08.2025;2025-08-07
+B-0202;betrag;Betragsformat;beheben;258,34;258.34
+B-0202;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0203;bestelldatum;Datumsformat;beheben;07.08.2025;2025-08-07
+B-0203;betrag;Betragsformat;beheben;162,00 €;162.00
+B-0203;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0203;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0205;bestelldatum;Datumsformat;beheben;07.08.2025;2025-08-07
+B-0205;betrag;Betragsformat;beheben;523,98 €;523.98
+B-0207;bestelldatum;Datumsformat;beheben;08.08.2025;2025-08-08
+B-0207;betrag;Betragsformat;beheben;1.244,39 €;1244.39
+B-0207;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34225
+B-0207;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Baunatal
+B-0208;bestelldatum;Datumsformat;beheben;08.08.2025;2025-08-08
+B-0208;betrag;Betragsformat;beheben;670,00;670.00
+B-0208;kunde;Schreibweise Kunde;beheben;SCHREINEREI KELLER GMBH;Schreinerei Keller GmbH
+B-0209;bestelldatum;Datumsformat;beheben;08.08.2025;2025-08-08
+B-0209;betrag;Betragsformat;beheben;207,00 €;207.00
+B-0209;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH
+B-0211;bestelldatum;Datumsformat;beheben;08.08.2025;2025-08-08
+B-0211;betrag;Betragsformat;beheben;2.340,31 €;2340.31
+B-0211;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH
+B-0211;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0218;kunde;Zeichensalat;beheben;SanitÃ¤r Lindner;Sanitär Lindner
+B-0221;bestelldatum;Datumsformat;beheben;12.08.2025;2025-08-12
+B-0221;betrag;Betragsformat;beheben;377,75;377.75
+B-0221;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG HORN GMBH;Bauunternehmung Horn GmbH
+B-0222;bestelldatum;Datumsformat;beheben;12.08.2025;2025-08-12
+B-0222;betrag;Betragsformat;beheben;382,00 €;382.00
+B-0224;kunde;Schreibweise Kunde;beheben;Tischlerei-Lange e.K.;Tischlerei Lange e.K.
+B-0225;bestelldatum;Datumsformat;beheben;12.08.25;2025-08-12
+B-0225;betrag;Betragsformat;beheben;388,97 EUR;388.97
+B-0225;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0225;plz;PLZ im Ortsfeld;beheben;;36251
+B-0226;bestelldatum;Datumsformat;beheben;12.08.2025;2025-08-12
+B-0226;betrag;Betragsformat;beheben;366,69 €;366.69
+B-0227;bestelldatum;Datumsformat;beheben;12.08.2025;2025-08-12
+B-0227;betrag;Betragsformat;beheben;626,12 €;626.12
+B-0228;bestelldatum;Datum US-Format;beheben;08/12/2025;2025-08-12
+B-0230;bestelldatum;Datumsformat;beheben;12.08.2025;2025-08-12
+B-0230;betrag;Betragsformat;beheben;482,42 €;482.42
+B-0230;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0232;bestelldatum;Datumsformat;beheben;13.08.2025;2025-08-13
+B-0232;betrag;Betragsformat;beheben;1.398,97 €;1398.97
+B-0232;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz;Fliesen Schmitz GmbH
+B-0232;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0233;bestelldatum;Datumsformat;beheben;13.08.2025;2025-08-13
+B-0233;betrag;Betragsformat;beheben;99,00;99.00
+B-0233;kunde;Schreibweise Kunde;beheben;METALLBAU ZIEGLER GMBH;Metallbau Ziegler GmbH
+B-0235;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0242;bestelldatum;Datumsformat;beheben;15.08.2025;2025-08-15
+B-0242;betrag;Betragsformat;beheben;121,19 €;121.19
+B-0242;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Hentschel;Kfz-Werkstatt Hentschel GmbH
+B-0242;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0243;bestelldatum;Datumsformat;beheben;15.08.2025;2025-08-15
+B-0243;betrag;Betragsformat;beheben;361,20 €;361.20
+B-0243;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Hentschel;Kfz-Werkstatt Hentschel GmbH
+B-0243;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0245;bestelldatum;Datumsformat;beheben;18.08.25;2025-08-18
+B-0245;betrag;Betragsformat;beheben;222 EUR;222.00
+B-0245;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0245;plz;PLZ im Ortsfeld;beheben;;36043
+B-0251;bestelldatum;Datumsformat;beheben;19.08.2025;2025-08-19
+B-0251;betrag;Betragsformat;beheben;33,69 €;33.69
+B-0251;kunde;Schreibweise Kunde;beheben;Dachdeckerei Günther;Dachdeckerei Günther GmbH
+B-0251;plz;PLZ ohne führende Null;beheben;4319;4319
+B-0252;bestelldatum;Datum US-Format;beheben;08/19/2025;2025-08-19
+B-0252;betrag;Betrag US-Format;beheben;14,160.00;14160.00
+B-0253;bestelldatum;Datumsformat;beheben;19.08.2025;2025-08-19
+B-0253;betrag;Betragsformat;beheben;692,00 €;692.00
+B-0253;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0255;bestelldatum;Datum US-Format;beheben;08/20/2025;2025-08-20
+B-0256;bestelldatum;Datum US-Format;beheben;08/20/2025;2025-08-20
+B-0258;bestelldatum;Datumsformat;beheben;21.08.25;2025-08-21
+B-0258;betrag;Betragsformat;beheben;274 EUR;274.00
+B-0258;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0258;plz;PLZ im Ortsfeld;beheben;;36381
+B-0260;kunde;Leerzeichen;beheben;  Elektro Weber GmbH ;Elektro Weber GmbH
+B-0261;kunde;Schreibweise Kunde;beheben;Malerbetrieb Wolf;Malerbetrieb Wolf GmbH
+B-0264;kunde;Schreibweise Kunde;beheben;Glaserei-Gebhardt;Glaserei Gebhardt
+B-0266;bestelldatum;Datumsformat;beheben;25.08.2025;2025-08-25
+B-0266;betrag;Betragsformat;beheben;327,69 €;327.69
+B-0267;bestelldatum;Datum US-Format;beheben;08/25/2025;2025-08-25
+B-0271;bestelldatum;Datumsformat;beheben;25.08.2025;2025-08-25
+B-0271;betrag;Betragsformat;beheben;103,00 €;103.00
+B-0271;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0271;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0272;bestelldatum;Datum nur Monat;markieren;August 2025;2025-08-26
+B-0272;betrag;Betragsformat;beheben;380,04;380.04
+B-0272;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG
+B-0273;bestelldatum;Datum US-Format;beheben;08/26/2025;2025-08-26
+B-0274;bestelldatum;Datumsformat;beheben;26.08.2025;2025-08-26
+B-0274;betrag;Betragsformat;beheben;595,81;595.81
+B-0274;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0275;kunde;Schreibweise Kunde;beheben;Schreinerei Kaiser;Schreinerei Kaiser e.K.
+B-0276;bestelldatum;Datumsformat;beheben;26.08.25;2025-08-26
+B-0276;betrag;Betragsformat;beheben;1007,98 EUR;1007.98
+B-0276;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0276;plz;PLZ im Ortsfeld;beheben;;36043
+B-0280;bestelldatum;Datum US-Format;beheben;08/26/2025;2025-08-26
+B-0281;bestelldatum;Datumsformat;beheben;27.08.2025;2025-08-27
+B-0281;betrag;Betragsformat;beheben;880,87 €;880.87
+B-0281;kunde;Schreibweise Kunde;beheben;AWG Gebäudeservice;AWG Gebäudeservice GmbH
+B-0281;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0283;bestelldatum;Datumsformat;beheben;27.08.2025;2025-08-27
+B-0283;betrag;Betragsformat;beheben;475,00 €;475.00
+B-0283;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH
+B-0283;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0284;bestelldatum;Datum US-Format;beheben;08/27/2025;2025-08-27
+B-0285;bestelldatum;Datumsformat;beheben;27.08.2025;2025-08-27
+B-0285;betrag;Betragsformat;beheben;2.276,00 €;2276.00
+B-0285;kunde;Schreibweise Kunde;beheben;Fliesen & Naturstein Jäger;Fliesen & Naturstein Jäger GmbH
+B-0285;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0286;bestelldatum;Datumsformat;beheben;27.08.2025;2025-08-27
+B-0286;betrag;Betragsformat;beheben;280,77 €;280.77
+B-0287;bestelldatum;Datumsformat;beheben;27.08.25;2025-08-27
+B-0287;betrag;Betragsformat;beheben;548,04 EUR;548.04
+B-0287;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0287;plz;PLZ im Ortsfeld;beheben;;36088
+B-0289;bestelldatum;Datumsformat;beheben;27.08.25;2025-08-27
+B-0289;betrag;Betragsformat;beheben;327 EUR;327.00
+B-0289;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0289;plz;PLZ im Ortsfeld;beheben;;36043
+B-0291;bestelldatum;Datumsformat;beheben;28.08.25;2025-08-28
+B-0291;betrag;Betragsformat;beheben;805 EUR;805.00
+B-0291;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0291;plz;PLZ im Ortsfeld;beheben;;36088
+B-0292;bestelldatum;Datumsformat;beheben;28.08.25;2025-08-28
+B-0292;betrag;Betragsformat;beheben;134 EUR;134.00
+B-0292;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0292;plz;PLZ im Ortsfeld;beheben;;36381
+B-0293;bestelldatum;Datum US-Format;beheben;08/28/2025;2025-08-28
+B-0293;betrag;Betrag US-Format;beheben;1,961.97;1961.97
+B-0295;kunde;Schreibweise Kunde;beheben;Metallbau Ziegler G.m.b.H.;Metallbau Ziegler GmbH
+B-0296;kunde;Schreibweise Kunde;beheben;Hausmeisterservice König G.m.b.H.;Hausmeisterservice König GmbH
+B-0297;bestelldatum;Datumsformat;beheben;28.08.2025;2025-08-28
+B-0297;betrag;Betragsformat;beheben;65,00 €;65.00
+B-0298;bestelldatum;Datumsformat;beheben;29.08.2025;2025-08-29
+B-0298;betrag;Betragsformat;beheben;73,37 €;73.37
+B-0298;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH
+B-0298;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0299;kunde;Schreibweise Kunde;beheben;Malerbetrieb-Köhler GmbH;Malerbetrieb Köhler GmbH
+B-0300;(Zeile);Dublette;Zeile löschen;;B-0305
+B-0301;bestelldatum;Datumsformat;beheben;29.08.2025;2025-08-29
+B-0301;betrag;Betragsformat;beheben;97,28 €;97.28
+B-0306;bestelldatum;Datumsformat;beheben;01.09.2025;2025-09-01
+B-0306;betrag;Betragsformat;beheben;848,00 €;848.00
+B-0306;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0307;bestelldatum;Datum US-Format;beheben;09/01/2025;2025-09-01
+B-0312;bestelldatum;Datumsformat;beheben;01.09.2025;2025-09-01
+B-0312;betrag;Betragsformat;beheben;128,61 €;128.61
+B-0312;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH
+B-0313;kunde;Schreibweise Kunde;beheben;hausmeisterservice groß gmbh;Hausmeisterservice Groß GmbH
+B-0314;bestelldatum;Datumsformat;beheben;02.09.25;2025-09-02
+B-0314;betrag;Betragsformat;beheben;223,73 EUR;223.73
+B-0314;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0314;plz;PLZ im Ortsfeld;beheben;;36381
+B-0315;bestelldatum;Datumsformat;beheben;02.09.2025;2025-09-02
+B-0315;betrag;Betragsformat;beheben;52,96 €;52.96
+B-0315;plz;Ort/PLZ fehlt;beheben;;34119
+B-0315;ort;Ort/PLZ fehlt;beheben;;Kassel
+B-0316;kunde;Schreibweise Kunde;beheben;Bauunternehmung Strauß GmbH und Co. KG;Bauunternehmung Strauß GmbH & Co. KG
+B-0317;bestelldatum;Datum US-Format;beheben;09/02/2025;2025-09-02
+B-0317;betrag;Betrag US-Format;beheben;1,118.00;1118.00
+B-0321;bestelldatum;Datum US-Format;beheben;09/03/2025;2025-09-03
+B-0321;betrag;Betrag US-Format;beheben;1,047.00;1047.00
+B-0322;bestelldatum;Datumsformat;beheben;03.09.2025;2025-09-03
+B-0322;betrag;Betragsformat;beheben;331,15 €;331.15
+B-0322;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger;Kfz-Werkstatt Rieger GmbH
+B-0322;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0324;bestelldatum;Datum nur Monat;markieren;September 2025;2025-09-04
+B-0324;betrag;Betragsformat;beheben;278,10;278.10
+B-0324;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG
+B-0326;bestelldatum;Datumsformat;beheben;04.09.2025;2025-09-04
+B-0326;betrag;Betragsformat;beheben;89,50 €;89.50
+B-0327;bestelldatum;Datumsformat;beheben;04.09.2025;2025-09-04
+B-0327;betrag;Betragsformat;beheben;353,00 €;353.00
+B-0327;kunde;Schreibweise Kunde;beheben;Holzbau Koch;Holzbau Koch GmbH & Co. KG
+B-0327;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0329;ort;Zeichensalat;beheben;Hann. MÃ¼nden;Hann. Münden
+B-0332;bestelldatum;Datumsformat;beheben;04.09.2025;2025-09-04
+B-0332;betrag;Betragsformat;beheben;198,23 €;198.23
+B-0334;bestelldatum;Datumsformat;beheben;04.09.2025;2025-09-04
+B-0334;betrag;Betragsformat;beheben;244,25 €;244.25
+B-0334;plz;Ort/PLZ fehlt;beheben;;34225
+B-0334;ort;Ort/PLZ fehlt;beheben;;Baunatal
+B-0335;(Zeile);Dublette;Zeile löschen;;B-0338
+B-0336;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0336;betrag;Betragsformat;beheben;384,08 €;384.08
+B-0336;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0336;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0337;kunde;Schreibweise Kunde;beheben;Holzbau-Vogt e.K.;Holzbau Vogt e.K.
+B-0340;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0340;betrag;Betragsformat;beheben;326,20 €;326.20
+B-0341;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0341;betrag;Betragsformat;beheben;91,33 €;91.33
+B-0341;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0341;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0343;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0343;betrag;Betragsformat;beheben;535,25 €;535.25
+B-0346;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0346;betrag;Betragsformat;beheben;277,00 €;277.00
+B-0346;plz;Ort/PLZ fehlt;beheben;;34212
+B-0346;ort;Ort/PLZ fehlt;beheben;;Melsungen
+B-0348;bestelldatum;Datumsformat;beheben;05.09.2025;2025-09-05
+B-0348;betrag;Betragsformat;beheben;359,20 €;359.20
+B-0348;kunde;Schreibweise Kunde;beheben;Sanitär Möller;Sanitär Möller GmbH
+B-0348;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0350;(Zeile);Dublette;Zeile löschen;;B-0353
+B-0352;bestelldatum;Datumsformat;beheben;08.09.2025;2025-09-08
+B-0352;betrag;Betragsformat;beheben;268,06 €;268.06
+B-0352;kunde;Schreibweise Kunde;beheben;Glaserei Förster;Glaserei Förster e.K.
+B-0352;plz;PLZ ohne führende Null;beheben;9111;9111
+B-0356;bestelldatum;Datumsformat;beheben;09.09.25;2025-09-09
+B-0356;betrag;Betragsformat;beheben;49,49 EUR;49.49
+B-0356;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0356;plz;PLZ im Ortsfeld;beheben;;36381
+B-0357;(Zeile);Dublette;Zeile löschen;;B-0355
+B-0359;bestelldatum;Datum US-Format;beheben;09/09/2025;2025-09-09
+B-0360;bestelldatum;Datumsformat;beheben;09.09.2025;2025-09-09
+B-0360;betrag;Betragsformat;beheben;349,78 €;349.78
+B-0360;kunde;Schreibweise Kunde;beheben;Glaserei Förster;Glaserei Förster e.K.
+B-0360;plz;PLZ ohne führende Null;beheben;9111;9111
+B-0363;bestelldatum;Datumsformat;beheben;10.09.2025;2025-09-10
+B-0363;betrag;Betragsformat;beheben;1.823,01 €;1823.01
+B-0363;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0366;kunde;Schreibweise Kunde;beheben;Sanitär Ahrens G.m.b.H.;Sanitär Ahrens GmbH
+B-0367;bestelldatum;Datumsformat;beheben;11.09.2025;2025-09-11
+B-0367;betrag;Betragsformat;beheben;553,78 €;553.78
+B-0368;bestelldatum;Datumsformat;beheben;11.09.2025;2025-09-11
+B-0368;betrag;Betragsformat;beheben;269,02 €;269.02
+B-0368;kunde;Schreibweise Kunde;beheben;Glaserei Martin;Glaserei Martin GmbH
+B-0368;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0371;bestelldatum;Datumsformat;beheben;11.09.2025;2025-09-11
+B-0371;betrag;Betragsformat;beheben;47,56 €;47.56
+B-0373;bestelldatum;Datum US-Format;beheben;09/12/2025;2025-09-12
+B-0374;bestelldatum;Datumsformat;beheben;12.09.2025;2025-09-12
+B-0374;betrag;Betragsformat;beheben;689,20 €;689.20
+B-0377;bestelldatum;Datumsformat;beheben;12.09.25;2025-09-12
+B-0377;betrag;Betragsformat;beheben;598,14 EUR;598.14
+B-0377;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0377;plz;PLZ im Ortsfeld;beheben;;36088
+B-0378;(Zeile);Dublette;Zeile löschen;;B-0376
+B-0379;bestelldatum;Datumsformat;beheben;12.09.2025;2025-09-12
+B-0379;betrag;Betragsformat;beheben;107,65 €;107.65
+B-0379;plz;Ort/PLZ fehlt;beheben;;34117
+B-0379;ort;Ort/PLZ fehlt;beheben;;Kassel
+B-0387;bestelldatum;Datumsformat;beheben;16.09.2025;2025-09-16
+B-0387;betrag;Betrag Kommafehler;markieren;45.531,00 €;455.31
+B-0388;bestelldatum;Datumsformat;beheben;16.09.25;2025-09-16
+B-0388;betrag;Betragsformat;beheben;139,99 EUR;139.99
+B-0388;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0388;plz;PLZ im Ortsfeld;beheben;;36381
+B-0391;bestelldatum;Datumsformat;beheben;16.09.25;2025-09-16
+B-0391;betrag;Betragsformat;beheben;89,03 EUR;89.03
+B-0391;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0391;plz;PLZ im Ortsfeld;beheben;;36251
+B-0392;bestelldatum;Datumsformat;beheben;16.09.2025;2025-09-16
+B-0392;betrag;Betragsformat;beheben;149,96 €;149.96
+B-0396;kunde;Schreibweise Kunde;beheben;Dachdeckerei-Pohl GmbH;Dachdeckerei Pohl GmbH
+B-0398;bestelldatum;Datumsformat;beheben;16.09.2025;2025-09-16
+B-0398;betrag;Betragsformat;beheben;241,00 €;241.00
+B-0398;kunde;Schreibweise Kunde;beheben;Glaserei Förster;Glaserei Förster e.K.
+B-0398;plz;PLZ ohne führende Null;beheben;9111;9111
+B-0402;kunde;Schreibweise Kunde;beheben;Malerbetrieb Winkler;Malerbetrieb Winkler GmbH
+B-0403;bestelldatum;Datumsformat;beheben;17.09.25;2025-09-17
+B-0403;betrag;Betragsformat;beheben;98,92 EUR;98.92
+B-0403;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0403;plz;PLZ im Ortsfeld;beheben;;36088
+B-0405;bestelldatum;Datum US-Format;beheben;09/17/2025;2025-09-17
+B-0409;bestelldatum;Datumsformat;beheben;19.09.2025;2025-09-19
+B-0409;betrag;Betragsformat;beheben;452,68 €;452.68
+B-0409;kunde;Schreibweise Kunde;beheben;Gartenbau Bergmann;Gartenbau Bergmann e.K.
+B-0409;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0410;bestelldatum;Datumsformat;beheben;19.09.2025;2025-09-19
+B-0410;betrag;Betragsformat;beheben;510,63 €;510.63
+B-0410;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0411;bestelldatum;Datumsformat;beheben;19.09.2025;2025-09-19
+B-0411;betrag;Betragsformat;beheben;152,49 €;152.49
+B-0414;bestelldatum;Datumsformat;beheben;19.09.2025;2025-09-19
+B-0414;betrag;Betragsformat;beheben;56,66 €;56.66
+B-0414;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt;Heizungsbau Schmidt GmbH
+B-0414;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0416;kunde;Schreibweise Kunde;beheben;dachdeckerei zimmermann;Dachdeckerei Zimmermann
+B-0417;bestelldatum;Datumsformat;beheben;22.09.2025;2025-09-22
+B-0417;betrag;Betragsformat;beheben;919,55 €;919.55
+B-0417;plz;Ort/PLZ fehlt;beheben;;34212
+B-0417;ort;Ort/PLZ fehlt;beheben;;Melsungen
+B-0418;bestelldatum;Datumsformat;beheben;22.09.25;2025-09-22
+B-0418;betrag;Betragsformat;beheben;281,5 EUR;281.50
+B-0418;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0418;plz;PLZ im Ortsfeld;beheben;;36381
+B-0420;bestelldatum;Datumsformat;beheben;22.09.2025;2025-09-22
+B-0420;betrag;Betragsformat;beheben;32,96 €;32.96
+B-0420;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0420;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0421;bestelldatum;Datumsformat;beheben;23.09.2025;2025-09-23
+B-0421;betrag;Betragsformat;beheben;535,34 €;535.34
+B-0421;kunde;Schreibweise Kunde;beheben;Heizungsbau Fuchs;Heizungsbau Fuchs GmbH
+B-0421;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0422;bestelldatum;Datumsformat;beheben;23.09.2025;2025-09-23
+B-0422;betrag;Betragsformat;beheben;133,24 €;133.24
+B-0423;bestelldatum;Datumsformat;beheben;23.09.2025;2025-09-23
+B-0423;betrag;Betragsformat;beheben;47,17 €;47.17
+B-0423;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0423;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0424;bestelldatum;Datumsformat;beheben;23.09.2025;2025-09-23
+B-0424;betrag;Betragsformat;beheben;179,41 €;179.41
+B-0424;kunde;Schreibweise Kunde;beheben;Tischlerei Funk;Tischlerei Funk e.K.
+B-0424;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0427;bestelldatum;Datum US-Format;beheben;09/23/2025;2025-09-23
+B-0427;betrag;Betrag US-Format;beheben;1,264.00;1264.00
+B-0430;bestelldatum;Datum US-Format;beheben;09/24/2025;2025-09-24
+B-0433;bestelldatum;Datumsformat;beheben;25.09.2025;2025-09-25
+B-0433;betrag;Betragsformat;beheben;48,00 €;48.00
+B-0435;bestelldatum;Datumsformat;beheben;26.09.2025;2025-09-26
+B-0435;betrag;Betragsformat;beheben;153,23 €;153.23
+B-0437;kunde;Leerzeichen;beheben;  Schreinerei Berger e.K.  ;Schreinerei Berger e.K.
+B-0438;bestelldatum;Datumsformat;beheben;26.09.2025;2025-09-26
+B-0438;betrag;Betragsformat;beheben;222,85;222.85
+B-0438;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH
+B-0439;bestelldatum;Datumsformat;beheben;26.09.2025;2025-09-26
+B-0439;betrag;Betragsformat;beheben;1.714,11 €;1714.11
+B-0439;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0441;bestelldatum;Datumsformat;beheben;29.09.25;2025-09-29
+B-0441;betrag;Betragsformat;beheben;739,46 EUR;739.46
+B-0441;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0441;plz;PLZ im Ortsfeld;beheben;;36037
+B-0442;bestelldatum;Datumsformat;beheben;29.09.25;2025-09-29
+B-0442;betrag;Betragsformat;beheben;202,2 EUR;202.20
+B-0442;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0442;plz;PLZ im Ortsfeld;beheben;;36381
+B-0444;bestelldatum;Datum US-Format;beheben;09/29/2025;2025-09-29
+B-0448;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0448;betrag;Betragsformat;beheben;1378,31;1378.31
+B-0448;kunde;Schreibweise Kunde;beheben;SCHREINEREI KELLER GMBH;Schreinerei Keller GmbH
+B-0450;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0450;betrag;Betragsformat;beheben;161,00 €;161.00
+B-0451;bestelldatum;Datumsformat;beheben;30.09.25;2025-09-30
+B-0451;betrag;Betragsformat;beheben;114,26 EUR;114.26
+B-0451;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0451;plz;PLZ im Ortsfeld;beheben;;36037
+B-0452;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0452;betrag;Betragsformat;beheben;458,50 €;458.50
+B-0452;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz;Fliesen Schmitz GmbH
+B-0452;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0453;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0453;betrag;Betragsformat;beheben;31,97 €;31.97
+B-0455;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0455;betrag;Betragsformat;beheben;243,00 €;243.00
+B-0456;bestelldatum;Datumsformat;beheben;30.09.2025;2025-09-30
+B-0456;betrag;Betragsformat;beheben;405,66 €;405.66
+B-0456;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0458;bestelldatum;Datumsformat;beheben;01.10.2025;2025-10-01
+B-0458;betrag;Betragsformat;beheben;291,00 €;291.00
+B-0459;kunde;Schreibweise Kunde;beheben;Zimmerei Simon GmbH und Co. KG;Zimmerei Simon GmbH & Co. KG
+B-0460;bestelldatum;Datumsformat;beheben;01.10.2025;2025-10-01
+B-0460;betrag;Betragsformat;beheben;267,79 €;267.79
+B-0461;bestelldatum;Datumsformat;beheben;01.10.2025;2025-10-01
+B-0461;betrag;Betragsformat;beheben;102,00 €;102.00
+B-0464;bestelldatum;Datum nur Monat;markieren;Oktober 2025;2025-10-02
+B-0464;betrag;Betragsformat;beheben;586,20;586.20
+B-0464;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG
+B-0465;bestelldatum;Datum US-Format;beheben;10/02/2025;2025-10-02
+B-0466;bestelldatum;Datumsformat;beheben;02.10.2025;2025-10-02
+B-0466;betrag;Betrag fehlt;markieren;;460.27
+B-0466;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH
+B-0467;bestelldatum;Datum US-Format;beheben;10/02/2025;2025-10-02
+B-0468;bestelldatum;Datumsformat;beheben;2.10.2025;2025-10-02
+B-0468;betrag;Betragsformat;beheben;106;106.00
+B-0468;kunde;Schreibweise Kunde;beheben;Tischlerei Kuhn G.m.b.H.;Tischlerei Kuhn GmbH
+B-0468;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0469;bestelldatum;Datum US-Format;beheben;10/03/2025;2025-10-03
+B-0470;bestelldatum;Datumsformat;beheben;3.10.2025;2025-10-03
+B-0470;betrag;Betragsformat;beheben;294,90;294.90
+B-0470;kunde;Schreibweise Kunde;beheben;Glaserei Martin G.m.b.H.;Glaserei Martin GmbH
+B-0470;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0472;bestelldatum;Datumsformat;beheben;3.10.2025;2025-10-03
+B-0472;betrag;Betragsformat;beheben;1.460,36;1460.36
+B-0472;kunde;Schreibweise Kunde;beheben;Fliesen & Naturstein Jäger G.m.b.H.;Fliesen & Naturstein Jäger GmbH
+B-0472;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0473;kunde;Leerzeichen;beheben; Sanitär & Heizung Groß e.K.;Sanitär & Heizung Groß e.K.
+B-0475;bestelldatum;Datum US-Format;beheben;10/06/2025;2025-10-06
+B-0478;bestelldatum;Datumsformat;beheben;06.10.2025;2025-10-06
+B-0478;betrag;Betragsformat;beheben;139,42 €;139.42
+B-0479;bestelldatum;Datumsformat;beheben;06.10.2025;2025-10-06
+B-0479;betrag;Betragsformat;beheben;12.100,00 €;12100.00
+B-0481;kunde;Schreibweise Kunde;beheben;Fliesen & Naturstein Jäger G.m.b.H.;Fliesen & Naturstein Jäger GmbH
+B-0486;bestelldatum;Datumsformat;beheben;07.10.2025;2025-10-07
+B-0486;betrag;Betragsformat;beheben;106,43 €;106.43
+B-0487;kunde;Leerzeichen;beheben; Glaserei Gebhardt;Glaserei Gebhardt
+B-0488;bestelldatum;Datumsformat;beheben;07.10.2025;2025-10-07
+B-0488;betrag;Betragsformat;beheben;145,62 €;145.62
+B-0490;bestelldatum;Datumsformat;beheben;08.10.2025;2025-10-08
+B-0490;betrag;Betragsformat;beheben;213,00;213.00
+B-0490;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0491;bestelldatum;Datumsformat;beheben;8.10.2025;2025-10-08
+B-0491;betrag;Betragsformat;beheben;689;689.00
+B-0491;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0493;bestelldatum;Datumsformat;beheben;9.10.2025;2025-10-09
+B-0493;betrag;Betragsformat;beheben;92,87;92.87
+B-0493;kunde;Schreibweise Kunde;beheben;Holzbau Koch G.m.b.H. & Co. KG;Holzbau Koch GmbH & Co. KG
+B-0493;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0495;kunde;Leerzeichen;beheben;  Glaserei Werner GmbH;Glaserei Werner GmbH
+B-0497;bestelldatum;Datumsformat;beheben;09.10.2025;2025-10-09
+B-0497;betrag;Betragsformat;beheben;981,55;981.55
+B-0497;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH
+B-0499;bestelldatum;Datumsformat;beheben;9.10.2025;2025-10-09
+B-0499;betrag;Betragsformat;beheben;302,37;302.37
+B-0499;kunde;Schreibweise Kunde;beheben;Metallbau Haas G.m.b.H.;Metallbau Haas GmbH
+B-0499;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0501;kunde;Schreibweise Kunde;beheben;Bauunternehmung Müller;Bauunternehmung Müller GmbH & Co. KG
+B-0503;bestelldatum;Datumsformat;beheben;10.10.2025;2025-10-10
+B-0503;betrag;Betragsformat;beheben;575,82 €;575.82
+B-0503;plz;Ort/PLZ fehlt;beheben;;34346
+B-0503;ort;Ort/PLZ fehlt;beheben;;Hann. Münden
+B-0504;bestelldatum;Datumsformat;beheben;10.10.2025;2025-10-10
+B-0504;betrag;Betragsformat;beheben;69;69.00
+B-0504;kunde;Schreibweise Kunde;beheben;Dachdeckerei Günther G.m.b.H.;Dachdeckerei Günther GmbH
+B-0504;plz;PLZ ohne führende Null;beheben;4319;4319
+B-0505;bestelldatum;Datum nur Monat;markieren;Oktober 2025;2025-10-10
+B-0505;betrag;Betragsformat;beheben;251,72;251.72
+B-0505;kunde;Schreibweise Kunde;beheben;METALLBAU ZIEGLER GMBH;Metallbau Ziegler GmbH
+B-0506;kunde;Schreibweise Kunde;beheben;Tischlerei Schneider;Tischlerei Schneider GmbH
+B-0507;bestelldatum;Datum US-Format;beheben;10/13/2025;2025-10-13
+B-0507;betrag;Betrag US-Format;beheben;2,240.00;2240.00
+B-0508;kunde;Schreibweise Kunde;beheben;holzbau vogt e.k.;Holzbau Vogt e.K.
+B-0511;kunde;Schreibweise Kunde;beheben;Malerbetrieb-Winkler GmbH;Malerbetrieb Winkler GmbH
+B-0512;kunde;Schreibweise Kunde;beheben;Tischlerei Arnold GmbH und Co. KG;Tischlerei Arnold GmbH & Co. KG
+B-0513;(Zeile);Dublette;Zeile löschen;;B-0512
+B-0517;bestelldatum;Datumsformat;beheben;13.10.2025;2025-10-13
+B-0517;betrag;Betragsformat;beheben;100;100.00
+B-0517;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz G.m.b.H.;Fliesen Schmitz GmbH
+B-0517;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0519;bestelldatum;Datumsformat;beheben;14.10.2025;2025-10-14
+B-0519;betrag;Betragsformat;beheben;382,00 €;382.00
+B-0522;bestelldatum;Datumsformat;beheben;14.10.2025;2025-10-14
+B-0522;betrag;Betragsformat;beheben;344,12;344.12
+B-0522;kunde;Schreibweise Kunde;beheben;Heizungsbau Fuchs G.m.b.H.;Heizungsbau Fuchs GmbH
+B-0522;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0525;bestelldatum;Datumsformat;beheben;14.10.2025;2025-10-14
+B-0525;betrag;Betragsformat;beheben;123,42;123.42
+B-0525;plz;PLZ ohne führende Null;beheben;9111;9111
+B-0526;bestelldatum;Datum US-Format;beheben;10/15/2025;2025-10-15
+B-0526;betrag;Betrag US-Format;beheben;8,219.12;8219.12
+B-0529;bestelldatum;Datumsformat;beheben;15.10.2025;2025-10-15
+B-0529;betrag;Betragsformat;beheben;115,47 €;115.47
+B-0530;bestelldatum;Datumsformat;beheben;15.10.25;2025-10-15
+B-0530;betrag;Betragsformat;beheben;525 EUR;525.00
+B-0530;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0530;plz;PLZ im Ortsfeld;beheben;;36251
+B-0532;bestelldatum;Datum US-Format;beheben;10/15/2025;2025-10-15
+B-0533;bestelldatum;Datumsformat;beheben;15.10.25;2025-10-15
+B-0533;betrag;Betragsformat;beheben;206,16 EUR;206.16
+B-0533;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0533;plz;PLZ im Ortsfeld;beheben;;36251
+B-0535;bestelldatum;Datumsformat;beheben;16.10.2025;2025-10-16
+B-0535;betrag;Betragsformat;beheben;373,70 €;373.70
+B-0537;kunde;Schreibweise Kunde;beheben;gartenbau bergmann e.k.;Gartenbau Bergmann e.K.
+B-0538;(Zeile);Dublette;Zeile löschen;;B-0536
+B-0540;bestelldatum;Datumsformat;beheben;16.10.2025;2025-10-16
+B-0540;betrag;Betragsformat;beheben;356,12 €;356.12
+B-0540;plz;Ort/PLZ fehlt;beheben;;34346
+B-0540;ort;Ort/PLZ fehlt;beheben;;Hann. Münden
+B-0541;bestelldatum;Datumsformat;beheben;16.10.2025;2025-10-16
+B-0541;betrag;Betragsformat;beheben;190,27;190.27
+B-0541;kunde;Schreibweise Kunde;beheben;Heizungsbau Schmidt G.m.b.H.;Heizungsbau Schmidt GmbH
+B-0541;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0543;kunde;Schreibweise Kunde;beheben;glaserei winter;Glaserei Winter
+B-0548;bestelldatum;Datumsformat;beheben;17.10.2025;2025-10-17
+B-0548;betrag;Betragsformat;beheben;94,76 €;94.76
+B-0548;plz;Ort/PLZ fehlt;beheben;;34119
+B-0548;ort;Ort/PLZ fehlt;beheben;;Kassel
+B-0550;bestelldatum;Datumsformat;beheben;17.10.2025;2025-10-17
+B-0550;betrag;Betragsformat;beheben;132,40 €;132.40
+B-0551;(Zeile);Dublette;Zeile löschen;;B-0545
+B-0552;bestelldatum;Datum US-Format;beheben;10/17/2025;2025-10-17
+B-0555;bestelldatum;Datum nur Monat;markieren;Oktober 2025;2025-10-20
+B-0555;betrag;Betragsformat;beheben;258,57;258.57
+B-0555;kunde;Schreibweise Kunde;beheben;METALLBAU DIETRICH GMBH;Metallbau Dietrich GmbH
+B-0558;(Zeile);Dublette;Zeile löschen;;B-0563
+B-0560;bestelldatum;Datumsformat;beheben;20.10.2025;2025-10-20
+B-0560;betrag;Betragsformat;beheben;62,40 €;62.40
+B-0561;bestelldatum;Datumsformat;beheben;20.10.2025;2025-10-20
+B-0561;betrag;Betragsformat;beheben;119,00;119.00
+B-0561;kunde;Schreibweise Kunde;beheben;ZIMMEREI HEINRICH GMBH;Zimmerei Heinrich GmbH
+B-0562;bestelldatum;Datum US-Format;beheben;10/20/2025;2025-10-20
+B-0564;bestelldatum;Datumsformat;beheben;20.10.2025;2025-10-20
+B-0564;betrag;Betragsformat;beheben;151,55;151.55
+B-0564;kunde;Schreibweise Kunde;beheben;Metallbau Haas G.m.b.H.;Metallbau Haas GmbH
+B-0564;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0565;bestelldatum;Datumsformat;beheben;21.10.2025;2025-10-21
+B-0565;betrag;Betragsformat;beheben;317,38 €;317.38
+B-0567;bestelldatum;Datumsformat;beheben;21.10.2025;2025-10-21
+B-0567;betrag;Betragsformat;beheben;79,00 €;79.00
+B-0569;kunde;Schreibweise Kunde;beheben;Sanitär Bauer;Sanitär Bauer e.K.
+B-0572;bestelldatum;Datumsformat;beheben;22.10.2025;2025-10-22
+B-0572;betrag;Betragsformat;beheben;113,00 €;113.00
+B-0573;bestelldatum;Datum US-Format;beheben;10/22/2025;2025-10-22
+B-0573;betrag;Betrag US-Format;beheben;4,189.25;4189.25
+B-0574;bestelldatum;Datumsformat;beheben;22.10.2025;2025-10-22
+B-0574;betrag;Betragsformat;beheben;588,85 €;588.85
+B-0577;bestelldatum;Datumsformat;beheben;22.10.2025;2025-10-22
+B-0577;betrag;Betragsformat;beheben;189,40;189.40
+B-0577;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG SCHÄFER GMBH;Bauunternehmung Schäfer GmbH
+B-0578;bestelldatum;Datumsformat;beheben;22.10.25;2025-10-22
+B-0578;betrag;Betragsformat;beheben;1186 EUR;1186.00
+B-0578;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0578;plz;PLZ im Ortsfeld;beheben;;36043
+B-0579;bestelldatum;Datum US-Format;beheben;10/22/2025;2025-10-22
+B-0580;bestelldatum;Datumsformat;beheben;22.10.2025;2025-10-22
+B-0580;betrag;Betrag fehlt;markieren;;228.88
+B-0580;kunde;Schreibweise Kunde;beheben;FLIESEN BRAUN GMBH;Fliesen Braun GmbH
+B-0581;bestelldatum;Datum US-Format;beheben;10/22/2025;2025-10-22
+B-0581;betrag;Betrag US-Format;beheben;29,851.71;29851.71
+B-0582;(Zeile);Dublette;Zeile löschen;;B-0584
+B-0586;bestelldatum;Datumsformat;beheben;23.10.2025;2025-10-23
+B-0586;betrag;Betragsformat;beheben;495,00 €;495.00
+B-0588;bestelldatum;Datum US-Format;beheben;10/24/2025;2025-10-24
+B-0588;betrag;Betrag US-Format;beheben;8,885.68;8885.68
+B-0589;kunde;Schreibweise Kunde;beheben;Elektro-Nolte;Elektro Nolte
+B-0590;(Zeile);Dublette;Zeile löschen;;B-0587
+B-0591;bestelldatum;Datumsformat;beheben;24.10.25;2025-10-24
+B-0591;betrag;Betragsformat;beheben;560 EUR;560.00
+B-0591;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0591;plz;PLZ im Ortsfeld;beheben;;36251
+B-0593;(Zeile);Dublette;Zeile löschen;;B-0592
+B-0594;bestelldatum;Datumsformat;beheben;24.10.2025;2025-10-24
+B-0594;betrag;Betragsformat;beheben;165,00 €;165.00
+B-0595;bestelldatum;Datumsformat;beheben;24.10.2025;2025-10-24
+B-0595;betrag;Betragsformat;beheben;691,40 €;691.40
+B-0595;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0595;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0596;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH
+B-0597;kunde;Schreibweise Kunde;beheben;zimmerei fiedler;Zimmerei Fiedler
+B-0599;bestelldatum;Datumsformat;beheben;27.10.25;2025-10-27
+B-0599;betrag;Betragsformat;beheben;483 EUR;483.00
+B-0599;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0599;plz;PLZ im Ortsfeld;beheben;;36043
+B-0600;bestelldatum;Datumsformat;beheben;27.10.2025;2025-10-27
+B-0600;betrag;Betragsformat;beheben;461;461.00
+B-0600;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger G.m.b.H.;Kfz-Werkstatt Rieger GmbH
+B-0600;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0603;bestelldatum;Datumsformat;beheben;27.10.2025;2025-10-27
+B-0603;betrag;Betragsformat;beheben;432,36;432.36
+B-0603;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0604;kunde;Schreibweise Kunde;beheben;Gartenbau-Busch GmbH;Gartenbau Busch GmbH
+B-0606;(Zeile);Dublette;Zeile löschen;;B-0610
+B-0607;kunde;Zeichensalat;beheben;SanitÃ¤r BrÃ¼ckner e.K.;Sanitär Brückner e.K.
+B-0608;bestelldatum;Datumsformat;beheben;28.10.2025;2025-10-28
+B-0608;betrag;Betragsformat;beheben;554,00 €;554.00
+B-0609;bestelldatum;Datum US-Format;beheben;10/28/2025;2025-10-28
+B-0612;kunde;Schreibweise Kunde;beheben;Fliesen Weiß;Fliesen Weiß GmbH
+B-0615;bestelldatum;Datum US-Format;beheben;10/29/2025;2025-10-29
+B-0617;kunde;Leerzeichen;beheben;  Dachdeckerei Ludwig;Dachdeckerei Ludwig
+B-0618;bestelldatum;Datum US-Format;beheben;10/29/2025;2025-10-29
+B-0619;kunde;Schreibweise Kunde;beheben;Glaserei Werner G.m.b.H.;Glaserei Werner GmbH
+B-0622;bestelldatum;Datumsformat;beheben;30.10.2025;2025-10-30
+B-0622;betrag;Betragsformat;beheben;1.298,00 €;1298.00
+B-0622;plz;Ort/PLZ fehlt;beheben;;34246
+B-0622;ort;Ort/PLZ fehlt;beheben;;Vellmar
+B-0624;bestelldatum;Datumsformat;beheben;31.10.2025;2025-10-31
+B-0624;betrag;Betragsformat;beheben;294,27;294.27
+B-0624;kunde;Schreibweise Kunde;beheben;Holzbau Koch G.m.b.H. & Co. KG;Holzbau Koch GmbH & Co. KG
+B-0624;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0626;kunde;Schreibweise Kunde;beheben;Sanitär Bauer;Sanitär Bauer e.K.
+B-0627;bestelldatum;Datumsformat;beheben;31.10.2025;2025-10-31
+B-0627;betrag;Betragsformat;beheben;101,00 €;101.00
+B-0630;bestelldatum;Datumsformat;beheben;03.11.2025;2025-11-03
+B-0630;betrag;Betragsformat;beheben;459,70 €;459.70
+B-0633;kunde;Leerzeichen;beheben; Hausmeisterservice Vogel GmbH & Co. KG ;Hausmeisterservice Vogel GmbH & Co. KG
+B-0637;(Zeile);Dublette;Zeile löschen;;B-0642
+B-0638;bestelldatum;Datumsformat;beheben;04.11.2025;2025-11-04
+B-0638;betrag;Betragsformat;beheben;903,29;903.29
+B-0638;kunde;Schreibweise Kunde;beheben;METALLBAU DIETRICH GMBH;Metallbau Dietrich GmbH
+B-0642;kunde;Zeichensalat;beheben;SanitÃ¤r & Heizung GroÃŸ e.K.;Sanitär & Heizung Groß e.K.
+B-0646;bestelldatum;Datumsformat;beheben;05.11.2025;2025-11-05
+B-0646;betrag;Betragsformat;beheben;341,79;341.79
+B-0646;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0648;bestelldatum;Datumsformat;beheben;5.11.2025;2025-11-05
+B-0648;betrag;Betragsformat;beheben;68,17;68.17
+B-0648;kunde;Schreibweise Kunde;beheben;Tischlerei Kuhn G.m.b.H.;Tischlerei Kuhn GmbH
+B-0648;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0649;bestelldatum;Datum US-Format;beheben;11/05/2025;2025-11-05
+B-0650;(Zeile);Dublette;Zeile löschen;;B-0652
+B-0651;bestelldatum;Datum US-Format;beheben;11/05/2025;2025-11-05
+B-0654;bestelldatum;Datum US-Format;beheben;11/06/2025;2025-11-06
+B-0655;bestelldatum;Datum US-Format;beheben;11/06/2025;2025-11-06
+B-0660;bestelldatum;Datum US-Format;beheben;11/06/2025;2025-11-06
+B-0661;bestelldatum;Datumsformat;beheben;6.11.2025;2025-11-06
+B-0661;betrag;Betragsformat;beheben;148,18;148.18
+B-0661;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz G.m.b.H.;Fliesen Schmitz GmbH
+B-0661;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0662;bestelldatum;Datumsformat;beheben;06.11.2025;2025-11-06
+B-0662;betrag;Betrag Kommafehler;markieren;34.398,00 €;343.98
+B-0663;bestelldatum;Datumsformat;beheben;07.11.2025;2025-11-07
+B-0663;betrag;Betragsformat;beheben;89,49 €;89.49
+B-0668;bestelldatum;Datumsformat;beheben;07.11.2025;2025-11-07
+B-0668;betrag;Betragsformat;beheben;283,00 €;283.00
+B-0669;bestelldatum;Datumsformat;beheben;07.11.2025;2025-11-07
+B-0669;betrag;Betragsformat;beheben;1.240,00 €;1240.00
+B-0671;bestelldatum;Datumsformat;beheben;7.11.2025;2025-11-07
+B-0671;betrag;Betragsformat;beheben;116,34;116.34
+B-0671;kunde;Schreibweise Kunde;beheben;Sanitär Möller G.m.b.H.;Sanitär Möller GmbH
+B-0671;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0672;bestelldatum;Datumsformat;beheben;07.11.25;2025-11-07
+B-0672;betrag;Betragsformat;beheben;378,22 EUR;378.22
+B-0672;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0672;plz;PLZ im Ortsfeld;beheben;;36043
+B-0673;bestelldatum;Datum US-Format;beheben;11/10/2025;2025-11-10
+B-0674;bestelldatum;Datumsformat;beheben;10.11.25;2025-11-10
+B-0674;betrag;Betrag Kommafehler;markieren;53368 EUR;533.68
+B-0674;ort;PLZ im Ortsfeld;beheben;36088 Hünfeld;Hünfeld
+B-0674;plz;PLZ im Ortsfeld;beheben;;36088
+B-0675;bestelldatum;Datumsformat;beheben;10.11.2025;2025-11-10
+B-0675;betrag;Betragsformat;beheben;248,95;248.95
+B-0675;kunde;Schreibweise Kunde;beheben;Tischlerei Schröder G.m.b.H. & Co. KG;Tischlerei Schröder GmbH & Co. KG
+B-0675;plz;PLZ ohne führende Null;beheben;4319;4319
+B-0676;bestelldatum;Datumsformat;beheben;10.11.2025;2025-11-10
+B-0676;betrag;Betragsformat;beheben;76,00 €;76.00
+B-0676;plz;Ort/PLZ fehlt;beheben;;34225
+B-0676;ort;Ort/PLZ fehlt;beheben;;Baunatal
+B-0677;kunde;Leerzeichen;beheben;  Zimmerei Fiedler ;Zimmerei Fiedler
+B-0681;kunde;Schreibweise Kunde;beheben;Schreinerei-Michel e.K.;Schreinerei Michel e.K.
+B-0682;bestelldatum;Datum nur Monat;markieren;November 2025;2025-11-11
+B-0682;betrag;Betragsformat;beheben;1019,21;1019.21
+B-0682;kunde;Schreibweise Kunde;beheben;ZIMMEREI KOLB GMBH;Zimmerei Kolb GmbH
+B-0683;bestelldatum;Datumsformat;beheben;12.11.2025;2025-11-12
+B-0683;betrag;Betragsformat;beheben;135,53 €;135.53
+B-0683;plz;Ort/PLZ fehlt;beheben;;34346
+B-0683;ort;Ort/PLZ fehlt;beheben;;Hann. Münden
+B-0685;bestelldatum;Datum US-Format;beheben;11/12/2025;2025-11-12
+B-0687;bestelldatum;Datumsformat;beheben;12.11.2025;2025-11-12
+B-0687;betrag;Betragsformat;beheben;677,00 €;677.00
+B-0689;bestelldatum;Datumsformat;beheben;12.11.2025;2025-11-12
+B-0689;betrag;Betragsformat;beheben;57,33 €;57.33
+B-0690;bestelldatum;Datumsformat;beheben;12.11.2025;2025-11-12
+B-0690;betrag;Betragsformat;beheben;197,38 €;197.38
+B-0690;kunde;Schreibweise Kunde;beheben;Bauunternehmung Beck;Bauunternehmung Beck GmbH
+B-0690;plz;PLZ ohne führende Null;beheben;7745;7745
+B-0694;bestelldatum;Datumsformat;beheben;13.11.25;2025-11-13
+B-0694;betrag;Betragsformat;beheben;657,9 EUR;657.90
+B-0694;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0694;plz;PLZ im Ortsfeld;beheben;;36037
+B-0696;bestelldatum;Datumsformat;beheben;13.11.2025;2025-11-13
+B-0696;betrag;Betragsformat;beheben;311,00 €;311.00
+B-0697;bestelldatum;Datumsformat;beheben;13.11.2025;2025-11-13
+B-0697;betrag;Betragsformat;beheben;214,20 €;214.20
+B-0697;plz;Ort/PLZ fehlt;beheben;;34246
+B-0697;ort;Ort/PLZ fehlt;beheben;;Vellmar
+B-0698;bestelldatum;Datumsformat;beheben;13.11.2025;2025-11-13
+B-0698;betrag;Betragsformat;beheben;583,03;583.03
+B-0698;kunde;Schreibweise Kunde;beheben;Fliesen & Naturstein Jäger G.m.b.H.;Fliesen & Naturstein Jäger GmbH
+B-0698;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0700;kunde;Schreibweise Kunde;beheben;schreinerei otto e.k.;Schreinerei Otto e.K.
+B-0701;(Zeile);Dublette;Zeile löschen;;B-0704
+B-0704;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0705;bestelldatum;Datumsformat;beheben;14.11.2025;2025-11-14
+B-0705;betrag;Betragsformat;beheben;396,63 €;396.63
+B-0706;bestelldatum;Datumsformat;beheben;14.11.2025;2025-11-14
+B-0706;betrag;Betragsformat;beheben;238,30 €;238.30
+B-0707;bestelldatum;Datum US-Format;beheben;11/14/2025;2025-11-14
+B-0710;kunde;Schreibweise Kunde;beheben;Hausmeisterservice Schulz;Hausmeisterservice Schulz GmbH
+B-0711;bestelldatum;Datum US-Format;beheben;11/17/2025;2025-11-17
+B-0712;bestelldatum;Datumsformat;beheben;17.11.2025;2025-11-17
+B-0712;betrag;Betrag Kommafehler;markieren;11896,00;118.96
+B-0712;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG HORN GMBH;Bauunternehmung Horn GmbH
+B-0715;bestelldatum;Datumsformat;beheben;17.11.2025;2025-11-17
+B-0715;betrag;Betragsformat;beheben;99,00 €;99.00
+B-0716;bestelldatum;Datumsformat;beheben;17.11.2025;2025-11-17
+B-0716;betrag;Betragsformat;beheben;226,06;226.06
+B-0716;kunde;Schreibweise Kunde;beheben;METALLBAU ZIEGLER GMBH;Metallbau Ziegler GmbH
+B-0717;bestelldatum;Datumsformat;beheben;17.11.2025;2025-11-17
+B-0717;betrag;Betragsformat;beheben;282,00;282.00
+B-0717;kunde;Schreibweise Kunde;beheben;METALLBAU DIETRICH GMBH;Metallbau Dietrich GmbH
+B-0718;bestelldatum;Datum US-Format;beheben;11/18/2025;2025-11-18
+B-0719;bestelldatum;Datumsformat;beheben;18.11.2025;2025-11-18
+B-0719;betrag;Betragsformat;beheben;1.222,08 €;1222.08
+B-0719;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34117
+B-0719;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Kassel
+B-0721;bestelldatum;Datum US-Format;beheben;11/18/2025;2025-11-18
+B-0721;betrag;Betrag US-Format;beheben;1,245.76;1245.76
+B-0723;bestelldatum;Datumsformat;beheben;19.11.2025;2025-11-19
+B-0723;betrag;Betragsformat;beheben;807,00 €;807.00
+B-0725;bestelldatum;Datumsformat;beheben;19.11.2025;2025-11-19
+B-0725;betrag;Betragsformat;beheben;3.7799999999999998;3780.00
+B-0725;kunde;Schreibweise Kunde;beheben;Fliesen Schmitz G.m.b.H.;Fliesen Schmitz GmbH
+B-0725;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0726;bestelldatum;Datumsformat;beheben;19.11.2025;2025-11-19
+B-0726;betrag;Betragsformat;beheben;644,39 €;644.39
+B-0726;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0729;bestelldatum;Datumsformat;beheben;20.11.2025;2025-11-20
+B-0729;betrag;Betragsformat;beheben;111,00 €;111.00
+B-0729;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0729;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0730;kunde;Schreibweise Kunde;beheben;Tischlerei-Schröder GmbH & Co. KG;Tischlerei Schröder GmbH & Co. KG
+B-0731;kunde;Schreibweise Kunde;beheben;zimmerei scholz gmbh;Zimmerei Scholz GmbH
+B-0732;bestelldatum;Datum US-Format;beheben;11/20/2025;2025-11-20
+B-0733;kunde;Schreibweise Kunde;beheben;Holzbau Friedrich;Holzbau Friedrich GmbH
+B-0734;(Zeile);Dublette;Zeile löschen;;B-0727
+B-0735;bestelldatum;Datumsformat;beheben;20.11.25;2025-11-20
+B-0735;betrag;Betragsformat;beheben;324 EUR;324.00
+B-0735;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0735;plz;PLZ im Ortsfeld;beheben;;36381
+B-0736;bestelldatum;Datumsformat;beheben;20.11.25;2025-11-20
+B-0736;betrag;Betragsformat;beheben;278,77 EUR;278.77
+B-0736;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0736;plz;PLZ im Ortsfeld;beheben;;36251
+B-0739;kunde;Schreibweise Kunde;beheben;sanitär stein gmbh;Sanitär Stein GmbH
+B-0742;bestelldatum;Datumsformat;beheben;21.11.2025;2025-11-21
+B-0742;betrag;Betrag fehlt;markieren;;633.21
+B-0742;kunde;Schreibweise Kunde;beheben;KFZ-WERKSTATT ENGEL GMBH & CO. KG;Kfz-Werkstatt Engel GmbH & Co. KG
+B-0743;bestelldatum;Datumsformat;beheben;21.11.2025;2025-11-21
+B-0743;betrag;Betragsformat;beheben;119,99 €;119.99
+B-0743;plz;Ort/PLZ fehlt;beheben;;34119
+B-0743;ort;Ort/PLZ fehlt;beheben;;Kassel
+B-0744;bestelldatum;Datumsformat;beheben;21.11.2025;2025-11-21
+B-0744;betrag;Betragsformat;beheben;317,91;317.91
+B-0744;kunde;Schreibweise Kunde;beheben;BAUUNTERNEHMUNG SCHÄFER GMBH;Bauunternehmung Schäfer GmbH
+B-0745;kunde;Schreibweise Kunde;beheben;awg gebäudeservice gmbh;AWG Gebäudeservice GmbH
+B-0747;bestelldatum;Datum US-Format;beheben;11/21/2025;2025-11-21
+B-0750;bestelldatum;Datumsformat;beheben;24.11.2025;2025-11-24
+B-0750;betrag;Betragsformat;beheben;604,98 €;604.98
+B-0750;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34225
+B-0750;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Baunatal
+B-0753;bestelldatum;Datumsformat;beheben;24.11.2025;2025-11-24
+B-0753;betrag;Betragsformat;beheben;1.016,07 €;1016.07
+B-0753;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0753;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0754;bestelldatum;Datumsformat;beheben;24.11.2025;2025-11-24
+B-0754;betrag;Betragsformat;beheben;116,44 €;116.44
+B-0754;plz;Ort/PLZ fehlt;beheben;;34117
+B-0754;ort;Ort/PLZ fehlt;beheben;;Kassel
+B-0756;bestelldatum;Datumsformat;beheben;24.11.2025;2025-11-24
+B-0756;betrag;Betragsformat;beheben;44,70;44.70
+B-0756;kunde;Schreibweise Kunde;beheben;Holzbau Koch G.m.b.H. & Co. KG;Holzbau Koch GmbH & Co. KG
+B-0756;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0758;(Zeile);Dublette;Zeile löschen;;B-0749
+B-0760;bestelldatum;Datumsformat;beheben;25.11.25;2025-11-25
+B-0760;betrag;Betragsformat;beheben;403 EUR;403.00
+B-0760;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0760;plz;PLZ im Ortsfeld;beheben;;36381
+B-0761;bestelldatum;Datum US-Format;beheben;11/25/2025;2025-11-25
+B-0762;bestelldatum;Datum US-Format;beheben;11/25/2025;2025-11-25
+B-0763;bestelldatum;Datumsformat;beheben;25.11.2025;2025-11-25
+B-0763;betrag;Betragsformat;beheben;954,00 €;954.00
+B-0764;kunde;Schreibweise Kunde;beheben;Malerbetrieb-Köhler GmbH;Malerbetrieb Köhler GmbH
+B-0766;bestelldatum;Datumsformat;beheben;26.11.2025;2025-11-26
+B-0766;betrag;Betragsformat;beheben;447,87 €;447.87
+B-0770;bestelldatum;Datumsformat;beheben;26.11.2025;2025-11-26
+B-0770;betrag;Betragsformat;beheben;504,00 €;504.00
+B-0770;plz;Ort/PLZ fehlt, zwei Standorte;markieren;;34225
+B-0770;ort;Ort/PLZ fehlt, zwei Standorte;markieren;;Baunatal
+B-0772;bestelldatum;Datumsformat;beheben;26.11.2025;2025-11-26
+B-0772;betrag;Betragsformat;beheben;99;99.00
+B-0772;kunde;Schreibweise Kunde;beheben;Dachdeckerei Günther G.m.b.H.;Dachdeckerei Günther GmbH
+B-0772;plz;PLZ ohne führende Null;beheben;4319;4319
+B-0773;bestelldatum;Datumsformat;beheben;26.11.2025;2025-11-26
+B-0773;betrag;Betragsformat;beheben;162,25 €;162.25
+B-0773;kunde;Schreibweise Kunde;beheben;Sanitär Huber;Sanitär Huber GmbH
+B-0775;(Zeile);Dublette;Zeile löschen;;B-0776
+B-0778;bestelldatum;Datumsformat;beheben;27.11.2025;2025-11-27
+B-0778;betrag;Betragsformat;beheben;639,72;639.72
+B-0778;kunde;Schreibweise Kunde;beheben;TISCHLEREI WAGNER GMBH & CO. KG;Tischlerei Wagner GmbH & Co. KG
+B-0780;bestelldatum;Datumsformat;beheben;27.11.2025;2025-11-27
+B-0780;betrag;Betragsformat;beheben;543;543.00
+B-0780;plz;PLZ ohne führende Null;beheben;4109;4109
+B-0781;bestelldatum;Datumsformat;beheben;27.11.25;2025-11-27
+B-0781;betrag;Betrag Kommafehler;markieren;68994 EUR;689.94
+B-0781;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0781;plz;PLZ im Ortsfeld;beheben;;36251
+B-0782;bestelldatum;Datumsformat;beheben;28.11.25;2025-11-28
+B-0782;betrag;Betragsformat;beheben;200 EUR;200.00
+B-0782;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0782;plz;PLZ im Ortsfeld;beheben;;36043
+B-0784;bestelldatum;Datumsformat;beheben;28.11.2025;2025-11-28
+B-0784;betrag;Betragsformat;beheben;146,41 €;146.41
+B-0787;bestelldatum;Datum US-Format;beheben;11/28/2025;2025-11-28
+B-0787;betrag;Betrag US-Format;beheben;1,136.26;1136.26
+B-0789;bestelldatum;Datumsformat;beheben;1.12.2025;2025-12-01
+B-0789;betrag;Betragsformat;beheben;117,89;117.89
+B-0789;kunde;Schreibweise Kunde;beheben;Sanitär Möller G.m.b.H.;Sanitär Möller GmbH
+B-0789;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0790;bestelldatum;Datumsformat;beheben;01.12.25;2025-12-01
+B-0790;betrag;Betragsformat;beheben;400,73 EUR;400.73
+B-0790;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0790;plz;PLZ im Ortsfeld;beheben;;36043
+B-0791;bestelldatum;Datumsformat;beheben;01.12.2025;2025-12-01
+B-0791;betrag;Betragsformat;beheben;89,00 €;89.00
+B-0791;kunde;Schreibweise Kunde;beheben;Sanitär Böhm;Sanitär Böhm e.K.
+B-0791;plz;PLZ ohne führende Null;beheben;7743;7743
+B-0795;(Zeile);Dublette;Zeile löschen;;B-0796
+B-0797;bestelldatum;Datumsformat;beheben;02.12.2025;2025-12-02
+B-0797;betrag;Betragsformat;beheben;581,20 €;581.20
+B-0798;bestelldatum;Datumsformat;beheben;02.12.2025;2025-12-02
+B-0798;betrag;Betragsformat;beheben;340,52 €;340.52
+B-0800;bestelldatum;Datum US-Format;beheben;12/02/2025;2025-12-02
+B-0801;bestelldatum;Datumsformat;beheben;03.12.2025;2025-12-03
+B-0801;betrag;Betragsformat;beheben;510,90 €;510.90
+B-0802;bestelldatum;Datumsformat;beheben;03.12.25;2025-12-03
+B-0802;betrag;Betragsformat;beheben;668,97 EUR;668.97
+B-0802;ort;PLZ im Ortsfeld;beheben;36043 Fulda;Fulda
+B-0802;plz;PLZ im Ortsfeld;beheben;;36043
+B-0807;bestelldatum;Datum US-Format;beheben;12/03/2025;2025-12-03
+B-0811;bestelldatum;Datumsformat;beheben;4.12.2025;2025-12-04
+B-0811;betrag;Betragsformat;beheben;561,73;561.73
+B-0811;kunde;Schreibweise Kunde;beheben;Sanitär Möller G.m.b.H.;Sanitär Möller GmbH
+B-0811;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0812;bestelldatum;Datumsformat;beheben;4.12.2025;2025-12-04
+B-0812;betrag;Betragsformat;beheben;1.280,63;1280.63
+B-0812;kunde;Schreibweise Kunde;beheben;Kfz-Werkstatt Rieger G.m.b.H.;Kfz-Werkstatt Rieger GmbH
+B-0812;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0814;bestelldatum;Datumsformat;beheben;04.12.2025;2025-12-04
+B-0814;betrag;Betragsformat;beheben;244,13;244.13
+B-0814;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0815;kunde;Schreibweise Kunde;beheben;Schreinerei-Ott;Schreinerei Ott
+B-0817;bestelldatum;Datumsformat;beheben;05.12.2025;2025-12-05
+B-0817;betrag;Betragsformat;beheben;761,90 €;761.90
+B-0818;bestelldatum;Datumsformat;beheben;05.12.25;2025-12-05
+B-0818;betrag;Betragsformat;beheben;177 EUR;177.00
+B-0818;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0818;plz;PLZ im Ortsfeld;beheben;;36381
+B-0819;bestelldatum;Datumsformat;beheben;05.12.2025;2025-12-05
+B-0819;betrag;Betragsformat;beheben;139,09 €;139.09
+B-0820;kunde;Schreibweise Kunde;beheben;dachdeckerei ludwig;Dachdeckerei Ludwig
+B-0820;ort;Zeichensalat;beheben;GÃ¶ttingen;Göttingen
+B-0821;bestelldatum;Datumsformat;beheben;05.12.2025;2025-12-05
+B-0821;betrag;Betragsformat;beheben;317,77;317.77
+B-0821;kunde;Schreibweise Kunde;beheben;TISCHLEREI WAGNER GMBH & CO. KG;Tischlerei Wagner GmbH & Co. KG
+B-0823;bestelldatum;Datum US-Format;beheben;12/05/2025;2025-12-05
+B-0824;bestelldatum;Datum US-Format;beheben;12/05/2025;2025-12-05
+B-0825;kunde;Schreibweise Kunde;beheben;Fliesen-Schmitz GmbH;Fliesen Schmitz GmbH
+B-0826;bestelldatum;Datumsformat;beheben;08.12.2025;2025-12-08
+B-0826;betrag;Betragsformat;beheben;195,33 €;195.33
+B-0828;bestelldatum;Datumsformat;beheben;08.12.25;2025-12-08
+B-0828;betrag;Betragsformat;beheben;250,4 EUR;250.40
+B-0828;ort;PLZ im Ortsfeld;beheben;36381 Schlüchtern;Schlüchtern
+B-0828;plz;PLZ im Ortsfeld;beheben;;36381
+B-0831;bestelldatum;Datumsformat;beheben;08.12.2025;2025-12-08
+B-0831;betrag;Betragsformat;beheben;519,00 €;519.00
+B-0831;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0831;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0832;bestelldatum;Datumsformat;beheben;08.12.2025;2025-12-08
+B-0832;betrag;Betragsformat;beheben;290,00 €;290.00
+B-0834;kunde;Schreibweise Kunde;beheben;Schreinerei-Berger e.K.;Schreinerei Berger e.K.
+B-0835;bestelldatum;Datumsformat;beheben;09.12.2025;2025-12-09
+B-0835;betrag;Betragsformat;beheben;555,64 €;555.64
+B-0836;bestelldatum;Datumsformat;beheben;9.12.2025;2025-12-09
+B-0836;betrag;Betragsformat;beheben;8.1899999999999995;8190.00
+B-0836;plz;PLZ ohne führende Null;beheben;8056;8056
+B-0838;bestelldatum;Datumsformat;beheben;9.12.2025;2025-12-09
+B-0838;betrag;Betragsformat;beheben;119,66;119.66
+B-0838;kunde;Schreibweise Kunde;beheben;Sanitär Möller G.m.b.H.;Sanitär Möller GmbH
+B-0838;plz;PLZ ohne führende Null;beheben;1067;1067
+B-0839;bestelldatum;Datum US-Format;beheben;12/09/2025;2025-12-09
+B-0840;bestelldatum;Datumsformat;beheben;09.12.25;2025-12-09
+B-0840;betrag;Betragsformat;beheben;356,2 EUR;356.20
+B-0840;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0840;plz;PLZ im Ortsfeld;beheben;;36037
+B-0841;bestelldatum;Datumsformat;beheben;09.12.25;2025-12-09
+B-0841;betrag;Betragsformat;beheben;141,55 EUR;141.55
+B-0841;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0841;plz;PLZ im Ortsfeld;beheben;;36037
+B-0844;(Zeile);Dublette;Zeile löschen;;B-0842
+B-0846;bestelldatum;Datumsformat;beheben;10.12.25;2025-12-10
+B-0846;betrag;Betragsformat;beheben;304 EUR;304.00
+B-0846;ort;PLZ im Ortsfeld;beheben;36251 Bad Hersfeld;Bad Hersfeld
+B-0846;plz;PLZ im Ortsfeld;beheben;;36251
+B-0848;bestelldatum;Datumsformat;beheben;10.12.2025;2025-12-10
+B-0848;betrag;Betragsformat;beheben;1.377,98 €;1377.98
+B-0849;bestelldatum;Datum US-Format;beheben;12/10/2025;2025-12-10
+B-0854;bestelldatum;Datum US-Format;beheben;12/10/2025;2025-12-10
+B-0855;kunde;Schreibweise Kunde;beheben;bauunternehmung müller gmbh & co. kg;Bauunternehmung Müller GmbH & Co. KG
+B-0857;bestelldatum;Datumsformat;beheben;11.12.2025;2025-12-11
+B-0857;betrag;Betragsformat;beheben;1.742,48 €;1742.48
+B-0857;kunde;Schreibweise Kunde;beheben;HEKA Haustechnik;HEKA Haustechnik GmbH
+B-0860;bestelldatum;Datumsformat;beheben;12.12.2025;2025-12-12
+B-0860;betrag;Betrag Kommafehler;markieren;38853,00;388.53
+B-0860;kunde;Schreibweise Kunde;beheben;HAUSMEISTERSERVICE KÖNIG GMBH;Hausmeisterservice König GmbH
+B-0863;bestelldatum;Datumsformat;beheben;12.12.2025;2025-12-12
+B-0863;betrag;Betragsformat;beheben;173,05;173.05
+B-0863;kunde;Schreibweise Kunde;beheben;Metallbau Haas G.m.b.H.;Metallbau Haas GmbH
+B-0863;plz;PLZ ohne führende Null;beheben;1277;1277
+B-0866;bestelldatum;Datumsformat;beheben;15.12.2025;2025-12-15
+B-0866;betrag;Betragsformat;beheben;285,12;285.12
+B-0866;kunde;Schreibweise Kunde;beheben;FLIESEN EBERT GMBH;Fliesen Ebert GmbH
+B-0869;(Zeile);Dublette;Zeile löschen;;B-0864
+B-0870;bestelldatum;Datumsformat;beheben;16.12.25;2025-12-16
+B-0870;betrag;Betrag Kommafehler;markieren;20844 EUR;208.44
+B-0870;ort;PLZ im Ortsfeld;beheben;36037 Fulda;Fulda
+B-0870;plz;PLZ im Ortsfeld;beheben;;36037
+B-0871;kunde;Schreibweise Kunde;beheben;Holzbau Koch G.m.b.H. & Co. KG;Holzbau Koch GmbH & Co. KG
+B-0872;bestelldatum;Datumsformat;beheben;16.12.2025;2025-12-16
+B-0872;betrag;Betragsformat;beheben;295;295.00
+B-0872;plz;PLZ ohne führende Null;beheben;4277;4277
+B-0874;bestelldatum;Datumsformat;beheben;17.12.2025;2025-12-17
+B-0874;betrag;Betragsformat;beheben;235,00 €;235.00
+B-0874;kunde;Schreibweise Kunde;beheben;Sanitär & Heizung Groß;Sanitär & Heizung Groß e.K.
+B-0874;plz;PLZ ohne führende Null;beheben;7545;7545
+B-0879;bestelldatum;Datum US-Format;beheben;12/18/2025;2025-12-18
+B-0880;bestelldatum;Datumsformat;beheben;18.12.2025;2025-12-18
+B-0880;betrag;Betrag Kommafehler;markieren;11.738;117.38
+B-0880;plz;PLZ ohne führende Null;beheben;1277;1277
+;;;;;
