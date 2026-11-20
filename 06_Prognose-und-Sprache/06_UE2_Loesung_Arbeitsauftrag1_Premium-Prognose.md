@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Ohne Modell, nur mit eigenem Urteil, für vier neue Kunden (N1 bis N4): (1) **Kauft er Premium** (79 € im Jahr), ja oder nein? (2) **Wie viel Umsatz** bringt er im nächsten Jahr? (3) **Einschätzungen begründen.**
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -70,36 +70,6 @@
 > | Kunde | A | B | C | D | E | F | G | H |
 > |---|---:|---:|---:|---:|---:|---:|---:|---:|
 > | € | 128 | 155 | 79 | 234 | 120 | 130 | 68 | 148 |
-
-## Schritt 1 · Premium: ja oder nein?
-
-| Kunde | Premium? (ja / nein) | Wie sicher? | Entscheidendes Merkmal |
-|:---|:---|:---|:---|
-| **N1** (31 J., 2.800 €, 8 Käufe, online) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N2** (57 J., 6.100 €, 3 Käufe, Filiale) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N3** (42 J., 3.500 €, 6 Käufe, beides) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N4** (26 J., 2.300 €, 12 Käufe, online) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Umsatz im nächsten Jahr
-
-| Kunde | Schätzung (Betrag) | Spanne (von bis) | Vergleichskunde(n) und Rechenweg |
-|:---|:---|:---|:---|
-| **N1** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N2** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N3** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **N4** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Begründung: welche Merkmale zählen?
-
-| Merkmal | Entscheidend, mitlaufend oder ignoriert? | Warum? |
-|:---|:---|:---|
-| **Käufe in 12 Monaten** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Einkommen** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Alter** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Kanal** (online, Filiale, beides) <br><br><br> | <br><br><br> | <br><br><br> |
-| **Newsletter** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Kunde seit** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Kampagne, Kempten, Holzkarte** <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

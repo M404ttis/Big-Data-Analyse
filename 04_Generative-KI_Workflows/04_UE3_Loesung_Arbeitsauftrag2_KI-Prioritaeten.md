@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leeres Bewertungsraster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Als Bereichsleitung (1) **Nutzen, Risiko, Komplexität** der drei Optionen bewerten, (2) eine **Priorisierungsentscheidung** treffen, (3) **unterschätzte Risiken** benennen.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -68,16 +68,6 @@
 > | **A** Amortisation (EU, 216.000 €), bei 100 % / 50 % | 216.000 € / 164.200 € / 64.100 € | 1,3 Jahre / 3,4 Jahre |
 > | Kombinationen, Einmalkosten *(Annahme: Budget deckt nur Einmalkosten)* | A (US) + C / A (EU) + C / A (EU) + B | 210.000 € / 246.000 € / 286.000 € |
 > | Rest vom Budget bei A (EU) + C | 250.000 € − 246.000 € | 4.000 € (1,6 %) |
-
-## Schritt 1 · Bewertungsraster
-
-| Kriterium | A) Chatbot | B) Berichte | C) E-Mails |
-|:---|:---|:---|:---|
-| **Nutzen** (was bringt es, in € oder Stunden?) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Risiko** (was kann schiefgehen, wie schlimm?) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Komplexität** (Aufwand, Daten, Abhängigkeiten, Dauer) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Ihre Priorität** (Rang 1 bis 3 und Begründung) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Unterschätztes Risiko** (was sieht man auf den ersten Blick nicht?) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

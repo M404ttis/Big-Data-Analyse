@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Für die ShopNow GmbH (Budget 700.000 €, messbare Ergebnisse in 12 Monaten): (1) **Kunden mit hoher Kaufwahrscheinlichkeit** identifizieren, (2) den **zukünftigen Umsatz prognostizieren**, (3) das **Kundenfeedback nach Stimmung** analysieren, (4) **Maßnahmen** ableiten. Dazu das Raster Baustein / Daten / Ergebnis / Maßnahme ausfüllen.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -81,42 +81,6 @@
 > | Retourenkosten pro Jahr (Größenordnung, siehe Annahme in Teil B) | 415.900 × 11 € | ca. 4,6 Mio. € |
 > | Anteil der Besuche mit Einwilligung | 64 % von 4,8 Mio. | 3,07 Mio. pro Monat |
 > | Entwicklertage, die das Budget höchstens hergibt | 700.000 € / 900 € | 777 |
-
-## Schritt 1 · Wo geht Umsatz verloren?
-
-| Stelle | Anteil der Abbrüche | Warum bricht der Kunde ab? | Was lässt sich ändern? |
-|:---|:---|:---|:---|
-| **Warenkorb** (38 %) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Versandkosten** (27 %) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Registrierung** (21 %) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Zahlung** (14 %) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Ergebnisraster
-
-| Baustein | Welche Daten? | Welches Ergebnis? | Welche Maßnahme? |
-|:---|:---|:---|:---|
-| **Kaufwahrscheinlichkeit** (Klasse: kauft ja/nein) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Umsatzprognose** (Zahl: Euro pro Monat) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Stimmung im Feedback** (Klasse: positiv / neutral / negativ, nach Thema) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Maßnahmen und Budget
-
-| Maßnahme | Wirkung auf | Aufwand | Reihenfolge | Kosten (Schätzung) |
-|:---|:---|:---|:---|:---|
-| **Versandkosten früher zeigen oder senken** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Kauf ohne Konto (Gastkauf)** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Wiederkauf-Modell für Einmalkäufer** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Umsatzprognose für den Einkauf** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Feedback-Analyse (Größen, Retouren)** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 4 · Risiken und Messung
-
-| Thema | Was kann schiefgehen? | Wie messen oder absichern? |
-|:---|:---|:---|
-| **Einwilligung (64 %)** <br><br><br> | <br><br><br> | <br><br><br> |
-| **E-Mails ohne Bestellbezug** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Erfolgsmessung in 12 Monaten** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Störfaktoren** (Lager Erfurt, Sportler, Konkurrent) <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

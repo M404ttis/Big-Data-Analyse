@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** (1) **Merkmalswahl** prüfen, (2) jeden Cluster **ablesen und benennen**, (3) entscheiden, welche Cluster **eigene Segmente** werden, (4) **Maßnahmen** je Segment ableiten, (5) **Risiken** bewerten (z. B. falsche Einordnung).
 
@@ -12,7 +12,7 @@
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -106,40 +106,6 @@
 > | Silhouette *(aus der CSV gerechnet)* | k = 2 bis 8 | 0,39 / 0,46 / **0,57** / 0,47 / 0,44 / 0,43 / 0,41 |
 > | Korrelation Käufe und Tage seit Kauf *(CSV)* | r | −0,65 |
 > | Alter fehlt in der CSV | 229 von 600 | 38 % |
-
-## Schritt 1 · Merkmalswahl prüfen
-
-| Merkmal | Im Modell? | Ergänzen, weglassen, behalten? | Warum? |
-|:---|:---|:---|:---|
-| **Käufe pro Jahr** <br><br><br> | ja | <br><br><br> | <br><br><br> |
-| **Ø Bon** <br><br><br> | ja | <br><br><br> | <br><br><br> |
-| **Rabattanteil** <br><br><br> | ja | <br><br><br> | <br><br><br> |
-| **Tage seit letztem Kauf** <br><br><br> | ja | <br><br><br> | <br><br><br> |
-| **Warengruppe** <br><br><br> | nein | <br><br><br> | <br><br><br> |
-| **Online-Anteil** <br><br><br> | nein | <br><br><br> | <br><br><br> |
-| **Alter** <br><br><br> | nein | <br><br><br> | <br><br><br> |
-| **Wohnort (PLZ)** <br><br><br> | nein | <br><br><br> | <br><br><br> |
-| **Kunde seit** <br><br><br> | nein | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Raster der Cluster
-
-| Cluster | Was ihn unterscheidet | Name | Maßnahme | Risiko |
-|:---|:---|:---|:---|:---|
-| **C1** (27 %, 5,4 Käufe, 36 € Bon, 71 % Rabatt, 47 Tage) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **C2** (30 %, 1,5 Käufe, 43 € Bon, 30 % Rabatt, 328 Tage) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **C3** (15 %, 13,0 Käufe, 55 € Bon, 13 % Rabatt, 20 Tage) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **C4** (9 %, 1,9 Käufe, 152 € Bon, 15 % Rabatt, 125 Tage) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **C5** (19 %, 2,5 Käufe, 45 € Bon, 31 % Rabatt, 146 Tage) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Eigene Segmente?
-
-| Cluster | Eigenes Segment? | Warum? |
-|:---|:---|:---|
-| **C1** <br><br><br> | <br><br><br> | <br><br><br> |
-| **C2** <br><br><br> | <br><br><br> | <br><br><br> |
-| **C3** <br><br><br> | <br><br><br> | <br><br><br> |
-| **C4** <br><br><br> | <br><br><br> | <br><br><br> |
-| **C5** <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

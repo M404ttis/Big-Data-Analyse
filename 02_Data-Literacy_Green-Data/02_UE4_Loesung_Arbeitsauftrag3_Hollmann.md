@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Mattis Lösung**: Fakten, Rechnungen und meine Einträge | [→ Teil A](#teil-a-mattis-lösung) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Bei 440 TB (Speicher zu 88 % voll) festlegen, (1) wo sich die Menge **ohne Informationsverlust** verringern lässt, (2) **was bleibt, wie lange, in welcher Form**, (3) **wo nicht gekürzt** werden darf, (4) die **Ersparnis in TB und € pro Jahr** schätzen.
 
@@ -66,24 +66,6 @@
 | **CAD & Fotos** | nur letzte CAD Version gesaved, Fotos nur einmal 0,5 CAD + 0,5 Fotos| 37 | |
 | **E-Mail-Archiv** | Rechnungen als uniques ins ERP, Anhänge löschen, Mails als text behalten | 20TB | |
 | **Video** | nur die letzten 2 Wochen  | | |
-| **ERP** | <br><br> | | |
-| **Summe** | | | |
-
-## Schritt 2 · Wo darf nicht gekürzt werden?
-
-| Was | Warum nicht? |
-|:---|:---|
-| 1 | <br><br> |
-| 2 | <br><br> |
-| 3 | <br><br> |
-
-## Schritt 3 · Gesamtbild
-
-| Frage | Meine Antwort |
-|:---|:---|
-| Belegung nach der Bereinigung | <br><br> |
-| Erweiterung nötig? | <br><br> |
-| Wie wird es dauerhaft verhindert? | <br><br> |
 
 ---
 

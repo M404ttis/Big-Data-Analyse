@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leeres Ergebnisraster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Mattis Lösung**: Fakten, Rechnungen und meine Einträge | [→ Teil A](#teil-a-mattis-lösung) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Aus den fünf Szenen bei Hollmann (1) mögliche **Probleme**, (2) **Vorteile** stärkerer Datennutzung und (3) **Hindernisse für Mitarbeitende** ableiten und jeweils der passenden Szene zuordnen.
 
@@ -66,12 +66,10 @@
 
 | Frage | Meine Antworten | Welche Szene zeigt das? |
 |:---|:---|:---:|
- mangelndes Vertrauen in bestehenden Daten |  **Mögliche Probleme** |Strichliste Werkmeister |
- Fehlende Datenkultur |  F[hrungskraft lebt vor |Analystin bleibt ungehört, Bericht nicht geöffnet |
- Data illiteracy |  Schulungen |Umfrage wird nicht verstanden |
- Silos |  Glossar mit Begriff, Definition, Quelle und Zuständigkeit  |ERP und CRM werden nur von entsprechenden Bereichen benutzt, Umfrage wird nicht verstanden |
-| **Vorteile stärkerer Datennutzung** | <br><br><br><br><br> | <br><br> |
-| **Hindernisse für Mitarbeitende** | <br><br><br><br><br> | <br><br> |
+| mangelndes Vertrauen in bestehenden Daten |  **Mögliche Probleme** |Strichliste Werkmeister |
+| Fehlende Datenkultur |  F[hrungskraft lebt vor |Analystin bleibt ungehört, Bericht nicht geöffnet |
+| Data illiteracy |  Schulungen |Umfrage wird nicht verstanden |
+| Silos |  Glossar mit Begriff, Definition, Quelle und Zuständigkeit  |ERP und CRM werden nur von entsprechenden Bereichen benutzt, Umfrage wird nicht verstanden |
 
 ---
 

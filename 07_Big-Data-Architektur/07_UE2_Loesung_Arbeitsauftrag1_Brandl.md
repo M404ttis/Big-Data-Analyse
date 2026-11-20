@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** (1) **Wo entstehen bei Brandl Daten?** (2) **Welche Probleme entstehen**, weil sie getrennt sind? (3) **Wie könnte ein zentraler Datenzugang aussehen?** Dazu das Raster System / Daten / Wer braucht sie noch / Was geht heute verloren.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -61,41 +61,6 @@
 > | Lagerbuchungen pro Jahr (365 Tage, Annahme) | 6.000 × 365 | 2,19 Mio. |
 > | Monatsbericht: Zeit nach Monatsende | 12. Arbeitstag | rund 16 bis 18 Kalendertage |
 > | Berichte pro Jahr mit 3 Tagen Kopierarbeit (Annahme: eine Person) | 3 Tage × 12 Monate | 36 Arbeitstage |
-
-## Schritt 1 · Ergebnisraster
-
-| System | Welche Daten? | Wer braucht sie noch? | Was geht heute verloren? |
-|:---|:---|:---|:---|
-| **CRM** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **ERP** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Excel** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Webshop** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Lagerscanner** (zusätzlich) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Probleme durch getrennte Daten
-
-| Szene | Welches Problem? | Woran liegt es? | Was würde helfen? |
-|:---|:---|:---|:---|
-| **Monatsbericht, drei Tage kopieren** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **"Heizung Müller", dreimal anders** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Außendienst besucht Nichtzahler** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Zwei Standortleiter, zwei Excel-Dateien** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Gesamtkauf eines Kunden über alle Kanäle** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Provision aus Excel statt ERP** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Zentraler Datenzugang
-
-### Skizze (Quellen, Weg, Ziel, Nutzer)
-
-<br><br><br><br><br><br><br><br>
-
-| Frage | Meine Antwort |
-|:---|:---|
-| **Wo liegen die Daten künftig?** <br><br><br> | <br><br><br> |
-| **Wie erkennt man denselben Kunden?** <br><br><br> | <br><br><br> |
-| **Wer darf was sehen?** <br><br><br> | <br><br><br> |
-| **Was wird zuerst verbunden?** <br><br><br> | <br><br><br> |
-| **Was kostet Brandl am meisten?** <br><br><br> | <br><br><br> |
 
 ---
 

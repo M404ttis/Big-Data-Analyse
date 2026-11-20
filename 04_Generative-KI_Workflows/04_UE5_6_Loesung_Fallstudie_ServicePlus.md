@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** (1) Geeignete **KI-Einsatzbereiche** identifizieren, (2) **Risiken** bewerten (z. B. falsche Antworten), (3) eine **priorisierte Implementierungsstrategie** entwickeln.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -81,33 +81,6 @@
 > | Telefon erreichbar | 50 Std. von 168 Std. je Woche | 30 % der Zeit |
 > | Auftraggeber in Anfragen | 38.000 × 70 % / 30 % | 26.600 / 11.400 |
 > | Hebel Zählerstand plus Abschlag *(Annahme: gleiche Gewichtung, 80 % automatisch gelöst)* | 49 / 177 × 3,4 Mio. € × 80 % | ca. 753.000 € je Jahr = ca. 11,5 Vollzeitstellen |
-
-## Schritt 1 · Raster der Anliegen
-
-| Anliegen | KI geeignet? | Welches Risiko? | Mensch oder KI? |
-|:---|:---|:---|:---|
-| **Zählerstand** (27 %, 10.260 je Monat, Aufwand 1) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Abschlag ändern** (22 %, 8.360 je Monat) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Rechnung unklar** (19 %, 7.220 je Monat) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Umzug** (14 %, 5.320 je Monat) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **Beschwerde** (11 %, 4.180 je Monat, Aufwand 8) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Risiken
-
-| Risiko | Wie schlimm? | Gegenmittel |
-|:---|:---|:---|
-| 1 <br><br><br> | <br><br><br> | <br><br><br> |
-| 2 <br><br><br> | <br><br><br> | <br><br><br> |
-| 3 <br><br><br> | <br><br><br> | <br><br><br> |
-| 4 <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Implementierungsstrategie
-
-| Phase | Was | Wann | Warum zuerst? |
-|:---|:---|:---|:---|
-| 1 <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| 2 <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| 3 <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

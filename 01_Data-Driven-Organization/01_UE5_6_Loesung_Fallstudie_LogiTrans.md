@@ -5,17 +5,14 @@
 >
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: leeres Raster zum Selbst-Ausfüllen | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** (1) drei datenbasierte Geschäftsansätze identifizieren, (2) nach Nutzen und Machbarkeit bewerten (Bewertungsraster), (3) eine priorisierte Umsetzungsstrategie entwickeln. Rahmen: **800.000 € Budget, 12 Monate, 2 Personen in der IT.**
 
 ---
 
-# Teil A: Mattis Lösung
-
-> [!TIP]
-> **Erst hier schreiben, dann Teil B lesen.** Alles Graue ist leer und gehört dir. Die Fragen stammen aus dem Aufgabenblatt.
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -99,32 +96,6 @@ Nur die Angaben der Folien 2–6, kurz sortiert, **ohne Bewertung und ohne Rechn
 > | Umsatz der 5 Großkunden | 46 % × 58 Mio. € | 26,68 Mio. € |
 > | Umsatz je Großkunde (Ø) | 26,68 Mio. € / 5 *(Annahme: gleich groß)* | ca. 5,34 Mio. € |
 > | GPS-Meldungen pro Tag | 120 Lkw × 2.880 (alle 30 s, 24 h, Obergrenze) | ca. 345.600 |
-
-## Schritt 1 · Die drei Ansätze
-
-| # | Name des Ansatzes | Welche Daten nutzt er? | Welches Problem löst er? |
-|:---:|---|---|---|
-| **1** | <br><br> | <br><br> | <br><br> |
-| **2** | <br><br> | <br><br> | <br><br> |
-| **3** | <br><br> | <br><br> | <br><br> |
-
-## Schritt 2 · Bewertungsraster
-
-| Ansatz | Nutzen (1–5) | Machbarkeit (1–5) | Kosten | Begründung |
-|:---|:---:|:---:|:---:|:---|
-| **Ansatz 1** | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br><br><br> |
-| **Ansatz 2** | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br><br><br> |
-| **Ansatz 3** | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br><br><br> |
-
-## Schritt 3 · Priorisierte Umsetzungsstrategie
-
-| Reihenfolge | Ansatz | Zeitraum | Budget | Baut auf | Entscheidungstor (wann, woran gemessen?) |
-|:---:|---|---|---|---|---|
-| **1.** | <br><br> | <br><br> | <br><br> | <br><br> | <br><br> |
-| **2.** | <br><br> | <br><br> | <br><br> | <br><br> | <br><br> |
-| **3.** | <br><br> | <br><br> | <br><br> | <br><br> | <br><br> |
-
-**Summe Budget:** ______ von 800.000 € &nbsp;·&nbsp; **Reserve:** ______
 
 ---
 

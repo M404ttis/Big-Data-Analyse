@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** (1) **drei Hebel** für Effizienz und Nachhaltigkeit identifizieren, (2) nach **Wirkung und Umsetzbarkeit** bewerten, (3) eine **priorisierte Transformationsstrategie** entwickeln. Rahmen: 1 Mio. €, 18 Monate, Betriebsrat beteiligen.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -68,30 +68,6 @@
 > | Förderung auf die Zähler | 40 % × 150.000 € | bis 60.000 € (Nettopreis 90.000 €) |
 > | Zählbare Großverbraucher | 6 Öfen + 24 Spritzguss + 3 Kompressoren | 33 (bei 40 Zählern) |
 > | Budget je Monat | 1 Mio. € / 18 | ca. 55.600 € |
-
-## Schritt 1 · Bewertungsraster
-
-| Hebel | Wirkung (1–5) | Umsetzbarkeit (1–5) | Kosten | Begründung |
-|:---|:---:|:---:|:---:|:---|
-| **Hebel 1** | | | | <br><br><br> |
-| **Hebel 2** | | | | <br><br><br> |
-| **Hebel 3** | | | | <br><br><br> |
-
-## Schritt 2 · Transformationsstrategie
-
-| Phase | Zeitraum | Was passiert | Budget | Prüfpunkt |
-|:---|:---:|:---|---:|:---|
-| 1 | | <br><br> | | |
-| 2 | | <br><br> | | |
-| 3 | | <br><br> | | |
-
-## Schritt 3 · Belegschaft, Betriebsrat, Risiken
-
-| Thema | Mein Vorgehen |
-|:---|:---|
-| Betriebsrat | <br><br> |
-| Schichtleiter | <br><br> |
-| Größtes Risiko | <br><br> |
 
 ---
 

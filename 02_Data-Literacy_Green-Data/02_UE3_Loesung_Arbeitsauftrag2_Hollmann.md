@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Mattis Lösung**: Fakten, Rechnungen und meine Einträge | [→ Teil A](#teil-a-mattis-lösung) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Drei Maßnahmen (A KI-Energie, B Data-Literacy-Schulung, C Nachhaltigkeitsreporting) nach **Impact, Risiko, Zeit bis Wirkung** bewerten, **priorisieren** (Budget 400.000 €) und die **Zielkonflikte** benennen.
 
@@ -57,28 +57,11 @@
 
 | Kriterium | A) KI-Energie | B) Schulung | C) Reporting |
 |:---|:---|:---|:---|
-| **Impact** | echte Reduktion von CO2 | <br><br><br> | hoch, Austatter wollen Zahlen, nicht **gute** Zahlen |
-| **Risiko** | mittel | <br><br><br> | gering |
-| **Zeit bis Wirkung** | 11 MOnate | <br><br><br> | 4 Monate, rechtzeitig für Ausstatter |
-| **Ihre Priorität** | hoch als Pilot | <br><br> | sehr hoch, |
-| **Zielkonflikt** | Daten ohne gutes Reporting und Schulung wie Informationen benutzt werden ggf. overkill | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Priorisierung und Budget
-
-| Maßnahme | Ja / Nein / später | Betrag | Begründung |
-|:---|:---:|---:|:---|
-| A) KI-Energie | | | <br><br> |
-| B) Schulung | | | <br><br> |
-| C) Reporting | | | <br><br> |
-| **Reserve** | | | <br><br> |
-
-## Schritt 3 · Zielkonflikte
-
-| Zielkonflikt | Zwischen was? | Mein Umgang damit |
-|:---|:---|:---|
-| 1 | <br><br> | <br><br> |
-| 2 | <br><br> | <br><br> |
-| 3 | <br><br> | <br><br> |
+| **Impact** | echte Reduktion von CO2 | | hoch, Austatter wollen Zahlen, nicht **gute** Zahlen |
+| **Risiko** | mittel | | gering |
+| **Zeit bis Wirkung** | 11 MOnate | | 4 Monate, rechtzeitig für Ausstatter |
+| **Ihre Priorität** | hoch als Pilot | | sehr hoch, |
+| **Zielkonflikt** | Daten ohne gutes Reporting und Schulung wie Informationen benutzt werden ggf. overkill | | |
 
 ---
 

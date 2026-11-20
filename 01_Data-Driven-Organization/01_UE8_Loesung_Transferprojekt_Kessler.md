@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leeres Raster | [→ Teil A](#teil-a-mattis-lösung) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
 > | **B** | **Lösungsentwurf** (KI), bewusst kurz | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Rolle:** Chief Data Officer, berichtet an den Vorstand. **Auftrag:** datengetriebene Geschäftsstrategie als Entscheidungsvorlage in 6 Monaten, in Entscheidungen denken, nicht in Einzelmaßnahmen. Die Titelfolie nennt „5 Outputs“, die Folien 7–8 listen **6 Ergebnisse**. Hier sind es sechs.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 

@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leeres Ergebnisraster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Mattis Lösung**: Fakten, Rechnungen und meine Einträge | [→ Teil A](#teil-a-mattis-lösung) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Für die sechs Arbeitsschritte von Frau Petersen klären: (1) Welche Schritte sind **immer gleich**? (2) Welche erfordern **menschliches Denken**? (3) Welche Teile könnten **automatisiert** werden?
 
@@ -84,12 +84,8 @@
 
 | Schritt | Immer gleich? | Menschliches Denken nötig? | Automatisierbar? |
 |:---:|:---|:---|:---|
-| **1 Lesen, Bestellnummer suchen** <br><br><br> | nein | Nummern ändern sich, aber mit gleichem Format | automatisierung mit RegEx oder auslesen mit KI |
-| **2 Bestellung nachschlagen** <br><br><br> | sobald Best.Nr bekannt, immer gleich | nein | im besten Fall verpflichtender Bestell eMail als quasi-ID in DB festhalten, dann Schnittstelle mit look-up | 
-| **3 Sendungsnummer kopieren** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **4 Textbaustein anpassen, senden** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **5 Schaden: Foto prüfen, entscheiden** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **6 Anruf bei verärgerten Kunden** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
+| **1 Lesen, Bestellnummer suchen** | nein | Nummern ändern sich, aber mit gleichem Format | automatisierung mit RegEx oder auslesen mit KI |
+| **2 Bestellung nachschlagen** | sobald Best.Nr bekannt, immer gleich | nein | im besten Fall verpflichtender Bestell eMail als quasi-ID in DB festhalten, dann Schnittstelle mit look-up | 
 
 ---
 

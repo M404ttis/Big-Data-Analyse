@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Ohne Algorithmus, nur mit dem Blick auf die Daten: (1) **Gruppen ähnlicher Kunden** bilden, (2) jede Gruppe **beschreiben und benennen**, (3) die **entscheidenden Unterschiede** benennen.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -63,27 +63,6 @@
 > | Kunde | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 |
 > |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 > | € | 25 | 650 | 128 | 27 | 1.200 | 52 | 133 | 24 | 90 | 525 | 124 | 80 |
-
-## Schritt 1 · Ergebnisraster
-
-| Gruppe | Kunden | Beschreibung | Name |
-|:---|:---|:---|:---|
-| **1** (Kunden-IDs, was haben sie gemeinsam?) <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **2** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **3** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **4** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Entscheidende Unterschiede
-
-| Merkmal | Trennt es die Gruppen? | Warum? |
-|:---|:---|:---|
-| **Käufe pro Jahr** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Umsatz pro Jahr** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Umsatz je Kauf** (abgeleitet) <br><br><br> | <br><br><br> | <br><br><br> |
-| **Alter** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Kunde seit** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Zahlart** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Filiale** <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

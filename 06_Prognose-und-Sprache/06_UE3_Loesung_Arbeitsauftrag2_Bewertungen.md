@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Sechs echte Bewertungen (ohne Sterne, ohne Produktangabe): (1) jede einordnen als **positiv, neutral oder negativ**, (2) **Unsicherheiten** benennen, (3) **zusätzliche Informationen** nennen, die helfen würden. Die Einordnungen dienen später als Trainingsbeispiele.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -51,37 +51,6 @@
 > | Anbieter-Genauigkeit 97 %, Fehlerquote | 100 % − 97 % | 3 % |
 > | Anbieter-Daten und Shop-Daten | Hotel, englisch gegen Elektronik, 92 % deutsch | zwei Unterschiede |
 > | Wörter je Bewertung, Nr. 1 bis 6 | 7, 12, 4, 10, 5, 12 (Zählung mit Python, "Hab’s" zählt als 2) | Ø 8,3, Shop-Ø: 23 |
-
-## Schritt 1 · Ergebnisraster
-
-| Nr. | Ihre Einordnung (positiv / neutral / negativ) | Wie sicher? (1–5) | Was würde helfen? |
-|:---|:---|:---|:---|
-| **1 Produkt gut, Lieferung langsam** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **2 "Na toll", nach zwei Wochen kaputt** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **3 "Macht, was es soll"** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **4 Geschenk für Schwiegermutter, nicht beschwert ;-)** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **5 "Nicht schlecht für den Preis"** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-| **6 Kundendienst schnell, Ersatz kommt später** <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 2 · Unsicherheiten
-
-| Quelle der Unsicherheit | Welche Bewertungen? | Warum unsicher? |
-|:---|:---|:---|
-| **Mehrere Themen in einer Bewertung** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Ironie und Sarkasmus** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Verneinung und Abschwächung** ("nicht schlecht") <br><br><br> | <br><br><br> | <br><br><br> |
-| **Ohne Wertung, nur Aussage** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Fehlender Kontext** (Produkt, Sterne, Erwartung) <br><br><br> | <br><br><br> | <br><br><br> |
-| **Die 97 % des Anbieters** <br><br><br> | <br><br><br> | <br><br><br> |
-
-## Schritt 3 · Zusätzliche Informationen
-
-| Information | Hilft bei welcher Bewertung? | Wie genau? |
-|:---|:---|:---|
-| **Sternebewertung** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Produkt oder Kategorie** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Vorgang im Kundendienst** <br><br><br> | <br><br><br> | <br><br><br> |
-| **Mehrere Einordner und Vergleich** <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 

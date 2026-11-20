@@ -3,8 +3,8 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leere Raster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Mattis Lösung**: Fakten, Rechnungen und meine Einträge | [→ Teil A](#teil-a-mattis-lösung) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Die Geschäftsführung entscheidet bis Freitag, ob das Marketingbudget steigt. Gefragt sind (1) mögliche **Interpretationen** der Zahlen, (2) **Risiken** beim Blick auf nur eine Kennzahl, (3) **zusätzliche Daten** und (4) eine **Empfehlung**.
 
@@ -65,12 +65,10 @@
 
 | Mögliche Interpretation | Was spricht dafür? | Mit welchen Daten prüfen? |
 |:---|:---|:---|
-| 1 der neue Zusteller braucht länger | Lieferzeit | <br><br><br> |
+| 1 der neue Zusteller braucht länger | Lieferzeit | |
 | 2 Marketing steigert Umsatz | Korrelation Marketingausgaben & Bestellungen | externe Faktoren (konkurrenz) |
-| 3 durch Marketing neu geworbene Kunden retournieren mehr | Korrelation Marketingausgaben & Retouren | <br><br><br> |
-| 4 Kundenzufriedenheit sinkt | sinkender Wert pro Quartal | <br><br><br> |
-| 5 <br><br><br> | <br><br><br> | <br><br><br> |
-| 6 <br><br><br> | <br><br><br> | <br><br><br> |
+| 3 durch Marketing neu geworbene Kunden retournieren mehr | Korrelation Marketingausgaben & Retouren | |
+| 4 Kundenzufriedenheit sinkt | sinkender Wert pro Quartal | |
 
 ## Schritt 2 · Risiken beim Blick auf nur eine Kennzahl
 

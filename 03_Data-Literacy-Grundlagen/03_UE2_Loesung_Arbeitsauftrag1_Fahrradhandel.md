@@ -3,14 +3,14 @@
 > [!NOTE]
 > | Teil | Inhalt | Springen |
 > |:---:|---|:---:|
-> | **A** | **Mattis Lösung**: Fakten, Rechnungen, leeres Ergebnisraster | [→ Teil A](#teil-a-mattis-lösung) |
-> | **B** | **Lösungsentwurf** (KI): zum Vergleichen, *nach* dem eigenen Entwurf lesen | [→ Teil B](#teil-b-lösungsentwurf) |
+> | **A** | **Fakten und Rechnungen** aus dem Aufgabenblatt | [→ Teil A](#teil-a-fakten-und-rechnungen) |
+> | **B** | **Lösungsentwurf** (KI) | [→ Teil B](#teil-b-lösungsentwurf) |
 
 **Aufgabe:** Aus der Tabelle (Umsatz und Kunden je Monat) und den Nebenbemerkungen des Inhabers (1) **Trends und Auffälligkeiten** beschreiben, (2) **mögliche Gründe** nennen, (3) **offene Fragen** stellen.
 
 ---
 
-# Teil A: Mattis Lösung
+# Teil A: Fakten und Rechnungen
 
 ## Schritt 0 · Daten, Zahlen, Fakten aus dem Aufgabenblatt
 
@@ -72,17 +72,6 @@
 | Monat | Jan | Feb | Mär | Apr | Mai | Jun | Jul | Aug | Sep | Okt | Nov | Dez |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | € | 130 | 129 | 133 | 126 | 142 | 153 | 160 | 160 | 170 | 180 | 199 | 216 |
-
-## Schritt 1 · Ergebnisraster
-
-| Was fällt auf? | Mögliche Gründe | Offene Fragen |
-|:---|:---|:---|
-| 1 <br><br><br> | <br><br><br> | <br><br><br> |
-| 2 <br><br><br> | <br><br><br> | <br><br><br> |
-| 3 <br><br><br> | <br><br><br> | <br><br><br> |
-| 4 <br><br><br> | <br><br><br> | <br><br><br> |
-| 5 <br><br><br> | <br><br><br> | <br><br><br> |
-| 6 <br><br><br> | <br><br><br> | <br><br><br> |
 
 ---
 
