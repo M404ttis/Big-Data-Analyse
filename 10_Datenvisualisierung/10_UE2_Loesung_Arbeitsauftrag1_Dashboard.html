@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Umsatz-Dashboard Gartenmöbel</title>
+  <style>
+    /* Aufbau: Kopfzeile mit Zeitraum-Filter, Kennzahlen (eine Heldenzahl), Monatsverlauf (Linie), Abweichung zum Vorjahr (Säulen),
+       Vertriebswege (gestapelte Balken + Anteils-Balken), Auffälligkeiten, Zahlentabellen.
+       Farben als Rollen (Tokens), Hell und Dunkel getrennt gewählt. Druck: Schwarz-Weiß-tauglich (Linienstil, Schraffur). */
+    :root {
+      color-scheme: light;
+      --page: #f9f9f7;
+      --surface: #fcfcfb;
+      --ink: #0b0b0b;
+      --ink2: #52514e;
+      --muted: #898781;
+      --grid: #e1e0d9;
+      --axis: #c3c2b7;
+      --ring: rgba(11, 11, 11, .10);
+      --s1: #2a78d6;
+      /* Fachhandel */
+      --s2: #eb6834;
+      /* Baumärkte */
+      --s3: #1baf7a;
+      /* Onlineshop */
+      --pos: #2a78d6;
+      /* über Vorjahr */
+      --neg: #e34948;
+      /* unter Vorjahr */
+      --up-text: #006300;
+      --down-text: #d03b3b;
+      --meter-track: #cde2fb;
+      --meter-fill: #2a78d6;
+      --band: rgba(11, 11, 11, .045);
+      --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:where(:not([data-theme="light"])) {
+        color-scheme: dark;
+        --page: #0d0d0d;
+        --surface: #1a1a19;
+        --ink: #f0efec;
+        --ink2: #c3c2b7;
+        --muted: #898781;
+        --grid: #2c2c2a;
+        --axis: #383835;
+        --ring: rgba(255, 255, 255, .10);
+        --s1: #3987e5;
+        --s2: #d95926;
+        --s3: #199e70;
+        --pos: #3987e5;
+        --neg: #e66767;
+        --up-text: #0ca30c;
+        --down-text: #e66767;
+        --meter-track: #184f95;
+        --meter-fill: #3987e5;
+        --band: rgba(255, 255, 255, .05);
+      }
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #f0efec;
+      --ink2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --ring: rgba(255, 255, 255, .10);
+      --s1: #3987e5;
+      --s2: #d95926;
+      --s3: #199e70;
+      --pos: #3987e5;
+      --neg: #e66767;
+      --up-text: #0ca30c;
+      --down-text: #e66767;
+      --meter-track: #184f95;
+      --meter-fill: #3987e5;
+      --band: rgba(255, 255, 255, .05);
+    }
+
+    * { box-sizing: border-box }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: 15px/1.5 var(--font);
+      padding: 20px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px));
+    }
+
+    .wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px }
+
+    h1 { font-size: 1.5rem; margin: 0; letter-spacing: -.01em; text-wrap: balance }
+    h2 { font-size: .78rem; margin: 0 0 2px; text-transform: uppercase; letter-spacing: .09em; color: var(--ink2); font-weight: 600 }
+    .sub { color: var(--ink2); margin: 2px 0 0 }
+    .hint { color: var(--muted); font-size: .82rem; margin: 0 0 10px }
+
+    header { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: flex-end }
+    .filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end }
+    .fl { display: flex; flex-direction: column; gap: 4px; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted) }
+
+    .seg { display: inline-flex; border: 1px solid var(--ring); border-radius: 8px; overflow: hidden; background: var(--surface) }
+    .seg button { font: inherit; font-size: .86rem; color: var(--ink2); background: transparent; border: 0; padding: 7px 13px; cursor: pointer; border-right: 1px solid var(--ring) }
+    .seg button:last-child { border-right: 0 }
+    .seg button:hover { background: var(--band) }
+    .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); font-weight: 600 }
+    .seg button:focus-visible, .btn:focus-visible { outline: 2px solid var(--s1); outline-offset: -2px }
+    .btn { font: inherit; font-size: .86rem; color: var(--ink2); background: var(--surface); border: 1px solid var(--ring); border-radius: 8px; padding: 7px 13px; cursor: pointer }
+    .btn:hover { background: var(--band) }
+
+    .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 16px 18px }
+
+    .kpis { display: grid; gap: 12px; grid-template-columns: 1.5fr repeat(4, 1fr) }
+    .kpi { display: flex; flex-direction: column; gap: 4px; min-width: 0 }
+    .kpi .lab { font-size: .8rem; color: var(--ink2) }
+    .kpi .val { font-size: 1.7rem; font-weight: 650; line-height: 1.15; letter-spacing: -.01em }
+    .kpi .note { font-size: .8rem; color: var(--ink2) }
+    .hero .val { font-size: 3.2rem; line-height: 1.05; letter-spacing: -.02em }
+    .delta { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; font-size: .9rem }
+    .delta .ic { font-size: .8rem }
+    .delta.up .ic { color: var(--up-text) }
+    .delta.down .ic { color: var(--down-text) }
+    .meter { height: 8px; border-radius: 99px; background: var(--meter-track); position: relative; margin: 8px 0 2px }
+    .meter i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: var(--meter-fill) }
+    .meter b { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--ink); border-radius: 1px }
+    .spark { display: block; margin-top: 8px }
+
+    .grid { display: grid; gap: 12px; grid-template-columns: 1.55fr 1fr }
+    .grid2 { display: grid; gap: 12px; grid-template-columns: 1.55fr 1fr }
+    .chart { position: relative; width: 100% }
+    .chart svg { display: block; overflow: visible }
+    .ax text { fill: var(--muted); font: 12px var(--font) }
+    .ax .gl { stroke: var(--grid); stroke-width: 1 }
+    .ax .base { stroke: var(--axis); stroke-width: 1 }
+    .lbl { fill: var(--ink2); font: 600 12px var(--font) }
+    .note-t { fill: var(--ink2); font: 12px var(--font) }
+    .inlab { font: 600 12px var(--font); fill: #fff; pointer-events: none }
+
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .84rem; color: var(--ink2); margin-top: 8px }
+    .legend span { display: inline-flex; align-items: center; gap: 7px }
+    .legend .k { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--c); border-radius: 2px }
+    .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--c) }
+
+    .band { fill: var(--band) }
+    .dim { opacity: .3 }
+    .hit { fill: transparent }
+    .pick { cursor: pointer }
+    .pick:hover, .pick:focus-visible { outline: none; filter: brightness(1.12) }
+    .focusring:focus-visible { outline: 2px solid var(--s1); outline-offset: 2px }
+    .prior { stroke: var(--muted) }
+
+    .ml { display: grid; gap: 10px }
+    .ml .row { display: grid; grid-template-columns: 30px 1fr 52px; align-items: center; gap: 10px; font-size: .86rem; color: var(--ink2) }
+    .ml .row.dim { opacity: .35 }
+    .ml .tr { height: 8px; border-radius: 99px; background: color-mix(in srgb, var(--s3) 22%, var(--surface)); position: relative }
+    .ml .tr i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: var(--s3) }
+    .ml .v { text-align: right; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums }
+    .segbar { display: flex; height: 28px; gap: 2px; margin: 12px 0 10px }
+    .segbar > div { display: flex; align-items: center; padding-left: 9px; color: #fff; font: 600 12px var(--font); border-radius: 4px; min-width: 0; white-space: nowrap; overflow: visible; cursor: default }
+    .segbar > div:first-child { border-radius: 4px 4px 4px 4px }
+
+    ul.find { margin: 10px 0 0; padding: 0; list-style: none; display: grid; gap: 14px 28px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) }
+    ul.find li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; font-size: .9rem; color: var(--ink2) }
+    ul.find li b { color: var(--ink) }
+    ul.find .n { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--axis); text-align: center; font-size: .75rem; line-height: 20px; color: var(--ink2) }
+
+    .tables { display: grid; gap: 12px; grid-template-columns: 1.3fr 1fr }
+    .tw { overflow-x: auto }
+    table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: .86rem }
+    th, td { text-align: right; padding: 6px 9px; border-bottom: 1px solid var(--grid); white-space: nowrap }
+    th:first-child, td:first-child { text-align: left }
+    th { font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600 }
+    tr.sum td { font-weight: 650; border-top: 1px solid var(--axis); border-bottom: 0 }
+    td.dn { color: var(--down-text) }
+
+    #tip { position: fixed; pointer-events: none; z-index: 10; display: none; background: var(--ink); color: var(--surface); padding: 8px 11px; border-radius: 8px; font-size: .82rem; line-height: 1.35; max-width: 260px; box-shadow: 0 4px 16px rgba(0, 0, 0, .18) }
+    #tip .t { opacity: .75; margin-bottom: 4px }
+    #tip .r { display: flex; align-items: baseline; gap: 8px; white-space: nowrap }
+    #tip .r .kk { display: inline-block; width: 12px; border-top: 2px solid; align-self: center; flex: none }
+    #tip .r b { font-size: .95rem }
+    #tip .r span { opacity: .8 }
+
+    footer { color: var(--muted); font-size: .8rem }
+    footer p { margin: 2px 0 }
+
+    @media (max-width: 1050px) {
+      .kpis { grid-template-columns: 1fr 1fr }
+      .hero { grid-column: 1 / -1 }
+      .grid, .grid2, .tables { grid-template-columns: 1fr }
+    }
+    @media (max-width: 520px) {
+      h1 { font-size: 1.25rem }
+      .hero .val { font-size: 2.6rem }
+      .kpis { grid-template-columns: 1fr }
+    }
+
+    /* Schwarz-Weiß-Druck: nicht auf Farbe verlassen */
+    @media print {
+      body { background: #fff; color: #000; padding: 0 }
+      .noprint { display: none !important }
+      .card { border-color: #999; break-inside: avoid }
+      .prior { stroke-dasharray: 7 5 }
+      .s1 { fill: #3a3a3a !important }
+      .s2 { fill: url(#h45) !important }
+      .s3 { fill: url(#h135) !important }
+      .segbar .c1 { background: #3a3a3a !important }
+      .segbar .c2 { background: repeating-linear-gradient(45deg, #fff 0 3px, #555 3px 5px) !important; color: #000 }
+      .segbar .c3 { background: repeating-linear-gradient(135deg, #fff 0 3px, #555 3px 5px) !important; color: #000 }
+      .inlab { fill: #000; stroke: #fff; stroke-width: 3px; paint-order: stroke }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact }
+      #stackLegend span:nth-child(1) .sw, #shareLegend span:nth-child(1) .sw { background: #3a3a3a !important }
+      #stackLegend span:nth-child(2) .sw, #shareLegend span:nth-child(2) .sw { background: repeating-linear-gradient(45deg, #fff 0 3px, #555 3px 5px) !important; border: 1px solid #555 }
+      #stackLegend span:nth-child(3) .sw, #shareLegend span:nth-child(3) .sw { background: repeating-linear-gradient(135deg, #fff 0 3px, #555 3px 5px) !important; border: 1px solid #555 }
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <pattern id="h45" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff" /><line x1="0" y1="0" x2="0" y2="5" stroke="#555" stroke-width="2" /></pattern>
+      <pattern id="h135" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="5" height="5" fill="#fff" /><line x1="0" y1="0" x2="0" y2="5" stroke="#555" stroke-width="2" /></pattern>
+    </defs>
+  </svg>
+
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Umsatz-Dashboard Gartenmöbel</h1>
+        <p class="sub">Aktuelles Jahr gegen Vorjahr, Umsatz in Tsd. € · Zeitraum wählen, alles darunter passt sich an</p>
+      </div>
+      <div class="filters">
+        <div class="fl">Zeitraum
+          <div class="seg" id="seg" role="group" aria-label="Zeitraum"></div>
+        </div>
+        <button class="btn noprint" id="theme" type="button" aria-label="Darstellung wechseln">Hell / Dunkel</button>
+      </div>
+    </header>
+
+    <section class="kpis" id="kpis" aria-label="Kennzahlen"></section>
+
+    <div class="grid">
+      <section class="card">
+        <h2 id="t-line">Umsatz je Monat: aktuell gegen Vorjahr</h2>
+        <p class="hint">Linie zeigt den Verlauf, die graue Linie ist das Vorjahr. Mit der Maus (oder Pfeiltasten) einen Monat ablesen.</p>
+        <div class="chart" id="lineChart"></div>
+        <div class="legend">
+          <span><i class="k" style="--c:var(--ink)"></i>Aktuell</span>
+          <span><i class="k prior" style="--c:var(--muted);border-top-style:solid"></i>Vorjahr</span>
+          <span><i class="sw" style="--c:var(--neg);border-radius:50%;width:10px;height:10px"></i>Monat unter Vorjahr</span>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Abweichung zum Vorjahr in Prozent</h2>
+        <p class="hint">Blau: über Vorjahr, rot: darunter. Nur der August liegt im Minus.</p>
+        <div class="chart" id="devChart"></div>
+      </section>
+    </div>
+
+    <div class="grid2">
+      <section class="card">
+        <h2>Umsatz nach Vertriebsweg und Quartal</h2>
+        <p class="hint">Ein Klick auf ein Quartal wählt den Zeitraum. Der Vorjahreswert je Vertriebsweg liegt nicht vor.</p>
+        <div class="seg noprint" id="mode" role="group" aria-label="Darstellung" style="margin-bottom:8px"></div>
+        <div class="chart" id="stackChart"></div>
+        <div class="legend" id="stackLegend"></div>
+      </section>
+      <section class="card">
+        <h2>Anteil am Umsatz im Zeitraum</h2>
+        <p class="hint" id="shareHint"></p>
+        <div class="segbar" id="segbar" role="img"></div>
+        <div class="legend" id="shareLegend"></div>
+        <h2 style="margin-top:22px">Onlineshop-Anteil je Quartal</h2>
+        <p class="hint">Anteil am Umsatz des jeweiligen Quartals. Der Anstieg folgt wohl der Saison, ein Trend ist nicht belegt.</p>
+        <div class="ml" id="onl"></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Auffälligkeiten (Gesamtjahr)</h2>
+      <ul class="find" id="find"></ul>
+    </section>
+
+    <div class="tables">
+      <section class="card">
+        <h2>Zahlen je Monat</h2>
+        <p class="hint">Alle Werte der Diagramme, ohne Maus lesbar.</p>
+        <div class="tw"><table id="tMon"></table></div>
+      </section>
+      <section class="card">
+        <h2>Zahlen je Quartal und Vertriebsweg</h2>
+        <p class="hint">Summe der drei Wege entspricht den Monatswerten.</p>
+        <div class="tw"><table id="tQ"></table></div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Datenbasis: Umsatz je Monat (Vorjahr und aktuell) und Umsatz je Vertriebsweg und Quartal (aktuelles Jahr), jeweils in Tsd. €, aus dem Aufgabenblatt von Tag 10. Plan für das aktuelle Jahr: 6,4 Mio. € (nur als Jahreswert bekannt).</p>
+      <p>Die Schätzung zum August nimmt an, dass er wie die übrigen elf Monate gewachsen wäre. Der Messe-Auftritt in Köln im Juni lässt sich in den Zahlen nicht nachweisen.</p>
+    </footer>
+  </div>
+  <div id="tip" role="tooltip"></div>
+
+  <script>
+    /* ---------- Daten ---------- */
+    const MON = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+    const M3 = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+    const VOR = [310, 345, 520, 780, 910, 870, 640, 480, 390, 300, 260, 290];
+    const AKT = [335, 362, 571, 842, 1004, 951, 702, 455, 430, 322, 281, 318];
+    const WEGE = [
+      { id: "s1", name: "Fachhandel", v: [720, 1510, 850, 480] },
+      { id: "s2", name: "Baumärkte", v: [390, 880, 470, 245] },
+      { id: "s3", name: "Onlineshop", v: [158, 407, 267, 196] }
+    ];
+    const PLAN = 6400;
+    const QN = ["Q1", "Q2", "Q3", "Q4"];
+
+    /* ---------- Helfer ---------- */
+    const $ = s => document.querySelector(s);
+    const NS = "http://www.w3.org/2000/svg";
+    const el = (tag, attrs = {}, parent) => {
+      const e = document.createElementNS(NS, tag);
+      for (const k in attrs) e.setAttribute(k, attrs[k]);
+      if (parent) parent.appendChild(e);
+      return e;
+    };
+    const h = (tag, attrs = {}, text) => {
+      const e = document.createElement(tag);
+      for (const k in attrs) e.setAttribute(k, attrs[k]);
+      if (text != null) e.textContent = text;
+      return e;
+    };
+    const nf = new Intl.NumberFormat("de-DE");
+    const f1 = v => v.toFixed(1).replace(".", ",");
+    const sign = v => (v > 0 ? "+" : v < 0 ? "−" : "");
+    const pct = v => sign(v) + f1(Math.abs(v)) + " %";
+    const tsd = v => sign(v) + nf.format(Math.abs(v));
+    const sum = a => a.reduce((s, x) => s + x, 0);
+
+    // Konsistenzprüfung: Quartalssummen der Monate = Summe der Vertriebswege
+    for (let q = 0; q < 4; q++) {
+      const m = sum(AKT.slice(q * 3, q * 3 + 3)), w = sum(WEGE.map(x => x.v[q]));
+      if (m !== w) console.warn("Quartal " + (q + 1) + ": Monate " + m + " ≠ Vertriebswege " + w);
+    }
+
+    const state = { q: 0, mode: "abs" };
+    { const m = /^#q([1-4])$/.exec(location.hash); if (m) state.q = +m[1]; if (location.hash === "#pct") state.mode = "pct"; }          // q: 0 = Gesamtjahr, 1..4 = Quartal
+    const range = () => state.q === 0 ? [0, 12] : [(state.q - 1) * 3, state.q * 3];
+    const inRange = i => { const [a, b] = range(); return i >= a && i < b; };
+
+    /* ---------- Tooltip ---------- */
+    const tip = $("#tip");
+    function tipRows(title, rows) {
+      tip.textContent = "";
+      tip.appendChild(h("div", { class: "t" }, title));
+      rows.forEach(r => {
+        const d = h("div", { class: "r" });
+        if (r.key) { const k = h("i", { class: "kk" }); k.style.borderColor = r.key; if (r.dash) k.style.borderTopStyle = "solid"; d.appendChild(k); }
+        d.appendChild(h("b", {}, r.value));
+        d.appendChild(h("span", {}, r.label));
+        tip.appendChild(d);
+      });
+    }
+    function placeTip(x, y) {
+      tip.style.display = "block";
+      const w = tip.offsetWidth, hh = tip.offsetHeight;
+      let left = x + 14, top = y - hh - 12;
+      if (left + w > innerWidth - 8) left = x - w - 14;
+      if (left < 8) left = 8;
+      if (top < 8) top = y + 18;
+      tip.style.left = left + "px"; tip.style.top = top + "px";
+    }
+    const hideTip = () => { tip.style.display = "none"; };
+    function tipAtEl(node) { const r = node.getBoundingClientRect(); placeTip(r.left + r.width / 2, r.top); }
+
+    /* ---------- Filter ---------- */
+    function buildFilters() {
+      const seg = $("#seg"); seg.textContent = "";
+      [["Gesamtjahr", 0], ["Q1", 1], ["Q2", 2], ["Q3", 3], ["Q4", 4]].forEach(([n, q]) => {
+        const b = h("button", { type: "button", "aria-pressed": state.q === q }, n);
+        b.onclick = () => { state.q = q; renderAll(); };
+        seg.appendChild(b);
+      });
+      const mode = $("#mode"); mode.textContent = "";
+      [["Absolut", "abs"], ["Anteil in %", "pct"]].forEach(([n, m]) => {
+        const b = h("button", { type: "button", "aria-pressed": state.mode === m }, n);
+        b.onclick = () => { state.mode = m; renderAll(); };
+        mode.appendChild(b);
+      });
+    }
+
+    /* ---------- Kennzahlen ---------- */
+    function renderKpis() {
+      const [a, b] = range(), n = b - a;
+      const sa = sum(AKT.slice(a, b)), sv = sum(VOR.slice(a, b)), d = sa - sv, dp = (sa / sv - 1) * 100;
+      const over = AKT.slice(a, b).filter((v, i) => v > VOR[a + i]).length;
+      const under = [];
+      for (let i = a; i < b; i++) if (AKT[i] < VOR[i]) under.push(MON[i]);
+      let pk = a; for (let i = a; i < b; i++) if (AKT[i] > AKT[pk]) pk = i;
+      let lo = a; for (let i = a; i < b; i++) if (AKT[i] < AKT[lo]) lo = i;
+      const total = sum(AKT), yr = sa / total * 100;
+      const box = $("#kpis"); box.textContent = "";
+      const scopeName = state.q === 0 ? "Gesamtjahr" : QN[state.q - 1];
+
+      // Heldenzahl
+      const hero = h("div", { class: "card kpi hero" });
+      hero.appendChild(h("div", { class: "lab" }, "Umsatz " + scopeName));
+      hero.appendChild(h("div", { class: "val" }, (sa / 1000).toFixed(2).replace(".", ",") + " Mio. €"));
+      const dl = h("div", { class: "delta " + (d >= 0 ? "up" : "down") });
+      dl.appendChild(h("span", { class: "ic", "aria-hidden": "true" }, d >= 0 ? "▲" : "▼"));
+      dl.appendChild(h("span", {}, tsd(d) + " Tsd. € (" + pct(dp) + ") gegen Vorjahr"));
+      hero.appendChild(dl);
+      hero.appendChild(h("div", { class: "note" }, nf.format(sa) + " Tsd. € im Zeitraum" + (state.q ? ", " + f1(yr) + " % des Jahres" : "")));
+      hero.appendChild(sparkline());
+      box.appendChild(hero);
+
+      // Plan
+      const pl = h("div", { class: "card kpi" });
+      pl.appendChild(h("div", { class: "lab" }, "Jahresplan " + f1(PLAN / 1000) + " Mio. €"));
+      pl.appendChild(h("div", { class: "val" }, f1(total / PLAN * 100) + " %"));
+      const mt = h("div", { class: "meter", role: "img", "aria-label": "Plan zu " + f1(total / PLAN * 100) + " Prozent erfüllt" });
+      const scale = 120;
+      const fill = h("i"); fill.style.width = Math.min(total / PLAN * 100, scale) / scale * 100 + "%"; mt.appendChild(fill);
+      const mk = h("b"); mk.style.left = "calc(" + (100 / scale * 100) + "% - 1px)"; mt.appendChild(mk);
+      pl.appendChild(mt);
+      pl.appendChild(h("div", { class: "note" }, tsd(total - PLAN) + " Tsd. € über Plan (Strich = Plan, Gesamtjahr)"));
+      box.appendChild(pl);
+
+      // Monate über Vorjahr
+      const mo = h("div", { class: "card kpi" });
+      mo.appendChild(h("div", { class: "lab" }, "Monate über Vorjahr"));
+      mo.appendChild(h("div", { class: "val" }, over + " von " + n));
+      mo.appendChild(h("div", { class: "note" }, under.length ? "Darunter: " + under.join(", ") : "Kein Monat im Minus"));
+      box.appendChild(mo);
+
+      // Spitzenmonat
+      const pm = h("div", { class: "card kpi" });
+      pm.appendChild(h("div", { class: "lab" }, "Stärkster Monat"));
+      pm.appendChild(h("div", { class: "val" }, MON[pk]));
+      pm.appendChild(h("div", { class: "note" }, nf.format(AKT[pk]) + " Tsd. € (" + pct((AKT[pk] / VOR[pk] - 1) * 100) + " gegen Vorjahr)"));
+      box.appendChild(pm);
+
+      // Schwächster Monat
+      const lm = h("div", { class: "card kpi" });
+      lm.appendChild(h("div", { class: "lab" }, "Schwächster Monat"));
+      lm.appendChild(h("div", { class: "val" }, MON[lo]));
+      lm.appendChild(h("div", { class: "note" }, nf.format(AKT[lo]) + " Tsd. €, Faktor " + f1(AKT[pk] / AKT[lo]) + " zum stärksten"));
+      box.appendChild(lm);
+    }
+
+    function sparkline() {
+      const W = 220, H = 36, p = 3;
+      const svg = el("svg", { class: "spark", width: W, height: H, viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Verlauf des Umsatzes je Monat" });
+      const mx = Math.max(...AKT);
+      const x = i => p + (W - 2 * p) * i / 11, y = v => H - p - (H - 2 * p) * v / mx;
+      el("path", { d: AKT.map((v, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1)).join(""), fill: "none", stroke: "var(--muted)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+      const [a, b] = range();
+      if (state.q) {
+        el("path", { d: AKT.slice(a, b).map((v, k) => (k ? "L" : "M") + x(a + k).toFixed(1) + " " + y(v).toFixed(1)).join(""), fill: "none", stroke: "var(--ink)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+      } else {
+        el("path", { d: AKT.map((v, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1)).join(""), fill: "none", stroke: "var(--ink)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+      }
+      return svg;
+    }
+
+    /* ---------- Liniendiagramm ---------- */
+    function renderLine() {
+      const box = $("#lineChart"); box.textContent = "";
+      const W = Math.max(box.clientWidth, 280), H = 320, m = { l: 46, r: 14, t: 18, b: 30 };
+      const svg = el("svg", { width: W, height: H, viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Liniendiagramm: Umsatz je Monat, aktuelles Jahr gegen Vorjahr. Spitze im Mai mit 1.004 Tausend Euro, August als einziger Monat unter dem Vorjahr." }, box);
+      const maxV = 1200, iw = W - m.l - m.r, ih = H - m.t - m.b;
+      const x = i => m.l + iw * (i + .5) / 12, y = v => m.t + ih * (1 - v / maxV);
+      const ax = el("g", { class: "ax" }, svg);
+      [0, 300, 600, 900, 1200].forEach(t => {
+        el("line", { class: t ? "gl" : "base", x1: m.l, x2: W - m.r, y1: y(t), y2: y(t) }, ax);
+        const tx = el("text", { x: m.l - 8, y: y(t) + 4, "text-anchor": "end" }, ax); tx.textContent = nf.format(t);
+      });
+      const step = W < 470 ? 2 : 1;
+      M3.forEach((n, i) => { if (i % step === 0) { const tx = el("text", { x: x(i), y: H - 9, "text-anchor": "middle" }, ax); tx.textContent = n; } });
+
+      // Auswahlband
+      if (state.q) {
+        const [a, b] = range();
+        el("rect", { class: "band", x: m.l + iw * a / 12, y: m.t, width: iw * (b - a) / 12, height: ih }, svg);
+      }
+      const dimG = el("g", {}, svg);
+      const path = arr => arr.map((v, i) => (i ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1)).join("");
+      // Fläche (10 % Wash) und Linien
+      el("path", { d: path(AKT) + "L" + x(11) + " " + y(0) + "L" + x(0) + " " + y(0) + "Z", fill: "var(--ink)", "fill-opacity": ".07" }, dimG);
+      el("path", { class: "prior", d: path(VOR), fill: "none", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, dimG);
+      el("path", { d: path(AKT), fill: "none", stroke: "var(--ink)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, dimG);
+      if (state.q) { // außerhalb des Zeitraums zurücknehmen
+        const [a, b] = range();
+        [[0, a], [b, 12]].forEach(([s, e]) => { if (e > s) el("rect", { x: m.l + iw * s / 12, y: m.t - 2, width: iw * (e - s) / 12, height: ih + 4, fill: "var(--surface)", "fill-opacity": ".66" }, svg); });
+      }
+      // Markierungen: Spitze, August, Dezember-Endpunkt
+      const dot = (i, v, col) => { el("circle", { cx: x(i), cy: y(v), r: 6, fill: "var(--surface)" }, svg); el("circle", { cx: x(i), cy: y(v), r: 4, fill: col }, svg); };
+      const pk = AKT.indexOf(Math.max(...AKT));
+      dot(11, VOR[11], "var(--muted)"); dot(11, AKT[11], "var(--ink)");
+      dot(pk, AKT[pk], "var(--ink)");
+      const lab = el("text", { class: "lbl", x: x(pk), y: y(AKT[pk]) - 12, "text-anchor": "middle" }, svg); lab.textContent = MON[pk] + " " + nf.format(AKT[pk]);
+      // August
+      const au = 7; dot(au, AKT[au], "var(--neg)");
+      const tx = Math.min(x(8) - 6, W - m.r - 150), ty = y(W < 560 ? 1030 : 760);
+      el("line", { x1: x(au), y1: y(AKT[au]) - 8, x2: x(au) + 10, y2: ty + 30, stroke: "var(--axis)", "stroke-width": 1 }, svg);
+      const note = el("text", { class: "note-t", x: tx, y: ty }, svg);
+      ["August: Teakholz-Lieferausfall,", "zwei Bestseller sechs", "Wochen nicht lieferbar"].forEach((t, k) => { const s = el("tspan", { x: tx, dy: k ? 15 : 0 }, note); s.textContent = t; });
+
+      // Fadenkreuz
+      const cross = el("g", { style: "display:none" }, svg);
+      const cl = el("line", { y1: m.t, y2: m.t + ih, stroke: "var(--axis)", "stroke-width": 1 }, cross);
+      const c1 = el("circle", { r: 5, fill: "var(--ink)", stroke: "var(--surface)", "stroke-width": 2 }, cross);
+      const c2 = el("circle", { r: 5, fill: "var(--muted)", stroke: "var(--surface)", "stroke-width": 2 }, cross);
+      const show = (i, cx, cy) => {
+        cross.style.display = "";
+        cl.setAttribute("x1", x(i)); cl.setAttribute("x2", x(i));
+        c1.setAttribute("cx", x(i)); c1.setAttribute("cy", y(AKT[i]));
+        c2.setAttribute("cx", x(i)); c2.setAttribute("cy", y(VOR[i]));
+        const d = AKT[i] - VOR[i];
+        tipRows(MON[i], [
+          { key: "var(--surface)", value: nf.format(AKT[i]) + " Tsd. €", label: "aktuell", dash: true },
+          { key: "var(--surface)", value: nf.format(VOR[i]) + " Tsd. €", label: "Vorjahr", dash: true },
+          { value: tsd(d) + " (" + pct((AKT[i] / VOR[i] - 1) * 100) + ")", label: "Abweichung" }
+        ]);
+        const r = svg.getBoundingClientRect();
+        placeTip(cx != null ? cx : r.left + x(i), cy != null ? cy : r.top + y(Math.max(AKT[i], VOR[i])));
+      };
+      const hit = el("rect", { class: "hit focusring", x: m.l, y: m.t, width: iw, height: ih, tabindex: 0, "aria-label": "Monate ablesen, Pfeiltasten wechseln den Monat" }, svg);
+      let cur = 4;
+      const idxAt = e => { const r = svg.getBoundingClientRect(); return Math.max(0, Math.min(11, Math.floor((e.clientX - r.left - m.l) / iw * 12))); };
+      hit.addEventListener("pointermove", e => { cur = idxAt(e); show(cur, e.clientX, e.clientY); });
+      hit.addEventListener("pointerleave", () => { cross.style.display = "none"; hideTip(); });
+      hit.addEventListener("focus", () => show(cur));
+      hit.addEventListener("blur", () => { cross.style.display = "none"; hideTip(); });
+      hit.addEventListener("keydown", e => {
+        if (e.key === "ArrowRight") { cur = Math.min(11, cur + 1); show(cur); e.preventDefault(); }
+        if (e.key === "ArrowLeft") { cur = Math.max(0, cur - 1); show(cur); e.preventDefault(); }
+      });
+    }
+
+    /* ---------- Abweichung (divergierend) ---------- */
+    function barPath(cx, w, y0, y1, r) {
+      const x0 = cx - w / 2, x1 = cx + w / 2, up = y1 < y0, rr = Math.min(r, Math.abs(y1 - y0) / 2);
+      if (up) return `M${x0} ${y0}V${y1 + rr}Q${x0} ${y1} ${x0 + rr} ${y1}H${x1 - rr}Q${x1} ${y1} ${x1} ${y1 + rr}V${y0}Z`;
+      return `M${x0} ${y0}V${y1 - rr}Q${x0} ${y1} ${x0 + rr} ${y1}H${x1 - rr}Q${x1} ${y1} ${x1} ${y1 - rr}V${y0}Z`;
+    }
+    function renderDev() {
+      const box = $("#devChart"); box.textContent = "";
+      const W = Math.max(box.clientWidth, 260), H = 320, m = { l: 40, r: 10, t: 22, b: 30 };
+      const svg = el("svg", { width: W, height: H, viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Säulendiagramm: Abweichung zum Vorjahr in Prozent je Monat. Alle Monate im Plus bis auf August mit minus 5,2 Prozent." }, box);
+      const dev = AKT.map((v, i) => (v / VOR[i] - 1) * 100);
+      const lo = -10, hi = 12, iw = W - m.l - m.r, ih = H - m.t - m.b;
+      const x = i => m.l + iw * (i + .5) / 12, y = v => m.t + ih * (1 - (v - lo) / (hi - lo));
+      const ax = el("g", { class: "ax" }, svg);
+      [-10, 0, 10].forEach(t => {
+        el("line", { class: t ? "gl" : "base", x1: m.l, x2: W - m.r, y1: y(t), y2: y(t) }, ax);
+        const tx = el("text", { x: m.l - 8, y: y(t) + 4, "text-anchor": "end" }, ax); tx.textContent = (t > 0 ? "+" : t < 0 ? "−" : "") + Math.abs(t) + " %";
+      });
+      const step = W < 400 ? 2 : 1;
+      const bw = Math.min(24, iw / 12 * .62);
+      const max = dev.indexOf(Math.max(...dev)), min = dev.indexOf(Math.min(...dev));
+      dev.forEach((v, i) => {
+        const g = el("g", { class: inRange(i) ? "" : "dim", tabindex: 0, role: "img", "aria-label": MON[i] + ": " + pct(v) + " gegen Vorjahr", style: "outline:none" }, svg);
+        const bar = el("path", { d: barPath(x(i), bw, y(0), y(v), 4), fill: v >= 0 ? "var(--pos)" : "var(--neg)" }, g);
+        el("rect", { class: "hit", x: x(i) - iw / 24, y: m.t, width: iw / 12, height: ih }, g);
+        const on = e => {
+          tipRows(MON[i], [{ value: pct(v), label: "gegen Vorjahr" }, { value: tsd(AKT[i] - VOR[i]) + " Tsd. €", label: nf.format(VOR[i]) + " → " + nf.format(AKT[i]) }]);
+          if (e && e.clientX != null) placeTip(e.clientX, e.clientY); else tipAtEl(bar);
+          bar.setAttribute("opacity", ".82");
+        };
+        const off = () => { hideTip(); bar.removeAttribute("opacity"); };
+        g.addEventListener("pointermove", on); g.addEventListener("pointerleave", off);
+        g.addEventListener("focus", () => on()); g.addEventListener("blur", off);
+        if (i % step === 0) { const tx = el("text", { class: "ax", x: x(i), y: H - 9, "text-anchor": "middle", style: "fill:var(--muted);font:12px var(--font)" }, svg); tx.textContent = M3[i]; }
+        if (i === max || i === min) { // gezielt beschriften: Extrem und Ausreißer
+          const l = el("text", { class: "lbl", x: x(i), y: v >= 0 ? y(v) - 7 : y(v) + 16, "text-anchor": "middle" }, g); l.textContent = pct(v);
+        }
+      });
+    }
+
+    /* ---------- Gestapelte Balken ---------- */
+    function renderStack() {
+      const box = $("#stackChart"); box.textContent = "";
+      const W = Math.max(box.clientWidth, 280), rowH = 24, gap = 24, m = { l: 34, r: 56, t: 6, b: 28 }, H = m.t + 4 * (rowH + gap) - gap + m.b;
+      const svg = el("svg", { width: W, height: H, viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Gestapelte Balken: Umsatz je Quartal nach Vertriebsweg. Zahlen siehe Tabelle." }, box);
+      const pctMode = state.mode === "pct", iw = W - m.l - m.r;
+      const totals = [0, 1, 2, 3].map(q => sum(WEGE.map(w => w.v[q])));
+      const maxT = Math.max(...totals), scale = pctMode ? 100 : Math.ceil(maxT / 500) * 500;
+      const x = v => m.l + iw * v / scale;
+      const ax = el("g", { class: "ax" }, svg);
+      const ticks = pctMode ? [0, 25, 50, 75, 100] : Array.from({ length: scale / 500 + 1 }, (_, k) => k * 500);
+      ticks.forEach(t => {
+        el("line", { class: t ? "gl" : "base", x1: x(t), x2: x(t), y1: m.t - 2, y2: H - m.b + 2 }, ax);
+        const tx = el("text", { x: x(t), y: H - 8, "text-anchor": "middle" }, ax); tx.textContent = pctMode ? t + " %" : nf.format(t);
+      });
+      for (let q = 0; q < 4; q++) {
+        const yy = m.t + q * (rowH + gap), dimmed = state.q && state.q !== q + 1;
+        const row = el("g", { class: dimmed ? "dim" : "" }, svg);
+        const ql = el("text", { class: "lbl", x: m.l - 8, y: yy + rowH / 2 + 4, "text-anchor": "end" }, row); ql.textContent = QN[q];
+        let acc = 0;
+        WEGE.forEach((w, k) => {
+          const v = w.v[q], val = pctMode ? v / totals[q] * 100 : v;
+          const x0 = x(acc), x1 = x(acc + val); acc += val;
+          const last = k === WEGE.length - 1, wpx = Math.max(x1 - x0 - (last ? 0 : 2), 0);
+          const g = el("g", { class: "pick", tabindex: 0, role: "button", "aria-label": QN[q] + " " + w.name + ": " + nf.format(v) + " Tsd. € (" + f1(v / totals[q] * 100) + " % des Quartals), wählt das Quartal" }, row);
+          const r = 4;
+          const d = last ? `M${x0} ${yy}H${x0 + wpx - r}Q${x0 + wpx} ${yy} ${x0 + wpx} ${yy + r}V${yy + rowH - r}Q${x0 + wpx} ${yy + rowH} ${x0 + wpx - r} ${yy + rowH}H${x0}Z` : `M${x0} ${yy}h${wpx}v${rowH}h${-wpx}Z`;
+          el("path", { class: w.id, d, fill: "var(--" + w.id + ")" }, g);
+          const txt = pctMode ? f1(v / totals[q] * 100) + " %" : nf.format(v);
+          if (wpx > txt.length * 7.2 + 14) { const t = el("text", { class: "inlab", x: x0 + 8, y: yy + rowH / 2 + 4 }, g); t.textContent = txt; }
+          const on = e => {
+            tipRows(QN[q] + " · " + w.name, [{ value: nf.format(v) + " Tsd. €", label: f1(v / totals[q] * 100) + " % des Quartals" }, { value: nf.format(totals[q]) + " Tsd. €", label: "Quartal gesamt" }]);
+            if (e && e.clientX != null) placeTip(e.clientX, e.clientY); else tipAtEl(g);
+          };
+          g.addEventListener("pointermove", on); g.addEventListener("pointerleave", hideTip);
+          g.addEventListener("focus", () => on()); g.addEventListener("blur", hideTip);
+          const pick = () => { state.q = state.q === q + 1 ? 0 : q + 1; renderAll(); };
+          g.addEventListener("click", pick);
+          g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+        });
+        if (!pctMode) { const t = el("text", { class: "lbl", x: x(totals[q]) + 8, y: yy + rowH / 2 + 4 }, row); t.textContent = nf.format(totals[q]); }
+      }
+      const lg = $("#stackLegend"); lg.textContent = "";
+      WEGE.forEach(w => { const s = h("span"); const sw = h("i", { class: "sw" }); sw.style.setProperty("--c", "var(--" + w.id + ")"); s.appendChild(sw); s.appendChild(document.createTextNode(w.name)); lg.appendChild(s); });
+    }
+
+    /* ---------- Anteil im Zeitraum (segmentierter Balken) ---------- */
+    function renderShare() {
+      const qs = state.q ? [state.q - 1] : [0, 1, 2, 3];
+      const vals = WEGE.map(w => sum(qs.map(q => w.v[q]))), tot = sum(vals);
+      $("#shareHint").textContent = (state.q ? QN[state.q - 1] : "Gesamtjahr") + ": " + nf.format(tot) + " Tsd. € verteilt auf drei Vertriebswege. Die Breite entspricht dem Anteil.";
+      const bar = $("#segbar"); bar.textContent = "";
+      bar.setAttribute("aria-label", WEGE.map((w, i) => w.name + " " + f1(vals[i] / tot * 100) + " Prozent").join(", "));
+      WEGE.forEach((w, i) => {
+        const d = h("div", { class: "c" + (i + 1), tabindex: 0 }, f1(vals[i] / tot * 100) + " %");
+        d.style.flex = vals[i] + " 1 0"; d.style.background = "var(--" + w.id + ")";
+        const on = e => { tipRows(w.name, [{ value: nf.format(vals[i]) + " Tsd. €", label: f1(vals[i] / tot * 100) + " % im Zeitraum" }]); if (e && e.clientX != null) placeTip(e.clientX, e.clientY); else tipAtEl(d); };
+        d.addEventListener("pointermove", on); d.addEventListener("pointerleave", hideTip); d.addEventListener("focus", () => on()); d.addEventListener("blur", hideTip);
+        bar.appendChild(d);
+      });
+      const lg = $("#shareLegend"); lg.textContent = "";
+      WEGE.forEach(w => { const s = h("span"); const sw = h("i", { class: "sw" }); sw.style.setProperty("--c", "var(--" + w.id + ")"); s.appendChild(sw); s.appendChild(document.createTextNode(w.name)); lg.appendChild(s); });
+
+      const onl = $("#onl"); onl.textContent = "";
+      for (let q = 0; q < 4; q++) {
+        const share = WEGE[2].v[q] / sum(WEGE.map(w => w.v[q])) * 100;
+        const row = h("div", { class: "row" + (state.q && state.q !== q + 1 ? " dim" : ""), role: "img", "aria-label": QN[q] + ": " + f1(share) + " Prozent Onlineshop" });
+        row.appendChild(h("span", {}, QN[q]));
+        const tr = h("div", { class: "tr" }), fl = h("i"); fl.style.width = share + "%"; tr.appendChild(fl); row.appendChild(tr);
+        row.appendChild(h("span", { class: "v" }, f1(share) + " %"));
+        onl.appendChild(row);
+      }
+    }
+
+    /* ---------- Auffälligkeiten ---------- */
+    function renderFindings() {
+      const total = sum(AKT), tv = sum(VOR);
+      const q2 = sum(AKT.slice(3, 6)), pk = AKT.indexOf(Math.max(...AKT)), lo = AKT.indexOf(Math.min(...AKT));
+      const rest = AKT.filter((_, i) => i !== 7), restV = VOR.filter((_, i) => i !== 7);
+      const g = sum(rest) / sum(restV) - 1, exp = VOR[7] * (1 + g), missing = Math.round(exp - AKT[7]);
+      const onl = [0, 1, 2, 3].map(q => WEGE[2].v[q] / sum(WEGE.map(w => w.v[q])) * 100);
+      const items = [
+        ["Saison. ", "April bis Juni bringen " + nf.format(q2) + " von " + nf.format(total) + " Tsd. € (" + f1(q2 / total * 100) + " %). Spitze im " + MON[pk] + " (" + nf.format(AKT[pk]) + "), Tiefpunkt im " + MON[lo] + " (" + nf.format(AKT[lo]) + "): Faktor " + f1(AKT[pk] / AKT[lo]) + ". Das Vorjahr hat dieselbe Form."],
+        ["August. ", "Als einziger Monat unter Vorjahr (" + pct((AKT[7] / VOR[7] - 1) * 100) + "). Das passt zum Teakholz-Ausfall, ist aber eine Erklärung, kein Beweis. Schätzung des Ausfalls: etwa " + missing + " Tsd. € (Annahme: Wachstum wie die übrigen Monate, +" + f1(g * 100) + " %)."],
+        ["Wachstum und Plan. ", tsd(total - tv) + " Tsd. € (" + pct((total / tv - 1) * 100) + ") gegen Vorjahr, Plan um " + tsd(total - PLAN) + " Tsd. € (" + pct((total / PLAN - 1) * 100) + ") übertroffen."],
+        ["Onlineshop. ", "Anteil steigt von " + f1(onl[0]) + " % (Q1) auf " + f1(onl[3]) + " % (Q4). Vermutlich Saison, weil der Online-Umsatz weniger schwankt als der Handel. Ein Trend ist ohne Vorjahreswerte je Vertriebsweg nicht belegt."],
+        ["Messe Köln im Juni. ", "Der Juni liegt mit " + pct((AKT[5] / VOR[5] - 1) * 100) + " im Rahmen der anderen Monate. Ein Messe-Effekt ist in diesen Zahlen nicht zu erkennen."]
+      ];
+      const ul = $("#find"); ul.textContent = "";
+      items.forEach(([b, t], i) => { const li = h("li"); li.appendChild(h("span", { class: "n" }, String(i + 1))); const d = h("div"); d.appendChild(h("b", {}, b)); d.appendChild(document.createTextNode(t)); li.appendChild(d); ul.appendChild(li); });
+    }
+
+    /* ---------- Tabellen ---------- */
+    function renderTables() {
+      const [a, b] = range();
+      const t = $("#tMon"); t.textContent = "";
+      const head = h("tr"); ["Monat", "Vorjahr", "Aktuell", "Abweichung", "in %"].forEach(c => head.appendChild(h("th", {}, c)));
+      t.appendChild(head);
+      for (let i = a; i < b; i++) {
+        const d = AKT[i] - VOR[i], r = h("tr");
+        [MON[i], nf.format(VOR[i]), nf.format(AKT[i]), tsd(d), pct((AKT[i] / VOR[i] - 1) * 100)].forEach((c, k) => { const td = h("td", k >= 3 && d < 0 ? { class: "dn" } : {}, c); r.appendChild(td); });
+        t.appendChild(r);
+      }
+      const sv = sum(VOR.slice(a, b)), sa = sum(AKT.slice(a, b)), sr = h("tr", { class: "sum" });
+      ["Summe", nf.format(sv), nf.format(sa), tsd(sa - sv), pct((sa / sv - 1) * 100)].forEach(c => sr.appendChild(h("td", {}, c)));
+      t.appendChild(sr);
+
+      const q = $("#tQ"); q.textContent = "";
+      const hq = h("tr"); ["Quartal", ...WEGE.map(w => w.name), "Gesamt"].forEach(c => hq.appendChild(h("th", {}, c)));
+      q.appendChild(hq);
+      const qs = state.q ? [state.q - 1] : [0, 1, 2, 3];
+      qs.forEach(k => { const r = h("tr"); [QN[k], ...WEGE.map(w => nf.format(w.v[k])), nf.format(sum(WEGE.map(w => w.v[k])))].forEach(c => r.appendChild(h("td", {}, c))); q.appendChild(r); });
+      if (qs.length > 1) { const r = h("tr", { class: "sum" }); ["Jahr", ...WEGE.map(w => nf.format(sum(w.v))), nf.format(sum(AKT))].forEach(c => r.appendChild(h("td", {}, c))); q.appendChild(r); }
+    }
+
+    /* ---------- Zusammenbau ---------- */
+    function renderAll() {
+      hideTip();
+      buildFilters(); renderKpis(); renderLine(); renderDev(); renderStack(); renderShare(); renderTables();
+      $("#t-line").textContent = "Umsatz je Monat: aktuell gegen Vorjahr" + (state.q ? " (Auswahl " + QN[state.q - 1] + ")" : "");
+    }
+    renderFindings();
+    renderAll();
+    let rz; new ResizeObserver(() => { clearTimeout(rz); rz = setTimeout(() => { renderLine(); renderDev(); renderStack(); }, 60); }).observe(document.querySelector(".wrap"));
+
+    /* Hell / Dunkel */
+    (function () {
+      let saved = null; try { saved = localStorage.getItem("umsatz-theme"); } catch (e) { }
+      if (saved) document.documentElement.dataset.theme = saved;
+      $("#theme").onclick = () => {
+        const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        const next = dark ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem("umsatz-theme", next); } catch (e) { }
+      };
+    })();
+  </script>
+</body>
+
+</html>
