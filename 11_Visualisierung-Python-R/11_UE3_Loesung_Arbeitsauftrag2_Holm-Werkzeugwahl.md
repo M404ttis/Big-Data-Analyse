@@ -70,11 +70,3 @@ Begründung:
 | **Akzeptanz** | 30 Führungskräfte müssen die Berichte wirklich nutzen, Geschäftsführer liest gedruckt | Druckfähige PDF-Version desselben Berichts, Einführung mit zwei bis drei Pilotnutzern, Feedback nach dem ersten Monat |
 | **Rechte und Datenschutz** | Kampagnendaten (Kundenkarte) sind personenbezogen | Auswertung aggregiert, Zugriffsrechte im BI-Werkzeug je Standort und Rolle, Datenschutz vor Start klären |
 | **Lizenzbindung** | Jahreslizenz, Preissteigerung | Vertragsdauer und Kündigungsfrist prüfen, mit Rabatt nur bei kurzer Bindung annehmen |
-
-## Teil E: Plenum-Leitfragen
-
-**Welche Option haben Sie gewählt?** C, stufenweise: BI für Controlling, Python für Marketing und Einkauf.
-
-**Was passiert, wenn eine der zwei Personen kündigt?** Ohne Vorsorge fällt die Hälfte der Leistung aus (wer BI kann oder wer Python kann). Gegenmaßnahmen sind Dokumentation, Git, Standardwerkzeuge, Tandem-Einarbeitung und ein externer Backup-Kontakt. Fällt Person 2 aus, sind Marketing und Einkauf pausiert, Controlling läuft weiter. Fällt Person 1 aus, laufen die Dashboards vorerst weiter, Änderungen aber nicht.
-
-**Welche Anforderung kommt zuerst?** Controlling. Klarer Bedarf, feste Struktur, saubere Quelle, größter Leserkreis, schnell erreichbar, und es schafft Vertrauen für die späteren Projekte.

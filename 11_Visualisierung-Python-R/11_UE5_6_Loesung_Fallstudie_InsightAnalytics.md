@@ -72,17 +72,7 @@ Hinweis zu 1: Ein Kreisdiagramm taugt hier nicht. Für Veränderungen zählt der
 
 Priorisierung nach Wirkung und Aufwand: Rabatt-Transparenz (hoher Effekt, geringer Aufwand) vor Mindestbestellwert (mittlerer Effekt, Kundenrisiko) vor Süd-Servicekonzept (hoher Aufwand).
 
-## Teil E: Plenum-Leitfragen
-
-**Mehr Aufträge, mehr Kunden, gleicher Umsatz: was könnte dahinterstecken?** Kleinere Aufträge (Ø 862 € → 771 €), höhere Rabatte (rund 140.000 € Umsatzverlust), ein verändertes Bestellverhalten (Portal, Zubehör statt Geräte), zusätzlich die Vakanz in West und der Wettbewerber im Süden.
-
-**Welche Aufteilung zeigt die Ursache?** Zuerst **Auftragswert nach Produktlinie und Kundentyp** (Zersplitterung), dann **Rabatt nach Betreuer und Region** (Steuerung), dann **Region** über die Zeit (West, Süd). Die Region allein reicht nicht, weil Vakanz und Wettbewerber nur zwei von mehreren Ursachen sind.
-
-**Welche Rolle spielen die gestiegenen Rabatte?** Eine große: Ohne den Anstieg läge der Umsatz bei rund 8,54 Mio. € (+1,1 %), mit ihm bei 8,40 Mio. € (−0,6 %). Offen ist, ob die Rabatte Aufträge **gewonnen** haben (mehr Aufträge +11,2 %) oder nur Marge **verschenkt**. Das zeigt die Auswertung Rabatt gegen Auftragswert und Wiederkaufrate.
-
-**Welche Empfehlung würden Sie der Geschäftsführung geben?** Erst Ursachen belegen (Auftragsdaten nach Region, Linie, Kundentyp, Betreuer), parallel Rabatte steuern und die West-Stellen besetzen. Kleinaufträge bündeln, Süd-Service stärken, sobald sich H5 bestätigt, und Margen ins Reporting aufnehmen.
-
-## Teil F: Python-Kontrollrechnung
+## Teil E: Python-Kontrollrechnung
 
 ```python
 v, a = 8.45e6, 8.40e6          # Umsatz Vorjahr / aktuell

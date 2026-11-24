@@ -100,14 +100,6 @@ Die Folie „Wann reicht Erfahrung, wann braucht es Daten?“ gibt einen einfach
 | **Lager & Einkauf** | ERP (Bestand, Bewegungen, Ersatzteilverkäufe), Serviceberichte (welche Teile getauscht wurden). | Der Lagerleiter bestellt nach Gefühl. 40 % der Artikel liegen seit 2 Jahren. Welche Teile fehlen, wenn ein Kunde sie braucht? | Bedarfsprognose pro Teil aus Verbrauch und Anlagenbestand. Nicht mehr bewegte Artikel erkennen. Teile, die bei Einsätzen getauscht, aber von Dritten gekauft werden, gezielt anbieten. |
 | **Produktentwicklung** | Garantie-Excel (Ursache „vermutet“), Servicestatistik, Absagegründe aus Ausschreibungen, Steuerungsdaten. | Neues Modell nach Zurufen aus dem Vertrieb. | Belegte Schwachstellen der Anlagen (Fehler nach Bauteil) und tatsächliche Nutzung der Anlagen in die Konstruktion. Anforderungen aus allen Kunden und Absagen statt aus dem letzten Anruf. |
 
-### 2.4 Plenum-Diskussion (meine Antworten, nicht die der Gruppe)
-
-| Frage | Antwort |
-|---|---|
-| Welche ungenutzte Datenquelle überrascht am meisten? | Die **Steuerungen**: Sie speichern seit Jahren Laufzeiten und Störungen, aber nur 90 Tage und niemand liest sie aus. Der Wert (Vorhersage von Ausfällen) wächst mit der Historie, und die geht täglich verloren. Auf Platz 2: die **Absagen in den Postfächern**, die zeigen, warum Aufträge verloren gehen, und kein zusätzliches Geld kosten. |
-| Welche Entscheidung ohne Daten ist am teuersten? | Die **Ersatzteil-Strategie** mit rund 2 Mio. € Umsatz bei Dritten. Wichtig: Das ist eine Schätzung des Vertriebs. Vor einer Entscheidung wäre sie zu prüfen (Ankereffekt, Überoptimismus der Folie „Verzerrungen“). Am sichersten belegt ist das Lager: 2,3 Mio. € Bestand sind eine Zahl aus der Buchhaltung. |
-| Wo könnten sich Gruppen uneinig sein? | (1) **Ersatzteile oder Wartung zuerst?** Ersatzteile sind das größere Geld, Wartung ist das Kundenthema. (2) **Ist Excel überhaupt „Digitalisierung“?** Nein, aber es ist der schnellste Weg zur Datenbasis. (3) **Sensoren sofort oder erst die Daten bereinigen?** Das ist der Zielkonflikt Geschwindigkeit gegen Qualität der Folien. (4) Wie ernst ist der Wettbewerber, nur 2 von 11 Ausschreibungen? |
-
 ---
 
 ## 3. Arbeitsauftrag 2: Bewertung der drei Maßnahmen
@@ -227,14 +219,6 @@ gantt
 | 10 | Wer **betreibt** Plattform, CRM, Excel? Kapazität der 2 IT-Mitarbeitenden? | Betrieb ist die häufigste Schwachstelle | ja | IT-Leitung |
 | 11 | Wie entwickelt sich die **Führung** (Geschäftsführer geht in 2 Jahren)? | Wer trägt das Vorhaben weiter? | möglich | Geschäftsführung |
 | 12 | Wie vollständig sind die **Altberichte**: Stichprobe nur 50 von 1.900 | Hochrechnung hat ±13 Prozentpunkte Unsicherheit | möglich | Größere Stichprobe in Monat 1 |
-
-### 3.5 Antworten auf die Leitfragen für das Plenum
-
-| Leitfrage | Antwort |
-|---|---|
-| Welche Reihenfolge, und warum? | **C, dann A als Pilot, dann B.** C ist billig, schnell und liefert die Datenbasis. A ist die strategische Antwort auf den Wettbewerber, aber zu groß und zu unsicher als Vollprojekt. B hängt an der Pflege und folgt nach dem Entscheidungstor. |
-| Welche fehlende Information hätte die Entscheidung geändert? | (1) **Gilt das Budget für laufende Kosten?** und **Ist A teilbar?**: Sonst fällt der Pilot weg und A wird auf nächstes Jahr verschoben. (2) Wären die **Absagen** wegen Preis und nicht wegen Fernwartung, wäre A weniger dringend. (3) Fehlende **Zustimmung der Kunden** würde A stoppen. |
-| Wie gehen Sie mit dem Zeitdruck um? | Nicht mit dem schnellsten Vollprojekt, sondern mit **schnellen sichtbaren Schritten**: Kontakt zu den 2 Stammkunden sofort, Pilot als Referenz in Ausschreibungen, Steuerungsprotokolle ab Monat 1 sichern, Ergebnisse aus C nach 3 Monaten. So verliert Brenner keine Daten und kein Vertrauen. Und: Zeitdruck ist kein Grund, 260.000 € ungeprüft auszugeben. |
 
 ---
 

@@ -44,33 +44,7 @@ Zur Profi-Frage:
 | **7. Wie stark ist der Rohertrag nach Region?** | Balken Rohertrag je Region, optional gestapelt nach Linie | Süd bringt 682 von 2.405 (28 %). West liegt mit 480 trotz fast gleichem Umsatz hinter Nord (501), weil es viele Einsteiger und kaum Profi verkauft. Der Produktmix bestimmt den Ertrag, nicht nur der Umsatz |
 | **8. Wie ist der Produktmix je Region im Vergleich?** | Heatmap Region × Produktlinie (sequenziell, eine Farbe, Zahlen in den Zellen) | Auf einen Blick: Hotspots Süd/Profi (540) und Süd/Standard (710), kalte Zellen Ost/Profi (60) und West/Profi (90) |
 
-## Teil C: Plenum-Fragen
-
-**Welche Frage ist am spannendsten?** Die Profi-Frage (5), weil sie eine Entscheidung betrifft und ein Bauchgefühl ("Profi ist klein, also weg") durch die Rohertragsrechnung widerlegt wird.
-
-**Welche Region und welche Linie fallen auf?**
-
-- **Süd** wächst als einzige stark (+15 %), getragen von Profi (540).
-- **West** schrumpft (−8 %). Der Verlust der Kette im März erklärt wohl den Rückgang (−120 gegenüber dem Vorjahr), die Daten selbst zeigen das aber nicht.
-- **Ost** wirkt stabil, aber: Umsatz teilweise über den Nord-Großhändler gebucht (verzerrt Ost nach unten, Nord nach oben), Außendienst seit Juli unbesetzt.
-- Linie: **Profi** (klein, aber ertragsstark und regional konzentriert) und **Ersatzteile** (kleiner Umsatz, hohe Marge).
-
-**Welche Daten fehlen für eine Antwort?**
-
-| Fehlende Daten | Wofür |
-|---|---|
-| Vorjahr **je Produktlinie** (nur Gesamt je Region vorhanden) | Trend der Profi-Linie, Wachstumstreiber in Süd |
-| **Monats- bzw. Quartalswerte** | Zeitpunkt des Einbruchs in West (März?), Effekt Neuer Großhändler Nord (ab Mai), Saison, Hausmesse Süd |
-| Ost-Umsatz **über den Nord-Großhändler** | Regionen fair vergleichen, sonst zählt der Umsatz in der falschen Region |
-| **Kosten** (Vertrieb, Lager, Marketing, Fixkosten je Linie) | Marge ist nur Rohertrag, nicht Gewinn. Ohne Kosten keine Einstellungsentscheidung |
-| **Verbundkäufe** (kaufen Profi-Kunden auch Ersatzteile/Zubehör?) | Cross-Selling-Effekt bei Profi-Einstellung |
-| Retouren (Daten sind ohne Retouren) | Nettoumsatz, Qualität je Linie |
-| Plan-/Zielwerte, Kundenzahl je Händler (Top-Händler-Konzentration) | Beurteilung, ob +4 % gut oder schlecht ist, Klumpenrisiko |
-| Margen je Region (Marge hier nur je Linie) | Annahme: gleiche Marge in jeder Region. Die Rohertragsrechnung ist eine **Näherung** |
-
-**Bewusst nicht verwendet:** Katalog-Redesign und Firmensitz seit 1987 in Kassel haben keinen Bezug zu den Fragen (Ablenkung). "Zentrallager und Werksverkauf in Kassel" in Mitte kann Mitte dagegen verzerren (Direktverkauf, kein Händlerumsatz), daher bei Mitte Vorsicht beim Vergleich je Händler.
-
-## Teil D: Passende und unpassende Formen
+## Teil C: Passende und unpassende Formen
 
 | Aufgabe | Passend | Unpassend |
 |---|---|---|
